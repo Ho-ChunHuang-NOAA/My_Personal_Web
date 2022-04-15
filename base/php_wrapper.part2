@@ -1,0 +1,12 @@
+<?php // end of user created page content ?>
+                        </div>
+                        </div>
+<?php
+                        // insert footer
+                        include($globalPath.'footer.inc');
+?>
+<!-- closing the two enclosing divs -->
+                </div>
+        </div>
+</body>
+</html>

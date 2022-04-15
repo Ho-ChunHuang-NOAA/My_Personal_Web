@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> NCEP CMAQ PM GRAPHICS </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
+<script language="JavaScript" src="../js/cmaq_pm_latest.day.js"> </script> 
+<script language="JavaScript" src="../js/cmaq_pm25_column.js"> </script> 
+<script language="JavaScript">
+
+</script>
+</head>
+                                                                                                                  
+<body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
+
+<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC PM2.5 Simulations</font>
+
+<br> 
+
+<table bgcolor="AAAAAA" align="left">
+
+<tr bgcolor="AAAAAA" align="center"><td colspan=3>&nbsp</td>
+<td  bgcolor="CCCCCC"> 
+<a href="#picture" onClick="javascript:show(2)" ><font size=2>03</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(5)"><font size=2>06</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(8)"><font size=2>09</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(11)"><font size=2>12</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(14)"><font size=2>15</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(17)"><font size=2>18</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(20)"><font size=2>21</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(23)"><font size=2>24</font></a>&nbsp 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="#picture" onClick="javascript:show(26)"><font size=2>27</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(29)"><font size=2>30</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(32)"><font size=2>33</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(35)"><font size=2>36</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(38)"><font size=2>39</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(41)"><font size=2>42</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(44)"><font size=2>45</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(47)"><font size=2>48</font></a>
+<br>
+</td>
+</tr>
+
+<tr><td colspan=3 bgcolor="AAAAAA">&nbsp</td>
+<td bgcolor="CCCCCC" align="center">
+<form name="form2">
+Select speed:
+<select name="spd">
+ <option selected>normal
+ <option>fast
+ <option>slow
+</select>
+&nbsp 
+Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:get_i();javascript:animation()">
+
+&nbsp <button onclick="clearTimeout(anmiloop)">Stop</button> <button onclick="javascript:get_i();javascript:animation()">Continue</button>  &nbsp
+<!--&nbsp &nbsp &nbsp &nbsp-->
+
+<!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
+<!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
+
+
+ <input  type="button" name="fst" value="First" onClick="javascript:rewind()">
+ <input  type="button" name="prv" value="Prev" onClick="javascript:prev()">
+ <input  type="button" name="nxt" value="Next" onClick="javascript:next()">
+ <input  type="button" name="lst" value="Last" onClick="javascript:last()">
+</form>
+</td>
+</tr>
+
+<form name="form1">
+
+<tr bgcolor="AAAAAA">
+<td colspan=3></td>
+<td rowspan=30>
+<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=500 height=375> <br>
+<figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Fire Location </font> </b> </figcaption>
+<img src="FIREIMAGE" name="hms_image" width=500 height=375> <br>
+<!--  <br> -->
+<!--  <img src="NESDISIMAGE" name="nesdis_image" width=500 height=400> -->
+</td>
+</tr>
+
+<tr bgcolor="DDDDDD"><td colspan=3> 
+<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/fvs/hysplit/web/html/fho.html" target="_blank"> HYSPLIT Verification </a><br> -->
+<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/docs/Smoke_CCS_WCOSS.pdf" target="_blank"> HYSPLIT 2013 Upgrades</a><br> -->
+<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
+<!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a><br>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_o3.html"> Ozone Simulations</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25.html"> PM2.5 Simulations</a>
+</td></tr>
+
+<tr bgcolor="CCCCCC"><td colspan=3><center> NCO RUN Type:<br>
+<select name="exp" >
+<option value="prod" selected > PROD
+<option value="para6" > PARA6
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
+<select name="rg" >
+<option value="conus" > Continental US
+<option value="east" > Eastern U.S. 
+<option value="ne" > Northeast U.S.
+<option value="se" > Southeast U.S.
+<option value="west" > Western U.S. 
+<option value="nw" > Northwest U.S.
+<option value="sw" > Southwest U.S.
+<!--  <option value="hi" > Hawaii -->
+<!--  <option value="ak" > Alaska -->
+</select>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center">
+     <td style="width:20px">
+      Year:
+      <select name="yr" >
+        <option value="2020"  > 2020
+        <option value="2021"  > 2021
+      </select>
+     </td>
+
+     <td style="width:40px">
+       Month:
+       <select name="mn" >
+       <option value="01"  > Jan
+       <option value="02"  > Feb
+       <option value="03"  > Mar
+       <option value="04"  > Apr
+       <option value="05"  > May
+       <option value="06"  > Jun
+       <option value="07"  > Jul
+       <option value="08"  > Aug
+       <option value="09"  > Sep
+       <option value="10"  > Oct
+       <option value="11"  > Nov
+       <option value="12"  > Dec
+       </select>
+     </td>
+
+     <td style="width:20px">
+       Day:
+       <select name="dy" >
+       <option value="01"  > 01
+       <option value="02"  > 02
+       <option value="03"  > 03
+       <option value="04"  > 04
+       <option value="05"  > 05
+       <option value="06"  > 06
+       <option value="07"  > 07
+       <option value="08"  > 08
+       <option value="09"  > 09
+       <option value="10"  > 10
+       <option value="11"  > 11
+       <option value="12"  > 12
+       <option value="13"  > 13
+       <option value="14"  > 14
+       <option value="15"  > 15
+       <option value="16"  > 16
+       <option value="17"  > 17
+       <option value="18"  > 18
+       <option value="19"  > 19
+       <option value="20"  > 20
+       <option value="21"  > 21
+       <option value="22"  > 22
+       <option value="23"  > 23
+       <option value="24"  > 24
+       <option value="25"  > 25
+       <option value="26"  > 26
+       <option value="27"  > 27
+       <option value="28"  > 28
+       <option value="29"  > 29
+       <option value="30"  > 30
+       <option value="31"  > 31
+       </select>
+     </td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()">&nbsp &nbsp <input size=10 type="button" name="submit" value="Day-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input size=10 type="button" name="submit" value="Day+1" onClick="load_imageP1(this.form)"></td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Cycle:&nbsp &nbsp
+<select name="tz" >
+<option value="06" selected> 06Z 
+<option value="12"> 12Z 
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
+<select name="fld" > 
+<option value="pm25" > &nbsp &nbsp &nbsp &nbsp Total Surface PM diameter < 2.5 μm &nbsp &nbsp &nbsp
+<option value="pm25_col" > &nbsp &nbsp &nbsp &nbsp Total Column PM diameter < 2.5 μm &nbsp &nbsp &nbsp
+<!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
+<!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
+
+<tr bgcolor="DDDDDD"><td colspan=3><br>
+<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/" target="_blank"> EMC AQ Verification<br>
+<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
+<center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
+<center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
+<br>
+<br>
+<center><a href=mailto:Ho-Chun.Huang@noaa.gov>Send Comments <br>
+</td>
+
+</form>
+
+<P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output, Daily max/ave, or Hourly speciated species <br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp # Some models may contain only 48 hour output and will be a blank page beyond hour 48 &nbsp &nbsp # GOES-16 and VIIRS AOD Images has a 2-3 days latency </font></P>
+<P><font color=black size=+0>PARA6 Change Log &nbsp :: &nbsp (1) 08/07-08/15 without dust scheme &nbsp (2) beyond 08/16 incorporating Fengsha dust scheme &nbsp (3) beyond 08/27 replacing the ARL optiomal adjusted GAS CHEM LBC with the current PROD GAS CHEM LBC</font></P>
+<font color=blue size=+0>NOTE - Due to the switch of GFS parallel run from the EMC to NCO, there is no 12Z cycle run on Oct 28 2020 for PARA6 and PARA6a</font></P>
+<!--  <P<P><left><font color=blue size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  New Update in production started on 12Z June 14 2017 </font></P>  -->
+<!--  <P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hysplit pbl Fcst are available from September 1 and sfc Fcst from September 9 to yesterday <br> -->
+<!--  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp New Hysplit implementation occurred at 12z on September 30 2014 with 3D particular model emissions </font></P> -->
+<!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GASP or MODIS obs are limited to daytime or overpass hours thus no figure means no obs ( up to the day before yesterday ) <br> -->
+<!--  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use number click to jump to model forecast hour. Use 'prev' and 'next' to move through hours </font></P> -->
+
+</table>
+
+</body>
+</html>
+

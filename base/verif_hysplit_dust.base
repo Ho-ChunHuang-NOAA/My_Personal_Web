@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> HYSPLIT SMOKE/DUST Verification </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
+<script language="JavaScript" src="../js/latest.mon.js"> </script> 
+<script language="JavaScript" src="../js/verif_hysplit_dust.js"> </script> 
+<script language="JavaScript">
+
+</script>
+</head>
+                                                                                                                  
+<body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
+
+<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
+<font color="Blue" size=+3> <b> &nbsp &nbsp &nbsp NOAA/NWS/NCEP/EMC HYSPLIT Dust Verification </b> </font>
+
+<br> 
+
+<table bgcolor="AAAAAA" align="left">
+
+<tr bgcolor="AAAAAA" align="center"  style="font-size:25px;"><td colspan=3>&nbsp</td>
+<td  bgcolor="CCCCCC"> 
+<a href="#picture" onClick="javascript:show(0)" >day 1</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(1)" >1.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(2)" >2.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(3)" >5.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(4)" >10.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(5)" >15.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(6)" >20.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(7)">day 2</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(8)" >1.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(9)" >2.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(10)" >5.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(11)" >10.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(12)" >15.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(13)" >20.0</font></a>&nbsp
+<br>
+</td>
+</tr>
+
+
+<form name="form1">
+<tr bgcolor="AAAAAA">
+<td colspan=3></td>
+<td rowspan=30>
+<img src="VERIFDUSTIMAGE" name="verif_dust_image" width=800 height=650>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC"  style="font-size:25px;"><td colspan=3><center> Model Variable :&nbsp &nbsp
+<select name="fld" style="font-size:20px;">
+<option value="DUST" > Dust
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"  style="font-size:25px;"><td colspan=3> &nbsp &nbsp Verification Statistic :&nbsp &nbsp
+<select name="stats" style="font-size:20px;">
+<option value="CSI" > CSI &nbsp &nbsp
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center" style="font-size:25px;"><td colspan=3> Forecast Cycle:&nbsp &nbsp
+<select name="tz" style="font-size:20px;">
+<option value="06Z" > 06Z
+<option value="12Z" > 12Z
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center" style="font-size:25px;"><td colspan=3> Mask Region:&nbsp &nbsp
+<select name="rg" style="font-size:20px;">
+<option value="G236" > CONUS
+<option value="FULL" > Full Domain
+<option value="G245" > Eastern U.S. 
+<option value="G246" > Western U.S. 
+</select>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center" style="font-size:25px;"><td colspan=3> Year:&nbsp &nbsp
+<select name="yr" style="font-size:20px;">
+<option value="2019"  > 2019
+<option value="2020"  > 2020
+<option value="2021"  > 2021
+<option value="2022"  > 2022
+</select>
+</td>
+</tr>
+
+
+<tr bgcolor="CCCCCC" align="center" style="font-size:25px;"><td colspan=3> Month:&nbsp &nbsp
+<select name="mn" style="font-size:20px;">
+<option value="01"  > Jan
+<option value="02"  > Feb
+<option value="03"  > Mar
+<option value="04"  > Apr
+<option value="05"  > May
+<option value="06"  > Jun
+<option value="07"  > Jul
+<option value="08"  > Aug
+<option value="09"  > Sep
+<option value="10"  > Oct
+<option value="11"  > Nov
+<option value="12"  > Dec
+</select>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3><input style="font-size:25px;" type="button" name="submit" value="Latest" onClick="load_image_latest()">&nbsp &nbsp <input style="font-size:25px;" type="button" name="submit" value="Mon-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input style="font-size:25px;" type="button" name="submit" value="Mon+1" onClick="load_imageP1(this.form)"></td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> <input style="font-size:25px;" type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
+
+<tr bgcolor="DDDDDD"><td colspan=3><br>
+<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank" style="font-size:25px;"> EMC AQ<br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/" target="_blank" style="font-size:25px;"> EMC AQ Verification<br>
+<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank" style="font-size:25px;"> NAQFC <br>
+<center><a href="http://www.ncep.noaa.gov" target="_blank" style="font-size:25px;"> NCEP Home <br>
+<center><a href="http://www.noaa.gov" target="_blank" style="font-size:25px;"> NOAA Home <br>
+<br>
+<br>
+<center><a href=mailto:Ho-Chun.Huang@noaa.gov>Send Comments <br>
+</td>
+
+</form>
+
+<p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
+<!-- <P><left><font color=red size=+1>&nbsp &nbsp &nbsp &nbsp Disclaimer - Graphics exhibited at this web site is non-operational product.  Therefore they are not supported 24/7 and can be removed anytime without advanced notice.</br></font> -->
+<!-- <font color=red size=+1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Users who use this web site is at their own risk </font> </P> -->
+</table>
+
+</body>
+</html>
+

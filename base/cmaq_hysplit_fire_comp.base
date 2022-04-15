@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> COMP CMAQ and HYSPLIT FIRE LOCATIONs </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
+<script language="JavaScript" src="../js/cmaq_hms_latest.day.js"> </script>
+<script language="JavaScript" src="../js/cmaq_hysplit_fire_comp.js"> </script>
+<script language="JavaScript">
+
+</script>
+</head>
+                                                                                                                  
+<body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
+
+<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  COMP CMAQ and HYSPLIT FIRE LOCATIONs </font>
+
+<br> 
+
+<table bgcolor="AAAAAA" align="left">
+
+<tr bgcolor="AAAAAA" align="center"><td colspan=3>&nbsp</td>
+<td  bgcolor="CCCCCC"> 
+<a href="#picture" onClick="javascript:show(0)" ><font size=2>analysis</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(1)" ><font size=2>day 1</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(2)"><font size=2>day 2</font></a>&nbsp
+</td>
+</tr>
+
+<tr><td colspan=3 bgcolor="AAAAAA">&nbsp</td>
+<td bgcolor="CCCCCC" align="center">
+<form name="form2">
+Select speed:
+<select name="spd">
+ <option selected>normal
+ <option>fast
+ <option>slow
+</select>
+&nbsp 
+Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:get_i();javascript:animation()">
+
+&nbsp <button onclick="clearTimeout(anmiloop)">Stop</button> <button onclick="javascript:get_i();javascript:animation()">Continue</button>  &nbsp
+<!--&nbsp &nbsp &nbsp &nbsp-->
+
+<!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
+<!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
+
+
+ <input  type="button" name="fst" value="First" onClick="javascript:rewind()">
+ <input  type="button" name="prv" value="Prev" onClick="javascript:prev()">
+ <input  type="button" name="nxt" value="Next" onClick="javascript:next()">
+ <input  type="button" name="lst" value="Last" onClick="javascript:last()">
+</form>
+</td>
+</tr>
+
+<form name="form1">
+
+<tr bgcolor="AAAAAA">
+<td colspan=3></td>
+<td rowspan=30>
+<figure>
+   <figcaption> <center> <b> <font color=blue size=+1> HYSPLIT  Fires </font> </b> </figcaption>
+   <img src="HYSPLITHMSIMAGE" name="hysplit_fire_image" width=550 height=350> 
+</figure>
+<figure>
+   <figcaption> <center> <b> <font color=blue size=+1> CMAQ     Fires </font> </b> </figcaption>
+   <img src="CMAQHMSIMAGE" name="cmaq_fire_image" width=550 height=350>
+</figure>
+<!--  <br> -->
+<!--  <img src="NESDISIMAGE" name="nesdis_image" width=500 height=400> -->
+</td>
+</tr>
+
+<tr bgcolor="DDDDDD"><td colspan=3> 
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/hysplit.nesdis.html/" target="_blank"> HYSPLIT smoke/dust pub</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/hysplit_bluesky.html" target="_blank"> HYSPLIT smoke/dust page </a><br><br>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_25pm_max.html" target="_blank"> CMAQ PM page</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a><br><br>
+</td></tr>
+
+<tr bgcolor="CCCCCC"><td colspan=3><center> HYSPLIT RUN Type:<br>
+<select name="h_exp" >
+<option value="prod" selected > PROD
+<option value="ncopara" > NCO PARA
+<option value="dev" > EMC DEV
+<option value="para1" > PARA1
+<option value="para2" > PARA2
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC"><td colspan=3><center> CMAQ    RUN Type:<br>
+<select name="c_exp" >
+<option value="prod" > PROD
+<option value="ncopara" > NCO PARA
+<option value="dev" > EMC DEV
+<option value="para1" > PARA1
+<option value="para2" > PARA2
+<option value="hms2cmaq" selected > TEST HMS2CMAQ
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
+<select name="rg" >
+<option value="na" > North America
+<option value="conus" selected > Continental US
+<option value="ne" > Northeast U.S.
+<option value="se" > Southeast U.S.
+<option value="mdn" > Upper Middle West
+<option value="mds" > Gulf Coast (Lower South)
+<option value="nw" > Northwest U.S.
+<option value="sw" > Southwest U.S.
+<option value="hi" > Hawaii
+<option value="ak" > Alaska
+<option value="can" > Canada
+</select>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center">
+     <td style="width:20px">
+      Year:
+      <select name="yr" >
+        <option value="2020"  > 2020
+        <option value="2021"  > 2021
+      </select>
+     </td>
+
+     <td style="width:40px">
+       Month:
+       <select name="mn" >
+       <option value="01"  > Jan
+       <option value="02"  > Feb
+       <option value="03"  > Mar
+       <option value="04"  > Apr
+       <option value="05"  > May
+       <option value="06"  > Jun
+       <option value="07"  > Jul
+       <option value="08"  > Aug
+       <option value="09"  > Sep
+       <option value="10"  > Oct
+       <option value="11"  > Nov
+       <option value="12"  > Dec
+       </select>
+     </td>
+
+     <td style="width:20px">
+       Day:
+       <select name="dy" >
+       <option value="01"  > 01
+       <option value="02"  > 02
+       <option value="03"  > 03
+       <option value="04"  > 04
+       <option value="05"  > 05
+       <option value="06"  > 06
+       <option value="07"  > 07
+       <option value="08"  > 08
+       <option value="09"  > 09
+       <option value="10"  > 10
+       <option value="11"  > 11
+       <option value="12"  > 12
+       <option value="13"  > 13
+       <option value="14"  > 14
+       <option value="15"  > 15
+       <option value="16"  > 16
+       <option value="17"  > 17
+       <option value="18"  > 18
+       <option value="19"  > 19
+       <option value="20"  > 20
+       <option value="21"  > 21
+       <option value="22"  > 22
+       <option value="23"  > 23
+       <option value="24"  > 24
+       <option value="25"  > 25
+       <option value="26"  > 26
+       <option value="27"  > 27
+       <option value="28"  > 28
+       <option value="29"  > 29
+       <option value="30"  > 30
+       <option value="31"  > 31
+       </select>
+     </td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()">&nbsp &nbsp <input size=10 type="button" name="submit" value="Day-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input size=10 type="button" name="submit" value="Day+1" onClick="load_imageP1(this.form)"></td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Cycle:&nbsp &nbsp
+<select name="tz" >
+<option value="06" selected> 06Z 
+<option value="12"> 12Z 
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
+<select name="fld" > 
+<option value="location" > Fire Location
+<option value="emission" > Fire Emission
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
+
+<tr bgcolor="DDDDDD"><td colspan=3><br>
+<center><a href="http://http://www.nws.noaa.gov/ost/air_quality/" target="_blank"> NAQFC <br>
+<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/" target="_blank"> EMC AQ Verification<br>
+<center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
+<center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
+<br>
+<br>
+<center><a href=mailto:Ho-Chun.Huang@noaa.gov>Send Comments <br>
+</td>
+
+</form>
+
+<P><left><font color=blue size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  The Locations of both HMS obersved and HYSPLIT aggregated fires that </font><br>
+<left><font color=blue size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  are used to cumputate fire emissions for HYSPLIT SMOKE Forecast </font></P> 
+<!--  <P><left><font color=blue size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Upper panel : Model Fcst &nbsp &nbsp &nbsp &nbsp Lower panel : Observation </font></P> -->
+<!--  <P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hysplit pbl Fcst are available from September 1 and sfc Fcst from September 9 to yesterday <br> -->
+<!--  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp New Hysplit implementation occurred at 12z on September 30 2014 with 3D particular model emissions </font></P> -->
+<!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GASP or MODIS obs are limited to daytime or overpass hours thus no figure means no obs ( up to the day before yesterday ) <br> -->
+<!--  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use number click to jump to model forecast hour. Use 'prev' and 'next' to move through hours </font></P> -->
+
+</table>
+
+</body>
+</html>
+

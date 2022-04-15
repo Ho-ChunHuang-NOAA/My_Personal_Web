@@ -1,0 +1,14 @@
+function Latestmon() {
+   var yr=AAAA;
+   var mon=BBBB;
+   var UpperLimit=100*yr+mon;
+   var status=save_latest_date(yr,mon);
+   return UpperLimit;
+}
+function Firstmon() {
+   var Fstyr=XXXX;
+   var Fstmon=YYYY;
+   var LowerLimit=100*Fstyr+Fstmon;
+   return LowerLimit;
+}
+

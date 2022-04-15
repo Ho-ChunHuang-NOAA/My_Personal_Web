@@ -1,0 +1,47 @@
+<?php // insert routines to set both local and global paths
+// insert header that forbids caching and carries doctype; html tag
+include ('includes/setAllPaths.inc');
+include ($globalPath.'noCacheHeader.inc'); ?>
+<title><?php include('includes/subsiteTitle.inc'); ?> SNPP/VIIRS Aerosol CAL/VAL</title>
+<?php // insert links to stylesheets
+include($globalPath.'styleLinks.inc'); ?>
+</head>
+<body>
+        <div id="wrap">
+        <div class="outline">
+<?php // insert top navigation 'row'
+        include($globalPath.'headerNew.inc'); ?>
+                <div id="navContainer">
+<?php // insert navigation div
+                        include($globalPath.'NavDivContainer.inc'); ?>
+<!-- content inserted UNDER this comment and BEFORE the closing </div>
+ below will appear below the nav panel inside the left-hand column -->
+  
+        </div>
+        <div id="main">
+                <div class="mainInner">
+                <?php include($globalPath.'noScriptWarning.inc'); ?>
+                <h1><?php include('includes/subsiteTitle.inc'); ?></h1>
+<?php  // page content insertion can start after this comment. ?>
+
+
+
+<!-- PUT YOUR HTML CONTENT HERE 
+
+-->
+
+
+
+
+<?php // end of user created page content ?>
+                        </div>
+                        </div>
+<?php
+                        // insert footer
+                        include($globalPath.'footer.inc');
+?>
+<!-- closing the two enclosing divs -->
+                </div>
+        </div>
+</body>
+</html>

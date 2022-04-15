@@ -1,0 +1,7 @@
+function LatestMon() {
+   var yr=AAAA;
+   var mon=BBBB;
+   var UpperLimit=100*yr+mon;
+   var status=save_latest_month(yr,mon);
+   return UpperLimit;
+}

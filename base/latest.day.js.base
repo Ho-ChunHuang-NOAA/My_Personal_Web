@@ -1,0 +1,9 @@
+function LatestDay() {
+   var yr=AAAA;
+   var mon=BBBB;
+   var day=CCCC;
+   var jday=dayofyear(yr, mon, day);
+   var UpperLimit=1000*yr+jday;
+   var status=save_latest_date(yr,mon,day);
+   return UpperLimit;
+}

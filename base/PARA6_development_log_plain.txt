@@ -1,0 +1,11 @@
+>PARA6 Change Log & :: & (1) 08/07-08/15 without dust scheme & (2) beyond 08/16 incorporating Fengsha dust scheme & (3) beyond 08/27 replacing the ARL optiomal adjusted GAS CHEM LBC with the current PROD GAS CHEM LBC (4) November 05 2020 is the last day of Simulation. Figures available from 08/07/20 to 10/03/20
+
+>PARA6A Change Log & :: & (1) starting 10/04 06z PARA6 with weekly mean observed Green Vegetation Fraction by JPSS-1/NOAA-20 (2-day back latency) (2) dust scheme bug fix on 12/16/2020. (3) Figures available from 10/04/20 to 01/19/2021
+
+>PARA6X Change Log & :: & (1) This is a testing version starting 01/10/21 06z (2) based on PARA6a with bioseason, NH4 bi-directional, and new input src file (2) Figures available from 01/10/21 to 01/28/21 
+
+>PARA6B Change Log & :: & (1) starting 01/22/21 06z (2) based on PARA6x plus NEI2017, inline dust mask for fugutive dust emission, LBC parallel processing, BELD5, E US fire filter, VIIRS LAI climatorology, and new input src file (3) Figures available from 01/23/21 
+
+>PARA6C Change Log & :: & (1) based on PARA6b plus new dust emission input parameter (2) Figures available from 08/01/2020
+
+>PARA6D Change Log & :: & (1) based on PARA6c but using NEI2016v1 (2) reduced 2D and 3D output species and 3D diagnnosis files (3) two-step post processing (4) new bias-correction for mixed time length input from CHEM/MET (5) Figures available from 08/01/2020

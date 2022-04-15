@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> CMAQ AOD Verification </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
+<script language="JavaScript" src="../js/latest.mon.js"> </script> 
+<script language="JavaScript" src="../js/verif_cmaq_aod.js"> </script> 
+<script language="JavaScript">
+
+</script>
+</head>
+                                                                                                                  
+<body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
+
+<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
+<font color="Blue" size=+2> <b> &nbsp &nbsp &nbsp NOAA/NWS/NCEP/EMC CMAQ AOD Verification </b> </font>
+
+<br> 
+
+<table bgcolor="AAAAAA" align="left">
+
+<tr bgcolor="AAAAAA" align="center"><td colspan=3>&nbsp</td>
+<td  bgcolor="CCCCCC"> 
+<a href="#picture" onClick="javascript:show(0)" ><font size=2>day 1</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(1)" ><font size=1>0.5</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(2)" ><font size=1>1.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(3)" ><font size=1>1.5</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(4)" ><font size=1>2.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(5)" ><font size=1>2.5</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(6)" ><font size=1>3.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(7)"><font size=2>day 2</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(8)" ><font size=1>0.5</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(9)" ><font size=1>1.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(10)" ><font size=1>1.5</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(11)" ><font size=1>2.0</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(12)" ><font size=1>2.5</font></a>&nbsp
+<a href="#picture" onClick="javascript:show(13)" ><font size=1>3.0</font></a>&nbsp
+<br>
+</td>
+</tr>
+
+
+<form name="form1">
+<tr bgcolor="AAAAAA">
+<td colspan=3></td>
+<td rowspan=30>
+<img src="VERIFAODIMAGE" name="cmaq_aod_image" width=600 height=500>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC"><td colspan=1><center> Model Variable :&nbsp &nbsp
+<select name="fld" >
+<option value="AOD" > AOD
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC"><td colspan=1><center> Satellite Obs Quality :&nbsp &nbsp
+<select name="qcf" >
+<option value="HIGH" > HIGH
+<option value="MEDIUM" > MEDIUM
+<option value="LOW" > LOW
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=1> &nbsp &nbsp Verification Statistic :&nbsp &nbsp
+<select name="stats" >
+<option value="TIME_SERIES" > TIME SERIES &nbsp &nbsp
+<option value="CSI" > CSI &nbsp &nbsp
+<option value="RMSEDL" > RMSE Diurnal &nbsp &nbsp
+<option value="MEDL" > ME Diurnal &nbsp &nbsp
+<option value="RMSETS" > RMSE Time Series &nbsp &nbsp
+<option value="METS" > ME Time Series &nbsp &nbsp
+<option value="TAYLOR" > TAYLOR's Diagram &nbsp &nbsp
+<option value="PERFORMANCE" > Perormance Diagram &nbsp &nbsp
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=1> Forecast Cycle:&nbsp &nbsp
+<select name="tz" >
+<option value="06Z" > 06Z
+<option value="12Z" > 12Z
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=1> Mask Region:&nbsp &nbsp
+<select name="rg" >
+<option value="CONUS" > CONUS
+<option value="FULL" > Full Domain
+<option value="EAST" > Eastern U.S. 
+<option value="WEST" > Western U.S. 
+<option value="NEUS" > Northeastern U.S. 
+<option value="SEUS" > Southeastern U.S. 
+<option value="NWUS" > Northwestern U.S. 
+<option value="SWUS" > Southwestern U.S. 
+<option value="NEC" > NEC
+<option value="SEC" > SEC
+<option value="APL" > APL
+<option value="GMC" > GMC
+<option value="LMV" > LMV
+<option value="MDW" > MDW
+<option value="NMT" > NMT
+<option value="NPL" > NPL
+<option value="SMT" > SMT
+<option value="SPL" > SPL
+<option value="NWC" > NWC
+<option value="SWC" > SWC
+<option value="SWD" > SWD
+</select>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center">
+     <td style="width:20px">
+      Year: &nbsp 
+      <select name="yr" >
+        <option value="2020"  > 2020
+        <option value="2021"  > 2021
+        <option value="2022"  > 2022
+      </select>
+
+       &nbsp &nbsp Month: &nbsp
+       <select name="mn" >
+       <option value="01"  > Jan
+       <option value="02"  > Feb
+       <option value="03"  > Mar
+       <option value="04"  > Apr
+       <option value="05"  > May
+       <option value="06"  > Jun
+       <option value="07"  > Jul
+       <option value="08"  > Aug
+       <option value="09"  > Sep
+       <option value="10"  > Oct
+       <option value="11"  > Nov
+       <option value="12"  > Dec
+       </select>
+     </td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()">&nbsp &nbsp <input size=10 type="button" name="submit" value="Mon-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input size=10 type="button" name="submit" value="Mon+1" onClick="load_imageP1(this.form)"></td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
+
+<tr bgcolor="DDDDDD"><td colspan=3><br>
+<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/" target="_blank"> EMC AQ Verification<br>
+<center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
+<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
+<center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
+<br>
+<br>
+<center><a href=mailto:Ho-Chun.Huang@noaa.gov>Send Comments <br>
+</td>
+
+</form>
+<p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
+<!-- <P><left><font color=red size=+1>&nbsp &nbsp &nbsp &nbsp Disclaimer - Graphics exhibited at this web site is non-operational product.  Therefore they are not supported 24/7 and can be removed anytime without advanced notice.</br></font> -->
+<!-- <font color=red size=+1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Users who use this web site is at their own risk </font> </P> -->
+
+</table>
+
+</body>
+</html>
+

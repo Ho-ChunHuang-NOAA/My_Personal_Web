@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> HYSPLIT SMOKE/DUST GRAPHICS </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
+<script language="JavaScript" src="../js/latest.day.js"> </script> 
+<script language="JavaScript" src="../js/hysplit_emc.js"> </script> 
+<script language="JavaScript">
+
+</script>
+</head>
+                                                                                                                  
+<body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
+
+<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp NOAA/NWS/NCEP/EMC HYSPLIT SMOKE/DUST RUN </font>
+
+<br> 
+
+<table bgcolor="AAAAAA" align="left">
+
+<tr bgcolor="AAAAAA" align="center"><td colspan=3>&nbsp</td>
+<td  bgcolor="CCCCCC"> 
+<a href="#picture" onClick="javascript:show(2)" ><font size=2>03</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(5)"><font size=2>06</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(8)"><font size=2>09</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(11)"><font size=2>12</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(14)"><font size=2>15</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(17)"><font size=2>18</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(20)"><font size=2>21</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(23)"><font size=2>24</font></a>&nbsp 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="#picture" onClick="javascript:show(26)"><font size=2>27</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(29)"><font size=2>30</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(32)"><font size=2>33</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(35)"><font size=2>36</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(38)"><font size=2>39</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(41)"><font size=2>42</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(44)"><font size=2>45</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(47)"><font size=2>48</font></a>
+<br>
+</td>
+</tr>
+
+<tr><td colspan=3 bgcolor="AAAAAA">&nbsp</td>
+<td bgcolor="CCCCCC" align="center">
+<form name="form2">
+Select speed:
+<select name="spd">
+ <option selected>normal
+ <option>fast
+ <option>slow
+</select>
+&nbsp 
+Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:get_i();javascript:animation()">
+
+&nbsp <button onclick="clearTimeout(anmiloop)">Stop</button> <button onclick="javascript:get_i();javascript:animation()">Continue</button>  &nbsp
+<!--&nbsp &nbsp &nbsp &nbsp-->
+
+<!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
+<!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
+
+
+ <input  type="button" name="fst" value="First" onClick="javascript:rewind()">
+ <input  type="button" name="prv" value="Prev" onClick="javascript:prev()">
+ <input  type="button" name="nxt" value="Next" onClick="javascript:next()">
+ <input  type="button" name="lst" value="Last" onClick="javascript:last()">
+</form>
+</td>
+</tr>
+
+<form name="form1">
+
+<tr bgcolor="AAAAAA">
+<td colspan=3></td>
+<td rowspan=30>
+   <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp HYSPLIT Forecast EXP1 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Forecast Fires PROD &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </font> </b> </figcaption>
+<img src="HYSPLITEXP1IMAGE" name="hysplit_exp1_image" width=400 height=300> <img src="FIRE1IMAGE" name="hms1_image" width=400 height=300>
+<br>
+   <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp HYSPLIT Forecast EXP2 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Forecast Fires DEV &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </font> </b> </figcaption>
+   <img src="HYSPLITEXP2IMAGE" name="hysplit_exp2_image" width=400 height=300> <img src="FIRE2IMAGE" name="hms2_image" width=400 height=300>
+   <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EXP2 - EXP1 Smoke/Dust </font> </b> </figcaption>
+   <img src="DIFFIMAGE" name="diff_image" width=400 height=300>
+   <figcaption> <left> <b> <font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp VIIRS Observed Smoke AOD High QF &nbsp &nbsp &nbsp &nbsp &nbsp VIIRS Observed Smoke AOD Med QF</font> </b> </figcaption>
+   <img src="HIGHVAOD" name="highvaod_image" width=400 height=300> <img src="MEDVAOD" name="medvaod_image" width=400 height=300>
+</tr>
+
+<tr bgcolor="CCCCCC"><td colspan=3><center> Change Type:<br>
+<select name="ptyp" >
+<option value="" selected > HYSPLIT Smoke/dust plots
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC"><td colspan=3><center> EXP I:&nbsp &nbsp
+<select name="exp1" >
+<option value="prod" selected > PROD
+<option value="ncopara" > NCO PARA
+<option value="cactus" > CACTUS
+<option value="prod_227" > PROD 227
+<option value="cactus_227" > CACTUS 227
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> EXP II:&nbsp &nbsp
+<select name="exp2" >
+<option value="ncopara" > NCO PARA
+<option value="prod" > PROD
+<option value="para" > PARA
+<option value="cactus" > CACTUS
+<option value="prod_227" > PROD 227
+<option value="cactus_227" > CACTUS 227
+<option value="acorn" > ACORN
+<option value="acorn_wgrib2ip_227" > ACORN PROD Wgrib2ip 227
+<option value="acorn_wgrib2_208_227" > ACORN PROD Wgrib2_208 227
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
+<select name="rg" >
+<option value="conus" > Continental US
+<option value="dset" > Full Domain
+<option value="east" > Eastern U.S. 
+<option value="ne10" > Northeast U.S.
+<option value="se10" > Southeast U.S.
+<option value="west" > Western U.S. 
+<option value="nw10" > Northwest U.S.
+<option value="swse" > Southwest U.S.
+<option value="hi" > Hawaii
+<option value="ak" > Alaska
+<option value="can" > Canada
+</select>
+</td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center">
+     <td style="width:20px">
+      Year:
+      <select name="yr" >
+        <option value="2020"  > 2020
+        <option value="2021"  > 2021
+        <option value="2022"  > 2022
+      </select>
+     </td>
+
+     <td style="width:40px">
+       Month:
+       <select name="mn" >
+       <option value="01"  > Jan
+       <option value="02"  > Feb
+       <option value="03"  > Mar
+       <option value="04"  > Apr
+       <option value="05"  > May
+       <option value="06"  > Jun
+       <option value="07"  > Jul
+       <option value="08"  > Aug
+       <option value="09"  > Sep
+       <option value="10"  > Oct
+       <option value="11"  > Nov
+       <option value="12"  > Dec
+       </select>
+     </td>
+
+     <td style="width:20px">
+       Day:
+       <select name="dy" >
+       <option value="01"  > 01
+       <option value="02"  > 02
+       <option value="03"  > 03
+       <option value="04"  > 04
+       <option value="05"  > 05
+       <option value="06"  > 06
+       <option value="07"  > 07
+       <option value="08"  > 08
+       <option value="09"  > 09
+       <option value="10"  > 10
+       <option value="11"  > 11
+       <option value="12"  > 12
+       <option value="13"  > 13
+       <option value="14"  > 14
+       <option value="15"  > 15
+       <option value="16"  > 16
+       <option value="17"  > 17
+       <option value="18"  > 18
+       <option value="19"  > 19
+       <option value="20"  > 20
+       <option value="21"  > 21
+       <option value="22"  > 22
+       <option value="23"  > 23
+       <option value="24"  > 24
+       <option value="25"  > 25
+       <option value="26"  > 26
+       <option value="27"  > 27
+       <option value="28"  > 28
+       <option value="29"  > 29
+       <option value="30"  > 30
+       <option value="31"  > 31
+       </select>
+     </td>
+</tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()">&nbsp &nbsp <input size=10 type="button" name="submit" value="Day-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input size=10 type="button" name="submit" value="Day+1" onClick="load_imageP1(this.form)"></td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Cycle:&nbsp &nbsp
+<select name="tz" >
+<option value="06" selected> 06Z 
+<option value="12"> 12Z 
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
+<select name="fld" > 
+<option value="smoke" selected > Smoke Fine Particulate matter (ug/m3)
+<option value="dust" >  Dust Fine Particulate matter (ug/m3)
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select vertical level:&nbsp &nbsp 
+<select name="lvl" > 
+<option value="sfc" > Surface
+<option value="pbl" selected > Column Average 
+</select>
+</td></tr>
+
+<tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
+
+<tr bgcolor="DDDDDD"><td colspan=3><br>
+<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/" target="_blank"> EMC AQ Verification<br>
+<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
+<center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
+<center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
+<br>
+<br>
+<center><a href=mailto:Ho-Chun.Huang@noaa.gov>Send Comments <br>
+</td>
+
+</form>
+
+</table>
+
+</body>
+</html>
+

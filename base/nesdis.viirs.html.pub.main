@@ -1,0 +1,115 @@
+<h2>SNPP/VIIRS Aerosol Calibration and Validation - Gridded Data</h2>
+
+
+  <form name="form1">
+
+<table bgcolor="AAAAAA" align="left">
+
+  <tbody>
+     
+   <tr>
+     <td colspan=5>
+       
+          <p> <B> <font color=black size=+1> <center> 0.25x0.25-degree Gridded Aerosol Optical Thickness at 550 nm </font> </B> </p>
+       
+     </td>
+   </tr>
+   
+   <tr bgcolor="CCCCCC">
+       
+     <td width=20> 
+      Year:
+      <select name="yr" >
+        <option value="2012" > 2012
+        <option value="2013" selected> 2013
+      </select>
+     </td>
+
+     <td width=20>
+       Month:
+       <select name="mn" >
+       <option value="01"> Jan
+       <option value="02"> Feb 
+       <option value="03"> Mar
+       <option value="04"> Apr
+       <option value="05"> May
+       <option value="06"> Jun
+       <option value="07"> Jul
+       <option value="08"> Aug
+       <option value="09" selected> Sep
+       <option value="10"> Oct
+       <option value="11"> Nov
+       <option value="12"> Dec
+       </select>
+      </td>
+
+ <td width=20>
+  Day:
+  <select name="dy" >
+  <option value="01" >01
+  <option value="02" >02
+  <option value="03" >03
+  <option value="04" >04
+  <option value="05" >05
+  <option value="06" >06
+  <option value="07" >07
+  <option value="08" >08
+  <option value="09" >09
+  <option value="10" selected >10
+  <option value="11" >11
+  <option value="12" >12
+  <option value="13" >13
+  <option value="14" >14
+  <option value="15" >15
+  <option value="16" >16
+  <option value="17" >17
+  <option value="18" >18
+  <option value="19" >19
+  <option value="20" >20
+  <option value="21" >21
+  <option value="22" >22
+  <option value="23" >23
+  <option value="24" >24
+  <option value="25" >25
+  <option value="26" >26
+  <option value="27" >27
+  <option value="28" >28
+  <option value="29" >29
+  <option value="30" >30
+  <option value="31" >31
+  </select>
+ </td>
+
+ <td width=50>
+  <center> <input size=30 type="button" name="submit" value="Display Image" onClick="load_image(this.form)">
+ </td>
+
+ <td width=80>
+
+    <B> <U> <center> <font color=red size=+1> 
+     <a href="ftp://ftp.star.nesdis.noaa.gov/pub/smcd/hhuang/npp.viirs.aerosol.data/edraot550"> Data Access  </a>
+   </font> </B> </U> 
+    
+ </td>
+
+</tr>
+ 
+  <tr bgcolor="FFFFFF">
+     <td colspan=5>
+      <img
+      src="IMAGE"
+      name="my_image" width=700 height=455> 
+     </td>
+  </tr>
+
+  <tr bgcolor="DDDDDD">
+     <td colspan=5>
+          <p> <font color=blue size=+1> <center> Beta Maturity period from May 02, 2012 - January 22, 2013 </font> </br>
+              <B> <font color=blue size=+1> <center> Provisional Maturity period from January 23, 2013 to present </font> </B> </br>
+              <font color=blue size=+1> <center> Data Error Period From October 15, 2012 to November 27, 2012 (No Data) </font> </p>
+     </td>
+   </tr>
+   
+</table>
+
+</form>

@@ -1,0 +1,31 @@
+         for (k=3; k<=24; k+=3) {
+            itmp=cycle/1+k;
+            if ( itmp >= 72 ) {
+               itmp=itmp-72;
+               tmpdate=calendar_day_plus1(dateStr);
+               tmpdate=calendar_day_plus1(tmpdate);
+               newdate=calendar_day_plus1(tmpdate);
+            }
+            else {
+               if ( itmp >= 48 ) {
+                  itmp=itmp-48;
+                  tmpdate=calendar_day_plus1(dateStr);
+                  newdate=calendar_day_plus1(tmpdate);
+               }
+               else {
+                  if ( itmp >= 24 ) {
+                     itmp=itmp-24;
+                     newdate=calendar_day_plus1(dateStr);
+                  }
+                  else {
+                     newdate=dateStr;
+                  }
+               }
+            }
+         
+            obs_yr=extract_year_from_calendarD(newdate);
+            chr_oyr=Num2Chr(obs_yr);
+            data=itmp;
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/null."+area+".g16."+newdate+"."+data+".aod.high.png";
+            preload(filename);
+         }
