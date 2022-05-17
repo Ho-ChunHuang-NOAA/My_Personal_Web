@@ -93,7 +93,9 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp" >
-<option value="rrfs13" > RRFS 13 KM
+<option value="rave" > RAVE 13 KM
+<option value="analysis" > NAM-CMAQ analysis FIRE
+<option value="runtime" > NAM-CMAQ Runtime FIRE
 <option value="rrfs25" > RRFS 25 KM
 <option value="prod" > PROD
 <option value="para6d" > PARA6D
@@ -105,8 +107,10 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="emcexp" >
+<option value="rave" > RAVE 13 KM
+<option value="analysis" > NAM-CMAQ analysis FIRE
+<option value="runtime" > NAM-CMAQ Runtime FIRE
 <option value="rrfs25" > RRFS 25 KM
-<option value="rrfs13" > RRFS 13 KM
 <option value="prodbc" > PROD BiCor
 <option value="prodbc" > PROD BiCor
 <option value="para6dbc" > PARA6D BiCor
