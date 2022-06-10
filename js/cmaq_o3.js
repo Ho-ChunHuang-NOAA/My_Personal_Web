@@ -851,11 +851,11 @@ function load_image_latest(){
          filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+femcexp_fire+"."+area_hms+"."+fireexp2+"."+dateStr+".t06z.location.day0.k1.png";
          preload(filename);
          filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+femcexp_fire+"."+area_hms+"."+fireexp2+"."+dateStr+".t06z.location.day1.k1.png";
+         preload(filename);
          filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+femcexp2_fire+"."+area_hms+".para6d."+dateStr+".t06z.location.day0.k1.png";
          preload(filename);
          filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+femcexp2_fire+"."+area_hms+".para6d."+dateStr+".t06z.location.day1.k1.png";
          preload(filename);
-   preload(filename);
    show(20);
    istatus=save_current_date(new_yr,new_mon,new_day);
 }

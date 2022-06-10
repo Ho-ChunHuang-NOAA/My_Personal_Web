@@ -173,6 +173,10 @@ old_ver='\/gpfs\/dell2\/emc\/verification\/noscrub\/${USER}\/WEB'
 new_ver='\/gpfs\/dell2\/emc\/modeling\/save\/${USER}\/WEB'
 old_ver='module load prod_util/1.1.3'
 new_ver='module load prod_util/1.1.6'
+old_ver='Ho-Chun.Huang'
+new_ver='${USER}'
+old_ver='mailto:${USER}@noaa'
+new_ver='mailto:ho-chun.huang@noaa'
 for i in "${shfile[@]}"
 do
    echo ${i}
