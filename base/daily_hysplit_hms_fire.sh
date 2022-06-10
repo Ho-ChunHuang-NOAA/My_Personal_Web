@@ -1,6 +1,6 @@
 #!/bin/sh
-#BSUB -o /gpfs/dell2/ptmp/${USER}/batch.logs/hyspt_hms_fire_20200128.out
-#BSUB -e /gpfs/dell2/ptmp/${USER}/batch.logs/hyspt_hms_fire_20200128.err
+#BSUB -o /gpfs/dell2/ptmp/Ho-Chun.Huang/batch.logs/hyspt_hms_fire_20200128.out
+#BSUB -e /gpfs/dell2/ptmp/Ho-Chun.Huang/batch.logs/hyspt_hms_fire_20200128.err
 #BSUB -n 1
 #BSUB -J jhyspt_hms_fire
 #BSUB -q debug
