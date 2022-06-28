@@ -110,6 +110,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70a1" > Online CMAQ FV3-AQM a1
 <option value="v70b1" > Online CMAQ UFS-AQm b1
 <option value="v70c1" > Online CMAQ One domain c1
+<option value="v70b2" > Online CMAQ UFS-AQm b2
+<option value="para6d" > GFS-CMAQ retro
+<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 
@@ -120,6 +123,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prodbc" > PROD BiCor
 <option value="v70b1" > Online CMAQ UFS-AQm b1
 <option value="v70c1" > Online CMAQ One domain c1
+<option value="v70b2" > Online CMAQ UFS-AQm b2
+<option value="para6d" > GFS-CMAQ retro
+<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 
@@ -130,6 +136,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prodbc" > PROD BiCor
 <option value="v70a1" > Online CMAQ FV3-AQM a1
 <option value="v70c1" > Online CMAQ One domain c1
+<option value="v70b2" > Online CMAQ UFS-AQm b2
+<option value="para6d" > GFS-CMAQ retro
+<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 

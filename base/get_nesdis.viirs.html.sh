@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## echo $1 $2 $3 $4 $5
 s=/data/home001/hhuang/WEB

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
 ## Will be using the same day as input
@@ -6,7 +6,7 @@
 ## echo $machine
 #
 ## Local  Source Directory
-local_src=/gpfs/dell2/emc/modeling/save/${USER}/WEB
+local_src=/lfs/h2/emc/physics/noscrub/${USER}/WEB/base
 local_base=${local_src}/base
 local_html=${local_src}/html
 local_js=${local_src}/js

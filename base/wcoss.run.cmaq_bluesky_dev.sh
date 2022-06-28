@@ -1,5 +1,5 @@
-#!/bin/sh
-module load prod_util/1.1.6
+#!/bin/bash
+module load prod_util
 
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
 ## Will be using the same day as input
@@ -23,7 +23,7 @@ fi
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 ## Local  Source Directory
-local_src=/gpfs/dell2/emc/modeling/save/${USER}/WEB
+local_src=/lfs/h2/emc/physics/noscrub/${USER}/WEB
 local_base=${local_src}/base
 local_html=${local_src}/html
 local_js=${local_src}/js

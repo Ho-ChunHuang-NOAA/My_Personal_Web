@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 module load prod_util/1.1.6
 
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
@@ -28,7 +28,7 @@ fi
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 ## Local  Source Directory
-local_src=/gpfs/dell2/emc/modeling/save/${USER}/WEB
+local_src=/lfs/h2/emc/physics/noscrub/${USER}/WEB
 local_base=${local_src}/base
 local_html=${local_src}/html
 local_js=${local_src}/js
@@ -36,7 +36,7 @@ local_inc=${local_src}/includes
 ##################################################
 ## creating new html and js file in working_dir ##
 ##################################################
-working_dir=/gpfs/dell2/stmp/${USER}/WEB
+working_dir=/lfs/h2/emc/stmp/${USER}/WEB
 mkdir -p ${working_dir}
 cd ${working_dir}
 /bin/rm -rf *

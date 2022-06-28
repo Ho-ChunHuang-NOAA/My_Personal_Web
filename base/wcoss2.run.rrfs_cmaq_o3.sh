@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
 ## Will be using the same day as input

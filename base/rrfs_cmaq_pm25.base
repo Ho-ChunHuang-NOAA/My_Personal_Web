@@ -122,6 +122,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70a1" > Online CMAQ FV3-AQM a1
 <option value="v70b1" > Online CMAQ UFS-AQM b1
 <option value="v70c1" > Online CMAQ One domain c1
+<option value="v70b2" > Online CMAQ UFS-AQM b2
+<option value="para6d" > GFS-CMAQ retro
+<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 
@@ -132,6 +135,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prodbc" > PROD BiCor
 <option value="v70b1" > Online CMAQ UFS-AQM b1
 <option value="v70c1" > Online CMAQ One domain c1
+<option value="v70b2" > Online CMAQ UFS-AQM b2
+<option value="para6d" > GFS-CMAQ retro
+<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 
@@ -142,6 +148,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prodbc" > PROD BiCor
 <option value="v70a1" > Online CMAQ FV3-AQM a1
 <option value="v70c1" > Online CMAQ One domain c1
+<option value="v70b2" > Online CMAQ UFS-AQM b2
+<option value="para6d" > GFS-CMAQ retro
+<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 
@@ -241,9 +250,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
 <select name="fld" > 
 <option value="pm25" > &nbsp &nbsp &nbsp &nbsp Total Surface PM diameter < 2.5 μm &nbsp &nbsp &nbsp
-<option value="aod" > &nbsp &nbsp &nbsp &nbsp Aerosol Optical Depth  &nbsp &nbsp &nbsp
-<option value="pm25_col" > &nbsp &nbsp &nbsp &nbsp PM25 Column Total &nbsp &nbsp
-<option value="pm25c_col" > &nbsp &nbsp &nbsp &nbsp Carbon PM25 (EC+OC) Column Total &nbsp &nbsp
+<!--  <option value="aod" > &nbsp &nbsp &nbsp &nbsp Aerosol Optical Depth  &nbsp &nbsp &nbsp -->
+<!--  <option value="pm25_col" > &nbsp &nbsp &nbsp &nbsp PM25 Column Total &nbsp &nbsp -->
+<!--  <option value="pm25c_col" > &nbsp &nbsp &nbsp &nbsp Carbon PM25 (EC+OC) Column Total &nbsp &nbsp -->
 <!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
 <!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
 </select>
