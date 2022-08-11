@@ -118,6 +118,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="para6ebc" > PARA6E BiCor
 <option value="ncopara" > NCO PARA
 <option value="ncoparabc" > NCO PARA BiCor
+<option value="dcomfire" > DCOM FIRE DOWNSTREAM
+<option value="v70a1" > V70A1
+<option value="v70b1" > V70B1
 </select>
 </td></tr>
 
