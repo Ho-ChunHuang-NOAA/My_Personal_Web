@@ -337,7 +337,7 @@ function get_hms_area(area_in){
 } 
 
 function get_ftype_fire(run){
-   ftype_out="gbbepxfire"
+   ftype_out="gbbepxfire";
    if ( run == "prod" ) {
       ftype_out="hmsfire";
    }

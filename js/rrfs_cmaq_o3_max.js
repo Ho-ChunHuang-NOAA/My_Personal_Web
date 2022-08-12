@@ -345,12 +345,12 @@ function get_ftype_fire(run){
    return ftype_out;
 }
   function myWin(){
-    newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25_max.html", "displayWindow", "width=950,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
+    newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html", "displayWindow", "width=950,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
   }
 
   function myWindow(frm){
     dateStr=frm.yr.options[frm.yr.selectedIndex].value+frm.mn.options[frm.mn.selectedIndex].value+frm.dy.options[frm.dy.selectedIndex].value;
-    newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25_max.html", "displayWindow", "width=800,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
+    newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html", "displayWindow", "width=800,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
   }
 function preload2(img){
     if ( count > imax ) {
@@ -373,10 +373,10 @@ function preload(img){
 }
 
 function get_speed(frm){
-   if(frm.elements["spd"].selectedIndex == 0) speed=400;
-   if(frm.elements["spd"].selectedIndex == 1) speed=100;
-   if(frm.elements["spd"].selectedIndex == 2) speed=1000;
-   return speed;
+  if(frm.elements["spd"].selectedIndex == 0) speed=400;
+  if(frm.elements["spd"].selectedIndex == 1) speed=100;
+  if(frm.elements["spd"].selectedIndex == 2) speed=1000;
+  return speed;
 }
 
 function increase_i(){
@@ -388,14 +388,12 @@ function anim(){
    if(i>=nmax){
       i=0;
    }
-   document.cmaq1_pm_image.src =  pics[i].src;
-   document.cmaq2_pm_image.src =  pics[i+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[i+2*nmodel].src;
-   document.fire1_image.src    =  pics[i+3*nmodel].src;
-   document.fire2_image.src    =  pics[i+4*nmodel].src;
-   document.fire3_image.src    =  pics[i+5*nmodel].src;
-   document.dust1_image.src    =  pics[i+6*nmodel].src;
-   document.dust2_image.src    =  pics[i+7*nmodel].src;
+   document.cmaq1_o3_image.src  =  pics[i].src;
+   document.cmaq2_o3_image.src  =  pics[i+nmodel].src;
+   document.cmaq3_o3_image.src  =  pics[i+2*nmodel].src;
+   document.fire1_image.src     =  pics[i+3*nmodel].src;
+   document.fire2_image.src     =  pics[i+4*nmodel].src;
+   document.fire3_image.src     =  pics[i+5*nmodel].src;
    window.setTimeout("increase_i(); anim()", speed);
 }
              
@@ -404,14 +402,12 @@ function animation(){
       i=0;
    }
    if(document.form2.timerBox.checked){
-      document.cmaq1_pm_image.src =  pics[i].src;
-      document.cmaq2_pm_image.src =  pics[i+nmodel].src;
-      document.cmaq3_pm_image.src =  pics[i+2*nmodel].src;
-      document.fire1_image.src    =  pics[i+3*nmodel].src;
-      document.fire2_image.src    =  pics[i+4*nmodel].src;
-      document.fire3_image.src    =  pics[i+5*nmodel].src;
-      document.dust1_image.src    =  pics[i+6*nmodel].src;
-      document.dust2_image.src    =  pics[i+7*nmodel].src;
+      document.cmaq1_o3_image.src  =  pics[i].src;
+      document.cmaq2_o3_image.src  =  pics[i+nmodel].src;
+      document.cmaq3_o3_image.src  =  pics[i+2*nmodel].src;
+      document.fire1_image.src     =  pics[i+3*nmodel].src;
+      document.fire2_image.src     =  pics[i+4*nmodel].src;
+      document.fire3_image.src     =  pics[i+5*nmodel].src;
       anmiloop= window.setTimeout("increase_i(); animation()", speed);
       ith=i;
    }
@@ -428,26 +424,22 @@ function show2(i){
    else {
       latest_ith=imax;
    }
-   document.cmaq1_pm_image.src =  pics[latest_ith].src;
-   document.cmaq2_pm_image.src =  pics[latest_ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[latest_ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[latest_ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[latest_ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[latest_ith+5*nmodel].src;
-   document.dust1_image.src    =  pics[latest_ith+6*nmodel].src;
-   document.dust2_image.src    =  pics[latest_ith+7*nmodel].src;
+   document.cmaq1_o3_image.src  =  pics[latest_ith].src;
+   document.cmaq2_o3_image.src  =  pics[latest_ith+nmodel].src;
+   document.cmaq3_o3_image.src  =  pics[latest_ith+2*nmodel].src;
+   document.fire1_image.src     =  pics[latest_ith+3*nmodel].src;
+   document.fire2_image.src     =  pics[latest_ith+4*nmodel].src;
+   document.fire3_image.src     =  pics[latest_ith+5*nmodel].src;
 }
 
 function show(i){
    ith=i;
-   document.cmaq1_pm_image.src =  pics[ith].src;
-   document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
-   document.dust1_image.src    =  pics[ith+6*nmodel].src;
-   document.dust2_image.src    =  pics[ith+7*nmodel].src;
+   document.cmaq1_o3_image.src  =  pics[ith].src;
+   document.cmaq2_o3_image.src  =  pics[ith+nmodel].src;
+   document.cmaq3_o3_image.src  =  pics[ith+2*nmodel].src;
+   document.fire1_image.src     =  pics[ith+3*nmodel].src;
+   document.fire2_image.src     =  pics[ith+4*nmodel].src;
+   document.fire3_image.src     =  pics[ith+5*nmodel].src;
 }
 
 function next2(){
@@ -457,14 +449,12 @@ function next2(){
       ith=ith-1;
    }
    else {
-      document.cmaq1_pm_image.src =  pics[ith].src;
-      document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-      document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-      document.fire1_image.src    =  pics[ith+3*nmodel].src;
-      document.fire2_image.src    =  pics[ith+4*nmodel].src;
-      document.fire3_image.src    =  pics[ith+5*nmodel].src;
-      document.dust1_image.src    =  pics[ith+6*nmodel].src;
-      document.dust2_image.src    =  pics[ith+7*nmodel].src;
+      document.cmaq1_o3_image.src  =  pics[ith].src;
+      document.cmaq2_o3_image.src  =  pics[ith+nmodel].src;
+      document.cmaq3_o3_image.src  =  pics[ith+2*nmodel].src;
+      document.fire1_image.src     =  pics[ith+3*nmodel].src;
+      document.fire2_image.src     =  pics[ith+4*nmodel].src;
+      document.fire3_image.src     =  pics[ith+5*nmodel].src;
    }
 }
 
@@ -475,66 +465,56 @@ function prev2(){
       ith=ith+1;
    }
    else {
-      document.cmaq1_pm_image.src =  pics[ith].src;
-      document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-      document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-      document.fire1_image.src    =  pics[ith+3*nmodel].src;
-      document.fire2_image.src    =  pics[ith+4*nmodel].src;
-      document.fire3_image.src    =  pics[ith+5*nmodel].src;
-      document.dust1_image.src    =  pics[ith+6*nmodel].src;
-      document.dust2_image.src    =  pics[ith+7*nmodel].src;
+      document.cmaq1_o3_image.src  =  pics[ith].src;
+      document.cmaq2_o3_image.src  =  pics[ith+nmodel].src;
+      document.cmaq3_o3_image.src  =  pics[ith+2*nmodel].src;
+      document.fire1_image.src     =  pics[ith+3*nmodel].src;
+      document.fire2_image.src     =  pics[ith+4*nmodel].src;
+      document.fire3_image.src     =  pics[ith+5*nmodel].src;
    }
 }
 
 function next(){
    ith=ith+1;
    if(ith >= nmax) ith=nmax;
-   document.cmaq1_pm_image.src =  pics[ith].src;
-   document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
-   document.dust1_image.src    =  pics[ith+6*nmodel].src;
-   document.dust2_image.src    =  pics[ith+7*nmodel].src;
+   document.cmaq1_o3_image.src  =  pics[ith].src;
+   document.cmaq2_o3_image.src  =  pics[ith+nmodel].src;
+   document.cmaq3_o3_image.src  =  pics[ith+2*nmodel].src;
+   document.fire1_image.src     =  pics[ith+3*nmodel].src;
+   document.fire2_image.src     =  pics[ith+4*nmodel].src;
+   document.fire3_image.src     =  pics[ith+5*nmodel].src;
 }
 
 function prev(){
    ith=ith-1;
    if(ith < 0) ith=0;
-   document.cmaq1_pm_image.src =  pics[ithth].src;
-   document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
-   document.dust1_image.src    =  pics[ith+6*nmodel].src;
-   document.dust2_image.src    =  pics[ith+7*nmodel].src;
+   document.cmaq1_o3_image.src  =  pics[ith].src;
+   document.cmaq2_o3_image.src  =  pics[ith+nmodel].src;
+   document.cmaq3_o3_image.src  =  pics[ith+2*nmodel].src;
+   document.fire1_image.src     =  pics[ith+3*nmodel].src;
+   document.fire2_image.src     =  pics[ith+4*nmodel].src;
+   document.fire3_image.src     =  pics[ith+5*nmodel].src;
 }
 
 function rewind(){
    ith=0;
-   document.cmaq1_pm_image.src =  pics[ith].src;
-   document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
-   document.dust1_image.src    =  pics[ith+6*nmodel].src;
-   document.dust2_image.src    =  pics[ith+7*nmodel].src;
+   document.cmaq1_o3_image.src  =  pics[ith].src;
+   document.cmaq2_o3_image.src  =  pics[ith+nmodel].src;
+   document.cmaq3_o3_image.src  =  pics[ith+2*nmodel].src;
+   document.fire1_image.src     =  pics[ith+3*nmodel].src;
+   document.fire2_image.src     =  pics[ith+4*nmodel].src;
+   document.fire3_image.src     =  pics[ith+5*nmodel].src;
 }
 
 function last(){
    ith=nmax;
    get_i();
-   document.cmaq1_pm_image.src =  pics[ith].src;
-   document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
-   document.dust1_image.src    =  pics[ith+6*nmodel].src;
-   document.dust2_image.src    =  pics[ith+7*nmodel].src;
+   document.cmaq1_o3_image.src  =  pics[ith].src;
+   document.cmaq2_o3_image.src  =  pics[ith+nmodel].src;
+   document.cmaq3_o3_image.src  =  pics[ith+2*nmodel].src;
+   document.fire1_image.src     =  pics[ith+3*nmodel].src;
+   document.fire2_image.src     =  pics[ith+4*nmodel].src;
+   document.fire3_image.src     =  pics[ith+5*nmodel].src;
 }
 
 function openWin(url) {
@@ -601,16 +581,6 @@ function load_image(frm){
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
             preload(filename);
          }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=1; k<=nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
-            preload(filename);
-         }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
@@ -646,7 +616,7 @@ function load_image_latest(){
       area="conus";
    }
    if ( prod == "" ) {
-      prod="max_1hr_pm25";
+      prod="max_1hr_o3";
    }
    if ( exp1 == "" ) {
       exp1="prod";
@@ -682,16 +652,6 @@ function load_image_latest(){
       data=Num2Chr(k);
       filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
       preload(filename);
-   }
-   for (k=0; k<nmodel; k++) {
-      data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-      preload(filename);
-   }
-   for (k=1; k<=nmodel; k++) {
-       data=Num2Chr(k);
-       filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
-       preload(filename);
    }
    for (k=1; k<=nmodel; k++) {
        data=Num2Chr(k);
@@ -733,7 +693,6 @@ function load_imageP1(frm){
    var fireexp2="fireemisfire";
    var fireexp3="fireemisfire";
    var mcday=get_mcday(new_yr,new_mon);
-   var switch_day=cald2jday(20160204);
    if ( new_day > mcday ) {
       alert("McDay Figure for date selected   "+new_yr+"  "+new_mon+"  "+new_day+"   is not available");
    }
@@ -769,16 +728,6 @@ function load_imageP1(frm){
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=1; k<=nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
@@ -859,16 +808,6 @@ function load_imageM1(frm){
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=1; k<=nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
