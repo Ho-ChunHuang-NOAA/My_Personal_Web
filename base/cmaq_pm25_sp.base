@@ -20,7 +20,7 @@
 
 <table bgcolor="AAAAAA" align="left">
 
-<tr bgcolor="AAAAAA" align="center" style="font-size:25px;"><td colspan=3>&nbsp</td>
+<tr bgcolor="AAAAAA" align="center" style="font-size:20px;"><td colspan=3>&nbsp</td>
 <td  bgcolor="CCCCCC"> 
 <a href="#picture" onClick="javascript:show(2)">03</font></a>&nbsp 
 <a href="#picture" onClick="javascript:show(5)">06</font></a>&nbsp 
@@ -53,10 +53,10 @@
 </tr>
 
 <tr><td colspan=3 bgcolor="AAAAAA">&nbsp</td>
-<td bgcolor="CCCCCC" align="center" style="font-size:25px;">
+<td bgcolor="CCCCCC" align="center" style="font-size:20px;">
 <form name="form2">
 Select speed:
-<select name="spd" style="font-size:20px;">
+<select name="spd" style="font-size:18px;">
  <option selected>normal
  <option>fast
  <option>slow
@@ -64,7 +64,7 @@ Select speed:
 &nbsp 
 Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get_speed(this.form);javascript:rewind();javascript:get_i();javascript:animation()" style="width:20px;height:20px">
 
-&nbsp <button onclick="clearTimeout(anmiloop)" style="font-size:20px;">Stop</button> <button onclick="javascript:get_i();javascript:animation()" style="font-size:20px;">Continue</button>  &nbsp
+&nbsp <button onclick="clearTimeout(anmiloop)" style="font-size:18px;">Stop</button> <button onclick="javascript:get_i();javascript:animation()" style="font-size:18px;">Continue</button>  &nbsp
 <!--&nbsp &nbsp &nbsp &nbsp-->
 
 <!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
@@ -84,16 +84,16 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=500 height=375>
-<img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=500 height=375>
-<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=500 height=375>
-<img src="HIGHGAOD" name="highgaod_image" width=500 height=375>
-<img src="MEDGAOD" name="medgaod_image" width=500 height=375>
-<img src="HIGHVAOD" name="highvaod_image" width=500 height=375>
-<img src="MEDVAOD" name="medvaod_image" width=500 height=375>
-<img src="FIREIMAGE" name="fire1_image" width=500 height=375>
-<img src="FIREIMAGE2" name="fire2_image" width=500 height=375>
-<img src="FIREIMAGE3" name="fire3_image" width=500 height=375>
+<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=375 height=300>
+<img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=375 height=300>
+<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=375 height=300>
+<img src="HIGHGAOD" name="highgaod_image" width=375 height=300>
+<img src="MEDGAOD" name="medgaod_image" width=375 height=300>
+<img src="HIGHVAOD" name="highvaod_image" width=375 height=300>
+<img src="MEDVAOD" name="medvaod_image" width=375 height=300>
+<img src="FIREIMAGE" name="fire1_image" width=375 height=300>
+<img src="FIREIMAGE2" name="fire2_image" width=375 height=300>
+<img src="FIREIMAGE3" name="fire3_image" width=375 height=300>
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EMC DEV Fire Location </font> </b> </figcaption> -->
 <!--  <br> -->
@@ -107,25 +107,20 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
 <!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a><br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_o3.html"> Ozone Simulations</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_o3.html"> Hourly Ozone</a>
 </td></tr>
 
-<tr bgcolor="DDDDDD"><td colspan=3><center> Product Type </a> &nbsp &nbsp
-<a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25.html"> Hourly </a> &nbsp &nbsp
-<a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25_max.html"> Max_Ave</a> &nbsp &nbsp
+<tr bgcolor="DDDDDD"><td colspan=3><center> Product Type </a>
+<a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25.html"> Hourly </a>
+<a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25_max.html"> Max_Ave</a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp" >
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
-<option value="nofire" > RRFS CMAQ No Fire
-<option value="fire_hourly" > RRFS CMAQ HRLY
-<option value="fire_static" > RRFS CMAQ STATIC
 <option value="para6d" > PARA6D
 <option value="para6dbc" > PARA6D BiCor
-<option value="para6e" > PARA6E
-<option value="para6ebc" > PARA6E BiCor
 <option value="ncopara" > NCO PARA
 <option value="ncoparabc" > NCO PARA BiCor
 </select>
@@ -135,13 +130,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="emcexp" >
 <option value="prodbc" > PROD BiCor
 <option value="prod" > PROD
-<option value="nofire" > RRFS CMAQ No Fire
-<option value="fire_hourly" > RRFS CMAQ HRLY
-<option value="fire_static" > RRFS CMAQ STATIC
 <option value="para6d" > PARA6D
 <option value="para6dbc" > PARA6D BiCor
-<option value="para6e" > PARA6E
-<option value="para6ebc" > PARA6E BiCor
 <option value="ncopara" > NCO PARA
 <option value="ncoparabc" > NCO PARA BiCor
 </select>
@@ -248,7 +238,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="pm25_soil" > Total PM25 SOIL
 <!--  <option value="aseacat" > ASEACAT -->
 <option value="pmc_tot" > Total PMC
-<option value="pbl2" > CMAQ PBL (ACM2 based Richardson)
+<option value="pbl2" > CMAQ PBL (ACM2)
 <option value="cfrac" > Cloud Fraction
 <option value="snocov" > Snow Cover
 <option value="veg" > Vegetation Coverage
@@ -288,19 +278,13 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 </form>
 
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
-<!-- <P><left><font color=red size=+1>&nbsp &nbsp &nbsp &nbsp Disclaimer - Graphics exhibited at this web site is non-operational product.  Therefore they are not supported 24/7 and can be removed anytime without advanced notice.</br></font> -->
-<!-- <font color=red size=+1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Users who use this web site is at their own risk </font> </P> -->
 <P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output, Daily max/ave, or Hourly speciated species <br>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp # Some models may contain only 48 hour output and will be a blank page beyond hour 48 &nbsp &nbsp # GOES-16 and VIIRS AOD Images has a 2-3 days latency </font></P>
 <font color=black size=+0>PARA6D (cmaq.v6.0.0) Change Log &nbsp :: &nbsp (1) new Fengsha dust scheme with update surface characteristics input (2) daily-updated 7-day mean VIIRS observed Green Vegetation Fraction (3) bioseason, NH4 bi-directional (4) NEI2016v1 (5) inline dust mask for fugutive dust emission, LBC parallel processing, BELD5, E US fire filter, VIIRS LAI climatorology (6) updated bias-correction scheme</font></P>
 <font color=blue size=+0>NOTE - Figures only be kept for 1 months </font></P>
 <font color=blue size=+0>NOTE - GFSv16 parallel hourly output were not available for some cycle runs.  Thus, there are no PARA6? output for (1) 12Z cycle on Oct 28 2020 (2) November 02 2020 (3) 12Z cycle on November 18 (4) November 21 & 22 and (5) 06Z cycle on December 2 (5) 12Z cycle on December 07 (6) December 09 2020 (7) 06Z 20210117</font></P>
-<!--  <P><left><font color=blue size=+0> PARA6x in figures indicates an experiment for testing new updates.  Once the AQ management approves the update. New EMC NRT run will be assigned with a new name such as PARA6%version%.  The version is in alphabetical order currently in "b".<br> -->
-<!--  <P><left><font color=blue size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Upper panel : Model Fcst &nbsp &nbsp &nbsp &nbsp Lower panel : Observation </font></P> -->
-<!--  <P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hysplit pbl Fcst are available from September 1 and sfc Fcst from September 9 to yesterday <br> -->
-<!--  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp New Hysplit implementation occurred at 12z on September 30 2014 with 3D particular model emissions </font></P> -->
-<!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GASP or MODIS obs are limited to daytime or overpass hours thus no figure means no obs ( up to the day before yesterday ) <br> -->
-<!--  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use number click to jump to model forecast hour. Use 'prev' and 'next' to move through hours </font></P> -->
+
+<P><left> <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
 
 </table>
 
