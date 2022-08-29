@@ -81,12 +81,12 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQO3IMAGE" name="cmaq_o3_image" width=375 height=300>
-<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=375 height=300>
-<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=375 height=300>
-<img src="FIREIMAGE" name="fire1_image" width=375 height=300>
-<img src="FIREIMAGE2" name="fire2_image" width=375 height=300>
-<img src="FIREIMAGE3" name="fire3_image" width=375 height=300>
+<img src="CMAQO3IMAGE" name="cmaq_o3_image" width=900 height=600>
+<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=900 height=600>
+<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=900 height=600>
+<img src="FIREIMAGE" name="fire1_image" width=900 height=600>
+<img src="FIREIMAGE2" name="fire2_image" width=900 height=600>
+<img src="FIREIMAGE3" name="fire3_image" width=900 height=600>
 </td>
 </tr>
 
@@ -101,6 +101,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp" >
+<option value="prodobs" > PROD-OBS overlay
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
 <option value="nofire" > RRFS CMAQ No Fire
@@ -118,6 +119,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="emcexp" >
 <option value="prodbc" > PROD BiCor
+<option value="prodobs" > PROD-OBS overlay
 <option value="prod" > PROD
 <option value="nofire" > RRFS CMAQ No Fire
 <option value="fire_hourly" > RRFS CMAQ HRLY

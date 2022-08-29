@@ -84,16 +84,16 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=375 height=300> 
-<img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=375 height=300>
-<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=375 height=300>
-<img src="HIGHGAOD" name="highgaod_image" width=375 height=300>
-<img src="MEDGAOD" name="medgaod_image" width=375 height=300>
-<img src="HIGHVAOD" name="highvaod_image" width=375 height=300>
-<img src="MEDVAOD" name="medvaod_image" width=375 height=300>
-<img src="FIREIMAGE" name="fire1_image" width=375 height=300> 
-<img src="FIREIMAGE2" name="fire2_image" width=375 height=300>
-<img src="FIREIMAGE3" name="fire3_image" width=375 height=300>
+<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=600 height=425> 
+<img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=600 height=425>
+<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=600 height=425>
+<img src="HIGHGAOD" name="highgaod_image" width=600 height=425>
+<img src="MEDGAOD" name="medgaod_image" width=600 height=425>
+<img src="HIGHVAOD" name="highvaod_image" width=600 height=425>
+<img src="MEDVAOD" name="medvaod_image" width=600 height=425>
+<img src="FIREIMAGE" name="fire1_image" width=600 height=425> 
+<img src="FIREIMAGE2" name="fire2_image" width=600 height=425>
+<img src="FIREIMAGE3" name="fire3_image" width=600 height=425>
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EMC DEV Fire Location </font> </b> </figcaption> -->
 <!--  <br> -->
@@ -117,6 +117,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp" >
+<option value="prodobs" > PROD-OBS overlay
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
 <option value="para6d" > PARA6D
@@ -129,6 +130,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="emcexp" >
 <option value="prodbc" > PROD BiCor
+<option value="prodobs" > PROD-OBS overlay
 <option value="prod" > PROD
 <option value="para6d" > PARA6D
 <option value="para6dbc" > PARA6D BiCor
