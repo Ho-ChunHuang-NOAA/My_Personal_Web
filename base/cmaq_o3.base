@@ -81,12 +81,12 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQO3IMAGE" name="cmaq_o3_image" width=900 height=600>
-<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=900 height=600>
-<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=900 height=600>
-<img src="FIREIMAGE" name="fire1_image" width=900 height=600>
-<img src="FIREIMAGE2" name="fire2_image" width=900 height=600>
-<img src="FIREIMAGE3" name="fire3_image" width=900 height=600>
+<img src="CMAQO3IMAGE" name="cmaq_o3_image" width=350 height=275>
+<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=350 height=275>
+<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=350 height=275>
+<img src="FIREIMAGE" name="fire1_image" width=350 height=275>
+<img src="FIREIMAGE2" name="fire2_image" width=350 height=275>
+<img src="FIREIMAGE3" name="fire3_image" width=350 height=275>
 </td>
 </tr>
 

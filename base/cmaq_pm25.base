@@ -84,16 +84,16 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=600 height=425> 
-<img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=600 height=425>
-<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=600 height=425>
-<img src="HIGHGAOD" name="highgaod_image" width=600 height=425>
-<img src="MEDGAOD" name="medgaod_image" width=600 height=425>
-<img src="HIGHVAOD" name="highvaod_image" width=600 height=425>
-<img src="MEDVAOD" name="medvaod_image" width=600 height=425>
-<img src="FIREIMAGE" name="fire1_image" width=600 height=425> 
-<img src="FIREIMAGE2" name="fire2_image" width=600 height=425>
-<img src="FIREIMAGE3" name="fire3_image" width=600 height=425>
+<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=350 height=275> 
+<img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=350 height=275>
+<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=350 height=275>
+<img src="HIGHGAOD" name="highgaod_image" width=350 height=275>
+<img src="MEDGAOD" name="medgaod_image" width=350 height=275>
+<img src="HIGHVAOD" name="highvaod_image" width=350 height=275>
+<img src="MEDVAOD" name="medvaod_image" width=350 height=275>
+<img src="FIREIMAGE" name="fire1_image" width=350 height=275> 
+<img src="FIREIMAGE2" name="fire2_image" width=350 height=275>
+<img src="FIREIMAGE3" name="fire3_image" width=350 height=275>
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EMC DEV Fire Location </font> </b> </figcaption> -->
 <!--  <br> -->
