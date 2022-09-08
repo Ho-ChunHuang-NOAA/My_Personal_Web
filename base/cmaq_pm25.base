@@ -150,6 +150,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="sw" > Southwest U.S.
 <option value="ak" > Alaska
 <option value="hi" > Hawaii
+<option value="lis" > Long Island Sound
+<option value="aznw" > Arizona and New Mexcico
+<option value="Mckinney" > McKinney Fire
 </select>
 </td>
 </tr>
