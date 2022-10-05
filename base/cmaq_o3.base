@@ -113,6 +113,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="para6ebc" > PARA6E BiCor
 <option value="ncopara" > NCO PARA
 <option value="ncoparabc" > NCO PARA BiCor
+<option value="para6t" > TEST
 </select>
 </td></tr>
 
