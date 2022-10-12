@@ -28,7 +28,8 @@ fi
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 ## Local  Source Directory
-local_src=/lfs/h2/emc/physics/noscrub/${USER}/WEB
+BASE=`pwd`
+export local_src="$(dirname ${BASE})"
 local_base=${local_src}/base
 local_html=${local_src}/html
 local_js=${local_src}/js
