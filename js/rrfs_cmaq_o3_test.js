@@ -692,7 +692,7 @@ function load_image(frm){
          preload(filename);
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70a1."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70c3."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(yr,mon,day);
@@ -768,7 +768,7 @@ function load_image_latest(){
          preload(filename);
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70a1."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70c3."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
             preload(filename);
          }
    show(13);
@@ -847,7 +847,7 @@ function load_imageP1(frm){
          preload(filename);
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70a1."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70c3."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);
@@ -928,7 +928,7 @@ function load_imageM1(frm){
          preload(filename);
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70a1."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70c3."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);

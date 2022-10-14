@@ -81,17 +81,13 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html"> Hourly Ozone </a>
-</td></tr>
-
-<tr bgcolor="DDDDDD"><td colspan=3><center> Product Type </a>
-<a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25.html"> Hourly</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25.html"> Hourly</a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
-<option value="v70a1" > Online CMAQ FV3-AQM a1
 <option value="v70b1" > Online CMAQ UFS-AQM b1
 <option value="v70c3" > Online CMAQ One domain c3
 </select>
@@ -99,9 +95,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="v70a1" > Online CMAQ FV3-AQM a1
-<option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
+<option value="prod" > PROD
 <option value="v70b1" > Online CMAQ UFS-AQM b1
 <option value="v70c3" > Online CMAQ One domain c3
 </select>
@@ -109,10 +104,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70b1" > Online CMAQ UFS-AQM b1
+<option value="v70c3" > Online CMAQ One domain c3
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
-<option value="v70c3" > Online CMAQ One domain c3
+<option value="v70b1" > Online CMAQ UFS-AQM b1
 </select>
 </td></tr>
 
