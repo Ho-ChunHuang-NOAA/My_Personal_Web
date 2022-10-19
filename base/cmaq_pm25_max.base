@@ -211,8 +211,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
 <select name="fld" > 
-<option value="max_1hr_pm25" >  1h daily Max PM2.5
-<option value="ave_24hr_pm25" > 24h daily Avg PM2.5
+<option value="ave_24hr_pm25" > daily 24hr-avg PM2.5
+<option value="max_1hr_pm25" > daily Max 1hr-avg PM2.5
 </select>
 </td></tr>
 

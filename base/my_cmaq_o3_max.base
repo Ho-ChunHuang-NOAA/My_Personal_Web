@@ -199,8 +199,8 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
 <select name="fld" > 
-<option value="max_1hr_o3" > 1h daily Max Ozone (ppbv) [05z-04z]
-<option value="max_8hr_o3" > 8h daily Max Ozone (ppbv) [05z-04z]
+<option value="max_8hr_o3" > daily Max 8hr-avg Ozone 
+<option value="max_1hr_o3" > daily Max 1hr-avg Ozone
 <!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
 <!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
 </select>
