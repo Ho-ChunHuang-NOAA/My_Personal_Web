@@ -104,6 +104,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
+<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="v70b1obs" > Online UFS-AQM b1 & OBS
 <option value="v70b1" > Online UFS-AQM b1
@@ -122,6 +123,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70b1" > Online UFS-AQM b1
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
+<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="v70c3obs" > Online 1 domain c3 & OBS
 <option value="v70c3" > Online 1 domain c3
@@ -138,6 +140,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70c3" > Online 1 domain c3
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
+<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="v70b1obs" > Online UFS-AQM b1 & OBS
 <option value="v70b1" > Online UFS-AQM b1

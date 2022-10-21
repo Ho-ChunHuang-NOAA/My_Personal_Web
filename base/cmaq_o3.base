@@ -103,6 +103,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp" >
 <option value="prodobs" > PROD-OBS overlay
 <option value="prod" > PROD
+<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="nofire" > RRFS CMAQ No Fire
 <option value="fire_hourly" > RRFS CMAQ HRLY
@@ -119,6 +120,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="emcexp" >
+<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="prodobs" > PROD-OBS overlay
 <option value="prod" > PROD
