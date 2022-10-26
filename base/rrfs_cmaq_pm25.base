@@ -130,12 +130,12 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
+<option value="prodbcobs" > PROD BiCor-OBS overlay
+<option value="prodbc" > PROD BiCor
 <option value="v70b1obs" > Online UFS-AQM b1 & OBS
 <option value="v70b1" > Online UFS-AQM b1
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
-<option value="prodbcobs" > PROD BiCor-OBS overlay
-<option value="prodbc" > PROD BiCor
 <option value="v70c3obs" > Online 1 domain c3 & OBS
 <option value="v70c3" > Online 1 domain c3
 <option value="v70a1obs" > Online FV3-AQM a1 & OBS
