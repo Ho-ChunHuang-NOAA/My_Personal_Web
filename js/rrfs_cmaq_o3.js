@@ -697,7 +697,12 @@ function load_image(frm){
          }
          istatus=save_current_date(yr,mon,day);
          istatus=save_current_prod(exp1,exp2,exp3,cycle,area,prod,layer);
-         show(13);
+         if ( cycle == "12" ) {
+             show(8);
+         }
+         else {
+             show(14);
+         }
       }
    }
 }
@@ -771,7 +776,12 @@ function load_image_latest(){
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70c3."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
             preload(filename);
          }
-   show(13);
+   if ( cycle == "12" ) {
+       show(8);
+   }
+   else {
+       show(14);
+   }
    istatus=save_current_date(new_yr,new_mon,new_day);
 }
 
@@ -852,7 +862,12 @@ function load_imageP1(frm){
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);
          istatus=save_current_prod(exp1,exp2,exp3,cycle,area,prod,layer);
-         show(13);
+         if ( cycle == "12" ) {
+             show(8);
+         }
+         else {
+             show(14);
+         }
       }
    }
 }
@@ -933,7 +948,12 @@ function load_imageM1(frm){
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);
          istatus=save_current_prod(exp1,exp2,exp3,cycle,area,prod,layer);
-         show(13);
+         if ( cycle == "12" ) {
+             show(8);
+         }
+         else {
+             show(14);
+         }
       }
    }
 }

@@ -113,18 +113,16 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
-<option value="prodobs" > PROD & OBS
+<option value="prodobs" > PROD & OBS overlay
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
+<option value="v70c15obs" > Online 1 domain c15 & OBS
+<option value="v70c15" > Online 1 domain c15
 <option value="v70b1obs" > Online UFS-AQM b1 & OBS
 <option value="v70b1" > Online UFS-AQM b1
 <option value="v70c3obs" > Online 1 domain c3 & OBS
 <option value="v70c3" > Online 1 domain c3
-<option value="v70a1obs" > Online FV3-AQM a1 & OBS
-<option value="v70a1" > Online FV3-AQM a1
-<option value="para6d" > GFS-CMAQ retro
-<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 
@@ -132,33 +130,29 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp2" >
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
-<option value="v70b1obs" > Online UFS-AQM b1 & OBS
-<option value="v70b1" > Online UFS-AQM b1
-<option value="prodobs" > PROD & OBS
+<option value="v70c15obs" > Online 1 domain c15 & OBS
+<option value="v70c15" > Online 1 domain c15
+<option value="prodobs" > PROD & OBS overlay
 <option value="prod" > PROD
 <option value="v70c3obs" > Online 1 domain c3 & OBS
+<option value="v70b1obs" > Online UFS-AQM b1 & OBS
+<option value="v70b1" > Online UFS-AQM b1
 <option value="v70c3" > Online 1 domain c3
-<option value="v70a1obs" > Online FV3-AQM a1 & OBS
-<option value="v70a1" > Online FV3-AQM a1
-<option value="para6d" > GFS-CMAQ retro
-<option value="para6dbc" > GFS-CMAQ BiCor retro
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c3obs" > Online 1 domain c3 & OBS
-<option value="v70c3" > Online 1 domain c3
-<option value="prodobs" > PROD & OBS
+<option value="v70c15obs" > Online 1 domain c15 & OBS
+<option value="v70c15" > Online 1 domain c15
+<option value="prodobs" > PROD & OBS overlay
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="v70b1obs" > Online UFS-AQM b1 & OBS
 <option value="v70b1" > Online UFS-AQM b1
-<option value="v70a1obs" > Online FV3-AQM a1 & OBS
-<option value="v70a1" > Online FV3-AQM a1
-<option value="para6d" > GFS-CMAQ retro
-<option value="para6dbc" > GFS-CMAQ BiCor retro
+<option value="v70c3obs" > Online 1 domain c3 & OBS
+<option value="v70c3" > Online 1 domain c3
 </select>
 </td></tr>
 
