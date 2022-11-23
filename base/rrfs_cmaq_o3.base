@@ -147,8 +147,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
 <select name="rg" >
-<option value="dset" > Full Domain
-<option value="conus" select > Continental US
+<option value="conus" > Continental US
 <option value="east" > Eastern U.S. 
 <option value="ne" > Northeast U.S.
 <option value="se" > Southeast U.S.
@@ -263,7 +262,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="DDDDDD"><td colspan=3><br>
 <center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
 <br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/" target="_blank"> EMC AQ Verification<br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/cmaq/para/" target="_blank"> EMC AQ Verification<br>
 <br>
 <center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
 <br>

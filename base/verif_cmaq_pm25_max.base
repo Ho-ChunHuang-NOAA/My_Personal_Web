@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="../js/style.css"></link>
 <script language="JavaScript" src="../js/cmaq_pm_latest.day.js"> </script> 
-<script language="JavaScript" src="../js/rrfs_cmaq_pm25.js"> </script> 
+<script language="JavaScript" src="../js/verif_cmaq_pm25_max.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Hourly PM2.5 Simulations</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Daily Max/Ave PM2.5 for evaluation</font>
 
 <br> 
 
@@ -22,32 +22,9 @@
 
 <tr bgcolor="AAAAAA" align="center" style="font-size:20px;"><td colspan=3>&nbsp</td>
 <td  bgcolor="CCCCCC"> 
-<a href="#picture" onClick="javascript:show(2)">03</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(5)">06</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(8)">09</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(11)">12</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(14)">15</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(17)">18</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(20)">21</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(23)">24</font></a>&nbsp 
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-<a href="#picture" onClick="javascript:show(26)">27</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(29)">30</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(32)">33</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(35)">36</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(38)">39</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(41)">42</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(44)">45</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(47)">48</font></a>&nbsp 
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-<a href="#picture" onClick="javascript:show(50)">51</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(53)">54</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(56)">57</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(59)">60</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(62)">63</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(65)">66</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(68)">69</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(71)">72</font></a>
+<a href="#picture" onClick="javascript:show(0)">day 1</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(1)">day 2</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(2)">day 3</font></a>&nbsp 
 <br>
 </td>
 </tr>
@@ -84,77 +61,52 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQPMIMAGE1" name="cmaq_pm_image" width=350 height=275> 
+<img src="CMAQPMIMAGE1" name="cmaq1_pm_image" width=350 height=275>
 <img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=350 height=275>
-<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=350 height=275>
-<img src="HIGHGAOD" name="highgaod_image" width=350 height=275>
-<img src="MEDGAOD" name="medgaod_image" width=350 height=275>
-<img src="HIGHVAOD" name="highvaod_image" width=350 height=275>
-<img src="MEDVAOD" name="medvaod_image" width=350 height=275>
-<img src="FIREIMAGE1" name="fire1_image" width=350 height=275> 
+<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=350 height=275> 
+<img src="FIREIMAGE1" name="fire1_image" width=350 height=275>
 <img src="FIREIMAGE2" name="fire2_image" width=350 height=275>
 <img src="FIREIMAGE3" name="fire3_image" width=350 height=275>
-<!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
-<!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EMC DEV Fire Location </font> </b> </figcaption> -->
+<img src="DUSTIMAGE1" name="dust1_image" width=350 height=275>
+<img src="DUSTIMAGE2" name="dust2_image" width=350 height=275>
 <!--  <br> -->
 <!--  <img src="NESDISIMAGE" name="nesdis_image" width=500 height=400> -->
 </td>
 </tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3> 
-<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/fvs/hysplit/web/html/fho.html" target="_blank"> HYSPLIT Verification </a><br> -->
-<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/docs/Smoke_CCS_WCOSS.pdf" target="_blank"> HYSPLIT 2013 Upgrades</a><br> -->
-<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
-<!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html"> Hourly Ozone</a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25_max.html"> Max/Ave PM25</a> 
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3.html"> Hourly Ozone</a> 
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3_max.html"> Max/Ave Ozone</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25.html"> Hourly PM2.5</a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
-<option value="prodobs" > PROD & OBS overlay
 <option value="prod" > PROD
-<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
-<option value="v70c15obs" > Online 1 domain c15 & OBS
-<option value="v70c15" > Online 1 domain c15
-<option value="v70c17obs" > Online 1 domain c17 & OBS
-<option value="v70c17" > Online 1 domain c17
-<option value="v70b1obs" > Online UFS-AQM b1 & OBS
-<option value="v70b1" > Online UFS-AQM b1
-<option value="v70c3obs" > Online 1 domain c3 & OBS
-<option value="v70c3" > Online 1 domain c3
+<option value="v70c15" > Online CMAQ One domain c15
+<option value="v70c17" > Online CMAQ One domain c17
+<option value="v70c3" > Online CMAQ One domain c3
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
-<option value="v70c15obs" > Online 1 domain c15 & OBS
-<option value="v70c15" > Online 1 domain c15
-<option value="v70c17obs" > Online 1 domain c17 & OBS
-<option value="v70c17" > Online 1 domain c17
-<option value="prodobs" > PROD & OBS overlay
+<option value="v70c15" > Online CMAQ One domain c15
+<option value="v70c17" > Online CMAQ One domain c17
 <option value="prod" > PROD
-<option value="v70c3obs" > Online 1 domain c3 & OBS
-<option value="v70c3" > Online 1 domain c3
+<option value="v70c3" > Online CMAQ One domain c3
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c15obs" > Online 1 domain c15 & OBS
-<option value="v70c15" > Online 1 domain c15
-<option value="prodobs" > PROD & OBS overlay
+<option value="v70c15" > Online CMAQ One domain c15
+<option value="v70c17" > Online CMAQ One domain c17
 <option value="prod" > PROD
-<option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
-<option value="v70c17obs" > Online 1 domain c17 & OBS
-<option value="v70c17" > Online 1 domain c17
-<option value="v70c3obs" > Online 1 domain c3 & OBS
-<option value="v70c3" > Online 1 domain c3
+<option value="v70c3" > Online CMAQ One domain c3
 </select>
 </td></tr>
 
@@ -172,6 +124,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="lis" > Long Island Sound
 <option value="aznw" > Arizona and New Mexcico
 <option value="Mckinney" > McKinney Fire
+</select>
 </td>
 </tr>
 
@@ -188,7 +141,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
       </select>
      </td>
 
-     <td style="width:20px">
+     <td style="width:40px">
        Month:
        <select name="mn" >
        <option value="01"  > Jan
@@ -255,46 +208,25 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
 <select name="fld" > 
-<option value="pm25" > &nbsp &nbsp &nbsp &nbsp Total Surface PM diameter < 2.5 μm &nbsp &nbsp &nbsp
-<!--  <option value="aod" > &nbsp &nbsp &nbsp &nbsp Aerosol Optical Depth  &nbsp &nbsp &nbsp -->
-<!--  <option value="pm25_col" > &nbsp &nbsp &nbsp &nbsp PM25 Column Total &nbsp &nbsp -->
-<!--  <option value="pm25c_col" > &nbsp &nbsp &nbsp &nbsp Carbon PM25 (EC+OC) Column Total &nbsp &nbsp -->
+<option value="ave_24hr_pm25" > daily 24hr-avg PM2.5
+<option value="max_1hr_pm25" > daily Max 1hr-avg PM2.5
 <!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
 <!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
-</select>
-</td></tr>
-
-<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select vertical level:&nbsp &nbsp 
-<select name="lvl" > 
-<option value="k1" > Surface
-<!--  <option value="sfc" > Surface -->
-<!--  <option value="pbl" selected > Column Average  -->
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3><br>
-<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
-<br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/cmaq/para/" target="_blank"> EMC AQ Verification<br>
-<br><br>
-<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
-<br><br>
-<center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
-<br><br>
-<center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
-<br><br><br><br><br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/cmaq/para/" target="_blank"> Return to CMAQ Verification
+<br><br><br><br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
 </td>
 
 </form>
 
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
-<P><left><font color=red size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Graphic only available for CONUS domain for Online CMAQ output.</font> </br>
-<!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output or Daily max/ave.</font> <br>  -->
+<P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output or Daily max/ave.</font> <br>
 <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
 
 </table>

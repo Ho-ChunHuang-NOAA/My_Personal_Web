@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="../js/style.css"></link>
 <script language="JavaScript" src="../js/cmaq_pm_latest.day.js"> </script> 
-<script language="JavaScript" src="../js/rrfs_cmaq_pm25.js"> </script> 
+<script language="JavaScript" src="../js/verif_cmaq_pm25.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Hourly PM2.5 Simulations</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Hourly PM2.5 for evaluation</font>
 
 <br> 
 
@@ -102,13 +102,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 </tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3> 
-<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/fvs/hysplit/web/html/fho.html" target="_blank"> HYSPLIT Verification </a><br> -->
-<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/docs/Smoke_CCS_WCOSS.pdf" target="_blank"> HYSPLIT 2013 Upgrades</a><br> -->
-<!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
-<!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html"> Hourly Ozone</a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25_max.html"> Max/Ave PM25</a> 
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3.html"> Hourly Ozone</a> 
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3_max.html"> Max/Ave Ozone</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25_max.html"> Max/Ave PM2.5</a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
@@ -275,19 +271,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3><br>
-<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
-<br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/cmaq/para/" target="_blank"> EMC AQ Verification<br>
-<br><br>
-<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
-<br><br>
-<center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
-<br><br>
-<center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
-<br><br><br><br><br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/cmaq/para/" target="_blank"> Return to CMAQ Verification
+<br><br><br><br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
 </td>
 
 </form>
