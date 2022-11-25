@@ -408,7 +408,8 @@ function anim(){
    document.cmaq2_o3_image.src =  pics[i+nmodel].src;
    document.cmaq3_o3_image.src =  pics[i+2*nmodel].src;
    document.cmaq4_o3_image.src =  pics[i+3*nmodel].src;
-   window.setTimeout("increase_i(); anim()", speed);
+   anmiloop= window.setTimeout("increase_i(); anim()", speed);
+   ith=i;
 }
              
 function animation(){
@@ -416,10 +417,10 @@ function animation(){
       i=0;
    }
    if(document.form2.timerBox.checked){
-      document.cmaq1_o3_image.src  =  pics[i].src;
+      document.cmaq1_o3_image.src =  pics[i].src;
       document.cmaq2_o3_image.src =  pics[i+nmodel].src;
       document.cmaq3_o3_image.src =  pics[i+2*nmodel].src;
-      document.cmaq3_o3_image.src =  pics[i+3*nmodel].src;
+      document.cmaq4_o3_image.src =  pics[i+3*nmodel].src;
       anmiloop= window.setTimeout("increase_i(); animation()", speed);
       ith=i;
    }

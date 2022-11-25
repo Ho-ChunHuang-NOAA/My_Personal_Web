@@ -22,9 +22,9 @@
 
 <tr bgcolor="AAAAAA" align="center" style="font-size:20px;"><td colspan=3>&nbsp</td>
 <td  bgcolor="CCCCCC"> 
-<a href="#picture" onClick="javascript:show(0)">day 1</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(1)">day 2</font></a>&nbsp 
-<a href="#picture" onClick="javascript:show(2)">day 3</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(0)">day 1</font></a>&nbsp &nbsp &nbsp &nbsp
+<a href="#picture" onClick="javascript:show(1)">day 2</font></a>&nbsp &nbsp &nbsp &nbsp
+<a href="#picture" onClick="javascript:show(2)">day 3</font></a>
 <br>
 </td>
 </tr>
@@ -41,8 +41,11 @@ Select speed:
 &nbsp 
 Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get_speed(this.form);javascript:rewind();javascript:get_i();javascript:animation()" style="width:20px;height:20px">
 
-&nbsp <button onclick="clearTimeout(anmiloop)" style="font-size:18px;">Stop</button> <button onclick="javascript:get_i();javascript:animation()" style="font-size:18px;">Continue</button>
-<!--&nbsp &nbsp &nbsp &nbsp-->
+&nbsp <button onclick="clearTimeout(anmiloop)" style="font-size:18px;">Stop</button> &nbsp &nbsp
+
+<!-- <button onclick="javascript:get_i();javascript:animation()" style="font-size:18px;">Continue</button> -->
+<!-- <button onclick="javascript:get_i();javascript:animation()">Continue</button>  &nbsp  -->
+<!-- <input  type="button" name="test1" value="Continue" onClick="javascript:get_speed(this.form);javascript:get_i();javascript:animation()">  -->
 
 <!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
 <!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
@@ -77,7 +80,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
 <option value="prod" > AQMv6
-<option value="prodbc" > AQMv6 Bias-Corrected
+<option value="prodbc" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 <option value="v70c15" > AQMv7
 <option value="v70c15bc" > AQMv7 Bias-Corrected
 </select>
@@ -85,7 +88,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="prodbc" > AQMv6 Bias-Corrected
+<option value="prodbc" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 <option value="v70c15" > AQMv7
 <option value="v70c15bc" > AQMv7 Bias-Corrected
 <option value="prod" > AQMv6
@@ -97,7 +100,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70c15" > AQMv7
 <option value="v70c15bc" > AQMv7 Bias-Corrected
 <option value="prod" > AQMv6
-<option value="prodbc" > AQMv6 Bias-Corrected
+<option value="prodbc" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 </select>
 </td></tr>
 
@@ -105,7 +108,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp4" >
 <option value="v70c15bc" > AQMv7 Bias-Corrected
 <option value="prod" > AQMv6
-<option value="prodbc" > AQMv6 Bias-Corrected
+<option value="prodbc" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 <option value="v70c15" > AQMv7
 </select>
 </td></tr>
