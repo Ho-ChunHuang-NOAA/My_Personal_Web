@@ -380,7 +380,7 @@ function increase_i(){
 }
 
 function anim(){
-   if(i>=nmax){
+   if(i>nmax){
       i=0;
    }
    document.cmaq_pm_image.src  =  pics[i].src;
@@ -395,7 +395,7 @@ function anim(){
 }
              
 function animation(){
-   if(i>=nmax){
+   if(i>nmax){
       i=0;
    }
    if(document.form2.timerBox.checked){

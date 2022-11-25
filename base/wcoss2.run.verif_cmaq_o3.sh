@@ -9,9 +9,6 @@ if [[ $# -lt 1 ]]; then
 else
    TODAY=$1
 fi
-exp1=prod
-exp2=v70a1
-exp3=v70b1
 #
 FIRST_AVAIL_DAY=20200801
 FIRST_AVAIL_DAY=20190701
@@ -70,14 +67,24 @@ D0=`echo ${TODAY} | cut -c7-8`
 ## if [[ -e ${remote_fig}/${Y0}/${TODAY}/hysplitconussmokepbl_03.png ]]; then
    chrstr=${str[${Mx}-1]}   ## keyword for Month
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQO3IMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.21.o3.k1.png!"  -e "s!CMAQO3IMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.21.o3.k1.png!" -e "s!CMAQO3IMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.21.o3.k1.png!" -e "s!FIREIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/fireemisfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!"  -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/hmsfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" ${local_base}/verif_cmaq_o3.base > ${working_dir}/verif_cmaq_o3.html
-   #
-sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQO3IMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp}.${TODAY}.t06z.max_1hr_o3.day1.k1.png!"  -e "s!CMAQO3IMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.max_1hr_o3.day1.k1.png!" -e "s!CMAQO3IMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.max_1hr_o3.day1.k1.png!" -e "s!FIREIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/gbbepxfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/fireemisfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!"  -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/hmsfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" ${local_base}/verif_cmaq_o3_max.base > ${working_dir}/verif_cmaq_o3_max.html
+exp1=prodobs
+exp2=prodbcobs
+exp3=v70c15obs
+exp4=v70c15bcobs
+
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.o3.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.o3.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.15.o3.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.15.o3.k1.png!"  ${local_base}/verif_cmaq_o3.base > ${working_dir}/verif_cmaq_o3.html
+
+exp1=prod
+exp2=prodbc
+exp3=v70c15
+exp4=v70c15bc
+
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!"  ${local_base}/verif_cmaq_o3_max.base > ${working_dir}/verif_cmaq_o3_max.html
 
    ##
    ## Update the Date Information of Latest Avaialble Figure for Date Selection Restriction
    ##
-   sed -e "s!AAAA!${Y0}!" -e "s!BBBB!${Mx}!" -e "s!CCCC!${D0}!"  -e "s!XXXX!${FstY0}!" -e "s!YYYY!${FstMx}!" -e "s!ZZZZ!${FstD0}!" ${local_js}/cmaq_o3_latest.day.js.base > ${working_dir}/cmaq_o3_latest.day.js
+   sed -e "s!AAAA!${Y0}!" -e "s!BBBB!${Mx}!" -e "s!CCCC!${D0}!"  -e "s!XXXX!${FstY0}!" -e "s!YYYY!${FstMx}!" -e "s!ZZZZ!${FstD0}!" ${local_js}/cmaq_o3_latest.day.js.base > ${working_dir}/verif_o3_latest.day.js
 
 cp -p ${local_js}/verif_cmaq_o3.js .
 cp -p ${local_js}/verif_cmaq_o3_max.js .
