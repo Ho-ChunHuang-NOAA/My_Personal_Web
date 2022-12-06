@@ -86,8 +86,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
-<option value="v70c15" > Online CMAQ One domain c15
-<option value="v70c17" > Online CMAQ One domain c17
+<option value="v70c20" > Online CMAQ One domain c20
+<option value="v70c22" > Online CMAQ One domain c22
 <option value="v70c3" > Online CMAQ One domain c3
 </select>
 </td></tr>
@@ -95,8 +95,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
 <option value="prodbc" > PROD BiCor
-<option value="v70c15" > Online CMAQ One domain c15
-<option value="v70c17" > Online CMAQ One domain c17
+<option value="v70c20" > Online CMAQ One domain c20
+<option value="v70c22" > Online CMAQ One domain c22
 <option value="prod" > PROD
 <option value="v70c3" > Online CMAQ One domain c3
 </select>
@@ -104,8 +104,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c15" > Online CMAQ One domain c15
-<option value="v70c17" > Online CMAQ One domain c17
+<option value="v70c20" > Online CMAQ One domain c20
+<option value="v70c22" > Online CMAQ One domain c22
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
 <option value="v70c3" > Online CMAQ One domain c3

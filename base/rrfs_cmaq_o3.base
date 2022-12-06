@@ -106,10 +106,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
-<option value="v70c15obs" > Online 1 domain c15 & OBS
-<option value="v70c15" > Online 1 domain c15
-<option value="v70c17obs" > Online 1 domain c17 & OBS
-<option value="v70c17" > Online 1 domain c17
+<option value="v70c20obs" > Online 1 domain c20 & OBS
+<option value="v70c20" > Online 1 domain c20
+<option value="v70c22obs" > Online 1 domain c22 & OBS
+<option value="v70c22" > Online 1 domain c22
 <option value="v70c3obs" > Online 1 domain c3 & OBS
 <option value="v70c3" > Online 1 domain c3
 </select>
@@ -119,10 +119,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp2" >
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
-<option value="v70c15obs" > Online 1 domain c15 & OBS
-<option value="v70c15" > Online 1 domain c15
-<option value="v70c17obs" > Online 1 domain c17 & OBS
-<option value="v70c17" > Online 1 domain c17
+<option value="v70c20obs" > Online 1 domain c20 & OBS
+<option value="v70c20" > Online 1 domain c20
+<option value="v70c22obs" > Online 1 domain c22 & OBS
+<option value="v70c22" > Online 1 domain c22
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
 <option value="v70c3obs" > Online 1 domain c3 & OBS
@@ -132,10 +132,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c15obs" > Online 1 domain c15 & OBS
-<option value="v70c15" > Online 1 domain c15
-<option value="v70c17obs" > Online 1 domain c17 & OBS
-<option value="v70c17" > Online 1 domain c17
+<option value="v70c20obs" > Online 1 domain c20 & OBS
+<option value="v70c20" > Online 1 domain c20
+<option value="v70c22obs" > Online 1 domain c22 & OBS
+<option value="v70c22" > Online 1 domain c22
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor-OBS overlay
