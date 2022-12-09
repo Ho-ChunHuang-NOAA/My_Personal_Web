@@ -105,32 +105,25 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
-<option value="nofire" > RRFS CMAQ No Fire
-<option value="fire_hourly" > RRFS CMAQ HRLY
-<option value="fire_static" > RRFS CMAQ STATIC
+<option value="firev4obs" > GBBEPX v4 fire ovelay
+<option value="firev4" > GBBEPX v4 fire
+<option value="firev4bcobs" > GBBEPX v4 BiCor overlay
+<option value="firev4bc" > GBBEPX v4 fire BiCor
 <option value="para6d" > PARA6D
 <option value="para6dbc" > PARA6D BiCor
-<option value="para6e" > PARA6E
-<option value="para6ebc" > PARA6E BiCor
-<option value="ncopara" > NCO PARA
-<option value="ncoparabc" > NCO PARA BiCor
-<option value="para6t" > TEST
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="emcexp" >
+<option value="firev4obs" > GBBEPX v4 fire ovelay
+<option value="firev4" > GBBEPX v4 fire
+<option value="firev4bcobs" > GBBEPX v4 BiCor overlay
+<option value="firev4bc" > GBBEPX v4 fire BiCor
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="prodobs" > PROD-OBS overlay
 <option value="prod" > PROD
-<option value="nofire" > RRFS CMAQ No Fire
-<option value="fire_hourly" > RRFS CMAQ HRLY
-<option value="fire_static" > RRFS CMAQ STATIC
-<option value="para6d" > PARA6D
-<option value="para6dbc" > PARA6D BiCor
-<option value="para6e" > PARA6E
-<option value="para6ebc" > PARA6E BiCor
 <option value="ncopara" > NCO PARA
 <option value="ncoparabc" > NCO PARA BiCor
 </select>
