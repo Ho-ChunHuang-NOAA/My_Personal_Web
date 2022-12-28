@@ -65,17 +65,17 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="GEFSPMIMAGE" name="gefs_pm_image" width=500 height=300> 
-<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=500 height=300>
-<img src="RRFSPMIMAGE" name="rrfs_pm_image" width=500 height=300>
-<img src="GEFSAODIMAGE" name="gefs_aod_image" width=500 height=300> 
-<img src="CMAQAODIMAGE" name="cmaq_aod_image" width=500 height=300>
-<img src="RRFSAODIMAGE" name="rrfs_aod_image" width=500 height=300>
-<img src="GLBGOESAOD" name="glbgoesaod_image" width=500 height=300>
-<img src="GLBVIIRSAOD" name="glbviirsaod_image" width=500 height=300>
-<img src="NULLPAGE" name="null_image" width=500 height=300>
-<img src="REGGOESAOD" name="reggoesaod_image" width=500 height=300>
-<img src="REGVIIRSAOD" name="regviirsaod_image" width=500 height=300>
+<img src="GEFSPMIMAGE" name="gefs_pm_image" width=350 height=275> 
+<img src="CMAQPMIMAGE" name="cmaq_pm_image" width=350 height=275>
+<img src="RRFSPMIMAGE" name="rrfs_pm_image" width=350 height=275>
+<img src="GEFSAODIMAGE" name="gefs_aod_image" width=350 height=275> 
+<img src="CMAQAODIMAGE" name="cmaq_aod_image" width=350 height=275>
+<img src="RRFSAODIMAGE" name="rrfs_aod_image" width=350 height=275>
+<img src="GLBGOESAOD" name="glbgoesaod_image" width=350 height=275>
+<img src="GLBVIIRSAOD" name="glbviirsaod_image" width=350 height=275>
+<img src="NULLPAGE" name="null_image" width=350 height=275>
+<img src="REGGOESAOD" name="reggoesaod_image" width=350 height=275>
+<img src="REGVIIRSAOD" name="regviirsaod_image" width=350 height=275>
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EMC DEV Fire Location </font> </b> </figcaption> -->
 <!--  <br> -->
