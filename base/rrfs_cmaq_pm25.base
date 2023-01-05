@@ -120,8 +120,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70c22obs" > Online c22 & OBS
 <option value="v70c22" > Online c22
 <option value="v70c22bcobs" > Online c22 BiCor & OBS
-<option value="v70c20obs" > Online c20 & OBS
-<option value="v70c20" > Online c20
+<option value="v70c40obs" > Online c40 & OBS
+<option value="v70c42obs" > Online c42 & OBS
+<option value="v70c43obs" > Online c43 & OBS
 </select>
 </td></tr>
 
@@ -134,6 +135,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70c22bcobs" > Online c22 BiCor & OBS
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
+<option value="v70c40obs" > Online c40 & OBS
+<option value="v70c42obs" > Online c42 & OBS
+<option value="v70c43obs" > Online c43 & OBS
 </select>
 </td></tr>
 
@@ -146,6 +150,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor & OBS
 <option value="prodbc" > PROD BiCor
+<option value="v70c40obs" > Online c40 & OBS
+<option value="v70c42obs" > Online c42 & OBS
+<option value="v70c43obs" > Online c43 & OBS
 </select>
 </td></tr>
 
@@ -172,10 +179,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
      <td style="width:20px">
       Year:
       <select name="yr" >
-        <option value="2019"  > 2019
         <option value="2020"  > 2020
         <option value="2021"  > 2021
         <option value="2022"  > 2022
+        <option value="2023"  > 2023
       </select>
      </td>
 

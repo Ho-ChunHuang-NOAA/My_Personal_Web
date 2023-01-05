@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-ls > tlist
+ls rrfs_cmaq* > tlist
 count=0
 while read line
 do
@@ -8,8 +8,8 @@ do
   ((count++))
 done<tlist
 
-old_ver='local_src=/lfs/h2/emc/physics/noscrub/${USER}/WEB'
-new_ver='local_src=/lfs/h2/emc/vpppg/save/${USER}/WEB'
+old_ver='c37'
+new_ver='c40'
 for i in "${shfile[@]}"
 do
    echo ${i}
