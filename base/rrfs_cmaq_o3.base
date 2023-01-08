@@ -106,12 +106,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor & OBS
 <option value="prodbc" > PROD BiCor
-<option value="v70c22obs" > Online c22 & OBS
-<option value="v70c22" > Online c22
-<option value="v70c22bcobs" > Online c22 BiCor & OBS
-<option value="v70c40obs" > Online c40 & OBS
-<option value="v70c42obs" > Online c42 & OBS
 <option value="v70c43obs" > Online c43 & OBS
+<option value="v70c43" > Online c43
+<option value="v70c43bcobs" > Online c43 BiCor & OBS
+<option value="v70c40obs" > Online c40 & OBS
 </select>
 </td></tr>
 
@@ -119,29 +117,23 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp2" >
 <option value="prodbcobs" > PROD BiCor & OBS
 <option value="prodbc" > PROD BiCor
-<option value="v70c22obs" > Online c22 & OBS
-<option value="v70c22" > Online c22
-<option value="v70c22bcobs" > Online c22 BiCor & OBS
+<option value="v70c43obs" > Online c43 & OBS
+<option value="v70c43" > Online c43
+<option value="v70c43bcobs" > Online c43 BiCor & OBS
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
-<option value="v70c40obs" > Online c40 & OBS
-<option value="v70c42obs" > Online c42 & OBS
-<option value="v70c43obs" > Online c43 & OBS
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c22obs" > Online c22 & OBS
-<option value="v70c22" > Online c22
-<option value="v70c22bcobs" > Online c22 BiCor & OBS
+<option value="v70c43obs" > Online c43 & OBS
+<option value="v70c43" > Online c43
+<option value="v70c43bcobs" > Online c43 BiCor & OBS
 <option value="prodobs" > PROD & OBS
 <option value="prod" > PROD
 <option value="prodbcobs" > PROD BiCor & OBS
 <option value="prodbc" > PROD BiCor
-<option value="v70c40obs" > Online c40 & OBS
-<option value="v70c42obs" > Online c42 & OBS
-<option value="v70c43obs" > Online c43 & OBS
 </select>
 </td></tr>
 

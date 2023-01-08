@@ -134,10 +134,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="emcexp" >
-<option value="firev4obs" > GBBEPX v4 fire ovelay
-<option value="firev4" > GBBEPX v4 fire
-<option value="firev4bcobs" > GBBEPX v4 BiCor overlay
-<option value="firev4bc" > GBBEPX v4 fire BiCor
 <option value="prodbcobs" > PROD BiCor-OBS overlay
 <option value="prodbc" > PROD BiCor
 <option value="prodobs" > PROD-OBS overlay
@@ -146,6 +142,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="para6dbc" > PARA6D BiCor
 <option value="ncopara" > NCO PARA
 <option value="ncoparabc" > NCO PARA BiCor
+<option value="firev4obs" > GBBEPX v4 fire ovelay
+<option value="firev4" > GBBEPX v4 fire
+<option value="firev4bcobs" > GBBEPX v4 BiCor overlay
+<option value="firev4bc" > GBBEPX v4 fire BiCor
 </select>
 </td></tr>
 
@@ -173,8 +173,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
      <td style="width:20px">
       Year:
       <select name="yr" >
-        <option value="2020"  > 2020
-        <option value="2021"  > 2021
         <option value="2022"  > 2022
         <option value="2023"  > 2023
       </select>
