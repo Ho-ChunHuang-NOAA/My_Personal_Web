@@ -88,24 +88,24 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
-<option value="v70c43" > Online c43
-<option value="v70c43bc" > Online c43 BiCor
+<option value="v70c55" > Online c55
+<option value="v70c55bc" > Online c55 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
 <option value="prodbc" > PROD BiCor
-<option value="v70c43" > Online c43
-<option value="v70c43bc" > Online c43 BiCor
+<option value="v70c55" > Online c55
+<option value="v70c55bc" > Online c55 BiCor
 <option value="prod" > PROD
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c43" > Online c43
-<option value="v70c43bc" > Online c43 BiCor
+<option value="v70c55" > Online c55
+<option value="v70c55bc" > Online c55 BiCor
 <option value="prod" > PROD
 <option value="prodbc" > PROD BiCor
 </select>
