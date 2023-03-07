@@ -1,4 +1,5 @@
 #!/bin/bash
+#module load prod_util
 # set -x
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
 ## Will be using the same day as input
@@ -10,6 +11,9 @@ if [[ $# -lt 1 ]]; then
 else
    TODAY=$1
 fi
+cdate=${TODAY}"00"
+PDYm1=$(${NDATE} -24 ${cdate} | cut -c1-8)
+PDYm2=$(${NDATE} -48 ${cdate} | cut -c1-8)
 if [[ $# -lt 2 ]]; then
    exp=${exp}
    exp2=${exp}_bc
@@ -24,9 +28,7 @@ else
    fi
 fi
 #
-FIRST_AVAIL_DAY=20191001
-FIRST_AVAIL_DAY=20200801
-FIRST_AVAIL_DAY=20190701
+FIRST_AVAIL_DAY=20200901
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
 X0=`echo ${FIRST_AVAIL_DAY} | cut -c5-5`
 if [[ ${X0} == "0" ]]; then
@@ -66,14 +68,15 @@ remote_fig=${remote_src}/fig
 WebFig=${remote_http}/fig
 
 declare -a str=( Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec )
-Y0=`echo ${TODAY} | cut -c1-4`
-X0=`echo ${TODAY} | cut -c5-5`
+DISPDAY=${PDYm2}
+Y0=`echo ${DISPDAY} | cut -c1-4`
+X0=`echo ${DISPDAY} | cut -c5-5`
 if [[ ${X0} == "0" ]]; then
-   Mx=`echo ${TODAY} | cut -c6-6`
+   Mx=`echo ${DISPDAY} | cut -c6-6`
 else
-   Mx=`echo ${TODAY} | cut -c5-6`
+   Mx=`echo ${DISPDAY} | cut -c5-6`
 fi
-D0=`echo ${TODAY} | cut -c7-8`
+D0=`echo ${DISPDAY} | cut -c7-8`
 #
 # If starting figure is not existed due to any reason,e.g., server down,  do not update the time info of the html and js
 #
@@ -90,10 +93,10 @@ exp4=v70c15bcobs
 
    sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.15.pm25.k1.png!"  ${local_base}/verif_cmaq_pm25.base > ${working_dir}/verif_cmaq_pm25.html
 
-exp1=prod
-exp2=prodbc
-exp3=v70c15
-exp4=v70c15bc
+exp1=prodobs
+exp2=prodbcobs
+exp3=v70c55obs
+exp4=v70c55bcobs
 
    sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.ave_24hr_pm25.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.ave_24hr_pm25.day1.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.ave_24hr_pm25.day1.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.ave_24hr_pm25.day1.k1.png!"  ${local_base}/verif_cmaq_pm25_max.base > ${working_dir}/verif_cmaq_pm25_max.html
 

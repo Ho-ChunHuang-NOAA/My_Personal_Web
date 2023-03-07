@@ -4,7 +4,7 @@
 <title> NCEP CMAQ PM GRAPHICS </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="../js/style.css"></link>
-<script language="JavaScript" src="../js/cmaq_pm_latest.day.js"> </script> 
+<script language="JavaScript" src="../js/verif_pm_latest.day.js"> </script> 
 <script language="JavaScript" src="../js/verif_cmaq_pm25_max.js"> </script> 
 <script language="JavaScript">
 
