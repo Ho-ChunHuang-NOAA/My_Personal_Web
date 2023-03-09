@@ -1,11 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title> NCEP AQM Ozone GRAPHICS </title>
+<title> NCEP AQM PM GRAPHICS </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="../js/style.css"></link>
-<script language="JavaScript" src="../js/verif_o3_latest.day.js"> </script> 
-<script language="JavaScript" src="../js/verif_cmaq_o3_max.js"> </script> 
+<script language="JavaScript" src="../js/eval_pm_latest.day.js"> </script> 
+<script language="JavaScript" src="../js/eval_cmaq_pm25.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Daily Max/Ave OZONE for evaluation</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Hourly PM2.5 for evaluation</font>
 
 <br> 
 
@@ -22,9 +22,32 @@
 
 <tr bgcolor="AAAAAA" align="center" style="font-size:20px;"><td colspan=3>&nbsp</td>
 <td  bgcolor="CCCCCC"> 
-<a href="#picture" onClick="javascript:show(0)">day 1</font></a>&nbsp &nbsp &nbsp &nbsp
-<a href="#picture" onClick="javascript:show(1)">day 2</font></a>&nbsp &nbsp &nbsp &nbsp
-<a href="#picture" onClick="javascript:show(2)">day 3</font></a>
+<a href="#picture" onClick="javascript:show(2)">03</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(5)">06</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(8)">09</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(11)">12</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(14)">15</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(17)">18</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(20)">21</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(23)">24</font></a>&nbsp 
+&nbsp &nbsp &nbsp &nbsp
+<a href="#picture" onClick="javascript:show(26)">27</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(29)">30</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(32)">33</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(35)">36</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(38)">39</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(41)">42</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(44)">45</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(47)">48</font></a>
+&nbsp &nbsp &nbsp &nbsp
+<a href="#picture" onClick="javascript:show(50)">51</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(53)">54</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(56)">57</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(59)">60</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(62)">63</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(65)">66</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(68)">69</font></a>&nbsp 
+<a href="#picture" onClick="javascript:show(71)">72</font></a>
 <br>
 </td>
 </tr>
@@ -42,10 +65,8 @@ Select speed:
 Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get_speed(this.form);javascript:rewind();javascript:get_i();javascript:animation()" style="width:20px;height:20px">
 
 &nbsp <button onclick="clearTimeout(anmiloop)" style="font-size:18px;">Stop</button> &nbsp &nbsp
-
 <!-- <button onclick="javascript:get_i();javascript:animation()" style="font-size:18px;">Continue</button> -->
-<!-- <button onclick="javascript:get_i();javascript:animation()">Continue</button>  &nbsp  -->
-<!-- <input  type="button" name="test1" value="Continue" onClick="javascript:get_speed(this.form);javascript:get_i();javascript:animation()">  -->
+<!--&nbsp &nbsp &nbsp &nbsp-->
 
 <!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
 <!-- Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:get_speed(this.form);javascript:rewind();javascript:animation()"> -->
@@ -64,23 +85,24 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQO3IMAGE1" name="cmaq1_o3_image" width=450 height=300>
-<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=450 height=300>
-<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=450 height=300>
-<img src="CMAQO3IMAGE4" name="cmaq4_o3_image" width=450 height=300>
+<img src="CMAQPMIMAGE1" name="cmaq1_pm_image" width=450 height=300>
+<img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=450 height=300>
+<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=450 height=300>
+<img src="CMAQPMIMAGE4" name="cmaq4_pm_image" width=450 height=300>
 </td>
 </tr>
 
+
 <tr bgcolor="DDDDDD"><td colspan=3> 
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3.html"> Hourly Ozone</a> 
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25.html"> Hourly PM2.5</a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25_max.html"> Max/Ave PM2.5</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/eval_cmaq_o3.html"> Hourly Ozone</a> 
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/eval_cmaq_o3_max.html"> Max/Ave Ozone</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/eval_cmaq_pm25_max.html"> Max/Ave PM2.5</a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
 <option value="prodobs" > AQMv6
-<option value="prodbcobs" > AQMv6 Bias-Corrected
+<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 <option value="v70c55obs" > AQMv7
 <option value="v70c55bcobs" > AQMv7 Bias-Corrected
 </select>
@@ -88,7 +110,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="prodbcobs" > AQMv6 Bias-Corrected
+<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 <option value="v70c55obs" > AQMv7
 <option value="v70c55bcobs" > AQMv7 Bias-Corrected
 <option value="prodobs" > AQMv6
@@ -100,7 +122,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="v70c55obs" > AQMv7
 <option value="v70c55bcobs" > AQMv7 Bias-Corrected
 <option value="prodobs" > AQMv6
-<option value="prodbcobs" > AQMv6 Bias-Corrected
+<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 </select>
 </td></tr>
 
@@ -108,7 +130,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp4" >
 <option value="v70c55bcobs" > AQMv7 Bias-Corrected
 <option value="prodobs" > AQMv6
-<option value="prodbcobs" > AQMv6 Bias-Corrected
+<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 <option value="v70c55obs" > AQMv7
 </select>
 </td></tr>
@@ -124,7 +146,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="sw" > Southwest U.S.
 <option value="ak" > Alaska
 <option value="hi" > Hawaii
-</select>
 </td>
 </tr>
 
@@ -206,19 +227,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 </select>
 </td></tr>
 
-<tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
-<select name="fld" > 
-<option value="max_8hr_o3" > daily Max 8hr-avg Ozone 
-<!--  <option value="max_1hr_o3" > daily Max 1hr-avg Ozone -->
-<!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
-<!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
-</select>
-</td></tr>
-
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3><br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/para/" target="_blank"> Return to AQM Verification
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/dev/" target="_blank"> Return to AQM Verification
 <br><br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 
 </td>
@@ -226,7 +238,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 </form>
 
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
-<P><left>
+<!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output or Daily max/ave.</font> <br>  -->
 <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
 
 </table>
