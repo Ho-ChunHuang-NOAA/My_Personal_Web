@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Hourly PM2.5 Simulations</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Hourly PM<sub>2.5</sub> Simulations</font>
 
 <br> 
 
@@ -248,7 +248,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="pm25" > &nbsp &nbsp &nbsp &nbsp Total Surface PM diameter < 2.5 μm &nbsp &nbsp &nbsp
 <option value="aod" > &nbsp &nbsp &nbsp &nbsp Aerosol Optical Depth  &nbsp &nbsp &nbsp
 <option value="pm25_col" > &nbsp &nbsp &nbsp &nbsp PM25 Column Total &nbsp &nbsp
-<option value="pm25c_col" > &nbsp &nbsp &nbsp &nbsp Carbon PM25 (EC+OC) Column Total &nbsp &nbsp
+<option value="pm25c_col" > &nbsp &nbsp &nbsp &nbsp Carbon PM<sub>2.5</sub> (EC+OC) Column Total &nbsp &nbsp
 <!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
 <!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
 </select>

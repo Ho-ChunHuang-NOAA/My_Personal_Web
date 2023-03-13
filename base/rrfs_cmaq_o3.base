@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC HOURLY OZONE Simulations</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Hourly Ozone Simulations</font>
 
 <br> 
 
@@ -96,7 +96,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
 <!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25.html"> Hourly PM2.5</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3_max.html"> Max/Ave Ozone</a>
 </td></tr>
 

@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Daily Max/Ave PM2.5 Simulations</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Daily Max/Ave PM<sub>2.5</sub> Simulations</font>
 
 <br> 
 
@@ -205,8 +205,8 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
 <select name="fld" > 
-<option value="ave_24hr_pm25" > daily 24hr-avg PM2.5
-<option value="max_1hr_pm25" > daily Max 1hr-avg PM2.5
+<option value="ave_24hr_pm25" > daily 24hr-avg PM<sub>2.5</sub>
+<option value="max_1hr_pm25" > daily Max 1hr-avg PM<sub>2.5</sub>
 <!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
 <!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
 </select>

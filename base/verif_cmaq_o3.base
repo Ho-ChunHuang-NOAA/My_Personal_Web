@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM HOURLY OZONE for evaluation</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Hourly Ozone for evaluation</font>
 
 <br> 
 
@@ -85,17 +85,17 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQO3IMAGE1" name="cmaq1_o3_image" width=450 height=300>
-<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=450 height=300>
-<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=450 height=300>
-<img src="CMAQO3IMAGE4" name="cmaq4_o3_image" width=450 height=300>
+<img src="CMAQO3IMAGE1" name="cmaq1_o3_image" width=400 height=300>
+<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=400 height=300>
+<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=400 height=300>
+<img src="CMAQO3IMAGE4" name="cmaq4_o3_image" width=400 height=300>
 </td>
 </tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3> 
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3_max.html"> Max/Ave Ozone</a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25.html"> Hourly PM2.5</a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25_max.html"> Max/Ave PM2.5</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25_max.html"> Max/Ave PM<sub>2.5</sub></a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
@@ -230,7 +230,7 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3><br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/para/" target="_blank"> Return to AQM Verification
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/para/"> Return to AQM Verification
 <br><br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 
 </td>

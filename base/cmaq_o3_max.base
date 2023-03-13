@@ -79,7 +79,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
 <!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a><br><br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25.html"> Hourly PM2.5</a>
+<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
 </td></tr>
 
 
