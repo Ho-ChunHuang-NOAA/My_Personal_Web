@@ -58,11 +58,12 @@ cd ${working_dir}
 remote_machine=emcrzdm.ncep.noaa.gov
 remote_user=hchuang
 ## Remote Target Directory
-remote_src=/home/people/emc/www/htdocs/mmb/hchuang/web
-remote_src=/home/people/emc/www/htdocs/users/verification/air_quality/aqm/para/spatial_plots
+remote_src=/home/people/emc/www/htdocs/users/verification/air_quality/aqm/para/forecast_graphics
 remote_http=http://www.emc.ncep.noaa.gov/mmb/hchuang/web
-remote_html=${remote_src}/html
-remote_js=${remote_src}/js
+remote_daily=${remote_src}/daily_ave_pm25
+remote_hourly=${remote_src}/hourly_pm25
+remote_js=${remote_src}/script
+remote_src=/home/people/emc/www/htdocs/mmb/hchuang/web
 remote_inc=${remote_src}/includes
 
 remote_fig=${remote_src}/fig
@@ -109,7 +110,8 @@ exp4=v70c55bcobs
 ## cp -p ${local_js}/verif_cmaq_pm25.js .
 ## cp -p ${local_js}/verif_cmaq_pm25_max.js .
 ## cp -p ${local_js}/verif_cmaq_pm25_nog16.js .
-scp *.html ${remote_user}@${remote_machine}:${remote_src}
-scp verif_pm_latest.day.js ${remote_user}@${remote_machine}:${remote_src}
+scp verif_cmaq_pm25.html ${remote_user}@${remote_machine}:${remote_hourly}/index.html
+scp verif_cmaq_pm25_max.html ${remote_user}@${remote_machine}:${remote_daily}/index.html
+scp verif_pm_latest.day.js ${remote_user}@${remote_machine}:${remote_js}
 
 exit
