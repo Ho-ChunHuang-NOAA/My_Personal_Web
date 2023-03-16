@@ -59,6 +59,7 @@ remote_machine=emcrzdm.ncep.noaa.gov
 remote_user=hchuang
 ## Remote Target Directory
 remote_src=/home/people/emc/www/htdocs/mmb/hchuang/web
+remote_src=/home/people/emc/www/htdocs/users/verification/air_quality/aqm/para/spatial_plots
 remote_http=http://www.emc.ncep.noaa.gov/mmb/hchuang/web
 remote_html=${remote_src}/html
 remote_js=${remote_src}/js
@@ -105,10 +106,10 @@ exp4=v70c55bcobs
    ##
    sed -e "s!AAAA!${Y0}!" -e "s!BBBB!${Mx}!" -e "s!CCCC!${D0}!"  -e "s!XXXX!${FstY0}!" -e "s!YYYY!${FstMx}!" -e "s!ZZZZ!${FstD0}!" ${local_js}/cmaq_pm_latest.day.js.base > ${working_dir}/verif_pm_latest.day.js
 
-cp -p ${local_js}/verif_cmaq_pm25.js .
-cp -p ${local_js}/verif_cmaq_pm25_max.js .
+## cp -p ${local_js}/verif_cmaq_pm25.js .
+## cp -p ${local_js}/verif_cmaq_pm25_max.js .
 ## cp -p ${local_js}/verif_cmaq_pm25_nog16.js .
-scp *.html ${remote_user}@${remote_machine}:${remote_html}
-scp *.js ${remote_user}@${remote_machine}:${remote_js}
+scp *.html ${remote_user}@${remote_machine}:${remote_src}
+scp verif_pm_latest.day.js ${remote_user}@${remote_machine}:${remote_src}
 
 exit

@@ -3,9 +3,9 @@
 <head>
 <title> NCEP AQM PM GRAPHICS </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
-<script language="JavaScript" src="../js/verif_pm_latest.day.js"> </script> 
-<script language="JavaScript" src="../js/verif_cmaq_pm25_max.js"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css"></link>
+<script language="JavaScript" src="verif_pm_latest.day.js"> </script> 
+<script language="JavaScript" src="verif_cmaq_pm25_max.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -13,7 +13,7 @@
                                                                                                                   
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
-<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
+<img src="noaa_logo.gif" height=60 width=65><img src="nws_logo.gif" height=60 width=65><img src="ncep_80.gif" height=55 width=75> 
 <font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Daily Max/Ave PM<sub>2.5</sub> for evaluation</font>
 
 <br> 
@@ -68,13 +68,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <img src="CMAQPMIMAGE4" name="cmaq4_pm_image" width=450 height=300>
 </td>
 </tr>
-
-
-<tr bgcolor="DDDDDD"><td colspan=3> 
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3.html"> Hourly Ozone</a> 
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_o3_max.html"> Max/Ave Ozone</a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/verif_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
-</td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
@@ -210,16 +203,12 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="fld" > 
 <option value="ave_24hr_pm25" > daily 24hr-avg PM<sub>2.5</sub>
 <!--  <option value="max_1hr_pm25" > daily Max 1hr-avg PM<sub>2.5</sub> -->
-<!--  <option value="smoke" selected > Smoke Fine Particulate matter (ug/m3) -->
-<!--  <option value="dust" >  Dust Fine Particulate matter (ug/m3) -->
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3><br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/para/"> Return to AQM Verification
-<br><br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 
 </td>
 
