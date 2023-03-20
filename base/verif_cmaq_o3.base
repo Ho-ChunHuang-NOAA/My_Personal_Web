@@ -3,9 +3,9 @@
 <head>
 <title> NCEP AQM Ozone GRAPHICS </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="style.css"></link>
-<script language="JavaScript" src="verif_o3_latest.day.js"> </script> 
-<script language="JavaScript" src="verif_cmaq_o3.js"> </script> 
+<link rel="stylesheet" type="text/css" href="../script/style.css"></link>
+<script language="JavaScript" src="../script/verif_o3_latest.day.js"> </script> 
+<script language="JavaScript" src="../script/verif_cmaq_o3.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -13,7 +13,7 @@
                                                                                                                   
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
-<img src="noaa_logo.gif" height=60 width=65><img src="nws_logo.gif" height=60 width=65><img src="ncep_80.gif" height=55 width=75> 
+<img src="../images/noaa_logo.gif" height=60 width=65><img src="../images/nws_logo.gif" height=60 width=65><img src="../images/ncep_80.gif" height=55 width=75> 
 <font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Hourly Ozone for evaluation</font>
 
 <br> 
@@ -85,10 +85,10 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="CMAQO3IMAGE1" name="cmaq1_o3_image" width=400 height=300>
-<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=400 height=300>
-<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=400 height=300>
-<img src="CMAQO3IMAGE4" name="cmaq4_o3_image" width=400 height=300>
+<img src="CMAQO3IMAGE1" name="cmaq1_o3_image" width=450 height=300>
+<img src="CMAQO3IMAGE2" name="cmaq2_o3_image" width=450 height=300>
+<img src="CMAQO3IMAGE3" name="cmaq3_o3_image" width=450 height=300>
+<img src="CMAQO3IMAGE4" name="cmaq4_o3_image" width=450 height=300>
 </td>
 </tr>
 

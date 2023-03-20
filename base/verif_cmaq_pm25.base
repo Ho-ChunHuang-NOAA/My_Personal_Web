@@ -3,9 +3,9 @@
 <head>
 <title> NCEP AQM PM GRAPHICS </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="style.css"></link>
-<script language="JavaScript" src="verif_pm_latest.day.js"> </script> 
-<script language="JavaScript" src="verif_cmaq_pm25.js"> </script> 
+<link rel="stylesheet" type="text/css" href="../script/style.css"></link>
+<script language="JavaScript" src="../script/verif_pm_latest.day.js"> </script> 
+<script language="JavaScript" src="../script/verif_cmaq_pm25.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -13,7 +13,7 @@
                                                                                                                   
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
-<img src="noaa_logo.gif" height=60 width=65><img src="nws_logo.gif" height=60 width=65><img src="ncep_80.gif" height=55 width=75> 
+<img src="../images/noaa_logo.gif" height=60 width=65><img src="../images/nws_logo.gif" height=60 width=65><img src="../images/ncep_80.gif" height=55 width=75> 
 <font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Hourly PM<sub>2.5</sub> for evaluation</font>
 
 <br> 
