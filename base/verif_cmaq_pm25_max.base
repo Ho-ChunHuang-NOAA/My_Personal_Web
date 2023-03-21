@@ -14,7 +14,7 @@
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
 <img src="../images/noaa_logo.gif" height=60 width=65><img src="../images/nws_logo.gif" height=60 width=65><img src="../images/ncep_80.gif" height=55 width=75> 
-<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Daily Max/Ave PM<sub>2.5</sub> for evaluation</font>
+<font color="Blue" size=+3> &nbsp &nbsp &nbsp  AQM Daily 24HR-AVG PM<sub>2.5</sub> for evaluation</font>
 
 <br> 
 
