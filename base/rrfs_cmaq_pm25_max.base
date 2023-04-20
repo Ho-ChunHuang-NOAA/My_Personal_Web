@@ -99,6 +99,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
+<option value="v70c64obs" > AQMv7 c64
 <option value="prodbcobs" > AQMv6 BiCor & Obs
 <option value="prodbc" > AQMv6 BiCor
 <option value="v70c55obs" > AQMv7 & Obs
@@ -112,6 +113,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
+<option value="v70c64robs" > AQMv7 c64 restart
 <option value="v70c55obs" > AQMv7 & Obs
 <option value="v70c55" > AQMv7
 <option value="v70c55bcobs" > AQMv7 BiCor & Obs
@@ -134,6 +136,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="sw" > Southwest U.S.
 <option value="ak" > Alaska
 <option value="hi" > Hawaii
+<option value="ctdeep" > CT DEEP
 <option value="lis" > Long Island Sound
 <option value="aznw" > Arizona and New Mexcico
 <option value="Mckinney" > McKinney Fire
