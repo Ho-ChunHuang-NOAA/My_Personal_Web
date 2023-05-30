@@ -113,24 +113,30 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
-<option value="prodbcobs" > AQMv6 BiCor-OBS overlay
-<option value="prodobs" > AQMv6 & OBS overlay
+<option value="prodobs" > AQMv6 & OBS
+<option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c55bcobs" > AQMv7bufr BiCor & OBS
+<option value="v70csvbcobs" > AQMv7csv BiCor & OBS
+<option value="v70c73bcobs" > v70c73 BiCor & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
 <option value="prod" > AQMv6
 <option value="prodbc" > AQMv6 BiCor
-<option value="v70c55obs" > AQMv7 & OBS
 <option value="v70c55" > AQMv7
-<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="v70c73obs" > v70c73 & OBS
 <option value="v70c55bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="v70c55bcobs" > AQMv7 BiCor & OBS
 <option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c73obs" > v70c73 & OBS
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="v70csvbcobs" > AQMv7csv BiCor & OBS
+<option value="v70c73bcobs" > v70c73 BiCor & OBS
 <option value="prodbcobs" > AQMv6 BiCor & OBS
-<option value="prodbc" > AQMv6 BiCor
 <option value="v70c55" > AQMv7
+<option value="prodbc" > AQMv6 BiCor
 <option value="v70c55bc" > AQMv7 BiCor
 <option value="prodobs" > AQMv6 & OBS
 <option value="prod" > AQMv6
@@ -139,8 +145,11 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
+<option value="v70c73obs" > v70c73 & OBS
+<option value="v70c73bcobs" > v70c73 BiCor & OBS
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
 <option value="v70csvbcobs" > AQMv7csv BiCor & OBS
-<option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c55obs" > AQMv7bufr & OBS
 <option value="v70c55" > AQMv7
 <option value="v70c55bcobs" > AQMv7 BiCor & OBS
 <option value="v70c55bc" > AQMv7 BiCor
@@ -153,9 +162,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
 <select name="rg" >
+<option value="ne" > Northeast U.S.
 <option value="conus" > Continental US
 <option value="east" > Eastern U.S. 
-<option value="ne" > Northeast U.S.
 <option value="se" > Southeast U.S.
 <option value="west" > Western U.S. 
 <option value="nw" > Northwest U.S.
