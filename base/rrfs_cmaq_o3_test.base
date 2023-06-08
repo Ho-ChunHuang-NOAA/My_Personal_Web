@@ -105,49 +105,40 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
-<option value="prod" > PROD
-<option value="prodbc" > PROD BiCor
-<option value="v70a1" > Online CMAQ FV3-AQM a1
-<option value="v70b1" > Online CMAQ UFS-AQM b1
-<option value="v70c1" > Online CMAQ One domain c1
-<option value="v70c3" > Online CMAQ One domain c3
-<option value="v70b5" > Online CMAQ UFS-AQM b5
-<option value="v70b6" > Online CMAQ UFS-AQM b6
-<option value="v70b2" > Online CMAQ UFS-AQM b2
-<option value="para6d" > GFS-CMAQ retro
-<option value="para6dbc" > GFS-CMAQ BiCor retro
+<option value="prodobs" > AQMv6 & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
+<option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="prod" > AQMv6
+<option value="prodbc" > AQMv6 BiCor
+<option value="v70c55" > AQMv7
+<option value="v70c55bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="v70a1" > Online CMAQ FV3-AQM a1
-<option value="prod" > PROD
-<option value="prodbc" > PROD BiCor
-<option value="v70b1" > Online CMAQ UFS-AQM b1
-<option value="v70c1" > Online CMAQ One domain c1
-<option value="v70c3" > Online CMAQ One domain c3
-<option value="v70b5" > Online CMAQ UFS-AQM b5
-<option value="v70b6" > Online CMAQ UFS-AQM b6
-<option value="v70b2" > Online CMAQ UFS-AQM b2
-<option value="para6d" > GFS-CMAQ retro
-<option value="para6dbc" > GFS-CMAQ BiCor retro
+<option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="prodobs" > AQMv6 & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
+<option value="prod" > AQMv6
+<option value="prodbc" > AQMv6 BiCor
+<option value="v70c55" > AQMv7
+<option value="v70c55bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70b1" > Online CMAQ UFS-AQM b1
-<option value="prod" > PROD
-<option value="prodbc" > PROD BiCor
-<option value="v70a1" > Online CMAQ FV3-AQM a1
-<option value="v70c1" > Online CMAQ One domain c1
-<option value="v70c3" > Online CMAQ One domain c3
-<option value="v70b5" > Online CMAQ UFS-AQM b5
-<option value="v70b6" > Online CMAQ UFS-AQM b6
-<option value="v70b2" > Online CMAQ UFS-AQM b2
-<option value="para6d" > GFS-CMAQ retro
-<option value="para6dbc" > GFS-CMAQ BiCor retro
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="prodobs" > AQMv6 & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
+<option value="v70c55obs" > AQMv7 & OBS
+<option value="prod" > AQMv6
+<option value="prodbc" > AQMv6 BiCor
+<option value="v70c55" > AQMv7
+<option value="v70c55bc" > AQMv7 BiCor
 </select>
 </td></tr>
 

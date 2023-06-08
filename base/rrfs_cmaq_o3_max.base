@@ -84,42 +84,40 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
-<option value="prodobs" > AQMv6 & Obs
+<option value="prodobs" > AQMv6 & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
+<option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
 <option value="prod" > AQMv6
-<option value="prodbcobs" > AQMv6 BiCor & Obs
 <option value="prodbc" > AQMv6 BiCor
-<option value="v70c55obs" > AQMv7 & Obs
 <option value="v70c55" > AQMv7
-<option value="v70c55bcobs" > AQMv7 BiCor & Obs
 <option value="v70c55bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="v70c64obs" > AQMv7 c64
-<option value="prodbcobs" > AQMv6 BiCor & Obs
-<option value="prodbc" > AQMv6 BiCor
-<option value="v70c55obs" > AQMv7 & Obs
-<option value="v70c55" > AQMv7
-<option value="v70c55bcobs" > AQMv7 BiCor & Obs
-<option value="v70c55bc" > AQMv7 BiCor
-<option value="prodobs" > AQMv6 & Obs
+<option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="prodobs" > AQMv6 & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
 <option value="prod" > AQMv6
+<option value="prodbc" > AQMv6 BiCor
+<option value="v70c55" > AQMv7
+<option value="v70c55bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c64robs" > AQMv7 c64 restart
-<option value="v70c55obs" > AQMv7 & Obs
-<option value="v70c55" > AQMv7
-<option value="v70c55bcobs" > AQMv7 BiCor & Obs
-<option value="v70c55bc" > AQMv7 BiCor
-<option value="prodobs" > AQMv6 & Obs
+<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="prodobs" > AQMv6 & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
+<option value="v70c55obs" > AQMv7 & OBS
 <option value="prod" > AQMv6
-<option value="prodbcobs" > AQMv6 BiCor & Obs
 <option value="prodbc" > AQMv6 BiCor
+<option value="v70c55" > AQMv7
+<option value="v70c55bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
