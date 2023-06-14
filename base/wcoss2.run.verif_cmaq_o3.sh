@@ -75,14 +75,14 @@ exp2=prodbcobs
 exp3=v70c55obs
 exp4=v70c55bcobs
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.o3.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.o3.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.15.o3.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.15.o3.k1.png!"  ${local_base}/verif_cmaq_o3.base > ${working_dir}/verif_cmaq_o3.html
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQO3IMAGE1!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp1}.${DISPDAY}.t06z.15.o3.k1.png!"  -e "s!CMAQO3IMAGE2!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp2}.${DISPDAY}.t06z.15.o3.k1.png!" -e "s!CMAQO3IMAGE3!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp3}.${DISPDAY}.t06z.15.o3.k1.png!" -e "s!CMAQO3IMAGE4!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp4}.${DISPDAY}.t06z.15.o3.k1.png!"  ${local_base}/verif_cmaq_o3.base > ${working_dir}/verif_cmaq_o3.html
 
 exp1=prodobs
 exp2=prodbcobs
 exp3=v70c55obs
 exp4=v70c55bcobs
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!"  ${local_base}/verif_cmaq_o3_max.base > ${working_dir}/verif_cmaq_o3_max.html
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQO3IMAGE1!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp1}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!"  -e "s!CMAQO3IMAGE2!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp2}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQO3IMAGE3!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp3}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQO3IMAGE4!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp4}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!"  ${local_base}/verif_cmaq_o3_max.base > ${working_dir}/verif_cmaq_o3_max.html
 
    ##
    ## Update the Date Information of Latest Avaialble Figure for Date Selection Restriction
