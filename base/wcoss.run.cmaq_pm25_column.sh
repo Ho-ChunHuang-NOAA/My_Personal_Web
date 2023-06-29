@@ -11,7 +11,7 @@ if [ $# -gt 0 ]; then TODAY=$1; fi
 if [ $# -gt 1 ]; then exp=$2; fi
 if [ $# -gt 2 ]; then exp2=$3; fi
 #
-FIRST_AVAIL_DAY=20190701
+FIRST_AVAIL_DAY=20200901
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
 X0=`echo ${FIRST_AVAIL_DAY} | cut -c5-5`
 if [[ ${X0} == "0" ]]; then

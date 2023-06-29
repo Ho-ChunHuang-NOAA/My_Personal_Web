@@ -1,7 +1,6 @@
      <td style="width:20px">
       Year:
       <select name="yr" >
-        <option value="2019"  > 2019
         <option value="2020"  > 2020
       </select>
      </td>

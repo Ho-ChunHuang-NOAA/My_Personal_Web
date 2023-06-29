@@ -11,7 +11,7 @@ else
    TODAY=$1
 fi
 #
-FIRST_AVAIL_MON=201906
+FIRST_AVAIL_MON=202009
 FstY0=`echo ${FIRST_AVAIL_MON} | cut -c1-4`
 X0=`echo ${FIRST_AVAIL_MON} | cut -c5-5`
 if [[ ${X0} == "0" ]]; then

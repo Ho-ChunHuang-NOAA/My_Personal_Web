@@ -164,7 +164,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  Year values need to be in continuous listing to decide the index for selecting year values -->  
 <tr bgcolor="CCCCCC" align="center" style="font-size:25px;"><td colspan=3> Year:&nbsp &nbsp
 <select name="yr" style="font-size:20px;">
-<option value="2019"  > 2019
 <option value="2020"  > 2020
 <option value="2021"  > 2021
 <option value="2022"  > 2022
