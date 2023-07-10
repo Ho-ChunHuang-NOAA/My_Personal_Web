@@ -10,18 +10,21 @@ if [[ $# -lt 1 ]]; then
 else
    TODAY=$1
 fi
+exp1=prodobs
 if [[ $# -lt 2 ]]; then
-   exp=${exp}
-   exp2=${exp}_bc
-   exp=${exp}
-   exp2=${exp2}a
+   exp2=${exp1}_bc
+   exp3=${exp1}_bc
+elif [[ $# -eq 2 ]]; then
+   exp2=$2
+   exp3=${exp2}_bc
+elif [[ $# -eq 3 ]]; then
+   exp1=$2
+   exp2=$3
+   exp3=${exp2}_bc
 else
-   exp=$2
-   if [[ $# -lt 3 ]]; then
-      exp2=${exp}_bc
-   else
-      exp2=$3
-   fi
+   exp1=$2
+   exp2=$3
+   exp3=$4
 fi
 exp1=prodobs
 exp2=v70c55obs
