@@ -25,6 +25,7 @@ FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 ## Local  Source Directory
 BASE=`pwd`
+BASE=/lfs/h2/emc/vpppg/save/ho-chun.huang/WEB/base
 export local_src="$(dirname ${BASE})"
 local_base=${local_src}/base
 local_html=${local_src}/html

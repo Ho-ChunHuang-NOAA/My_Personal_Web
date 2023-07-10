@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x
+set -x
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
 ## Will be using the same day as input
 ## machine=`hostname | cut -d'.' -f1`
@@ -41,7 +41,7 @@ fi
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 ## Local  Source Directory
-BASE=`pwd`
+BASE=/lfs/h2/emc/vpppg/save/ho-chun.huang/WEB/base
 export local_src="$(dirname ${BASE})"
 local_base=${local_src}/base
 local_html=${local_src}/html
