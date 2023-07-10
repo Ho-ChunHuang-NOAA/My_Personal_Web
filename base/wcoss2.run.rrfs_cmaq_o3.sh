@@ -9,9 +9,9 @@ if [[ $# -lt 1 ]]; then
 else
    TODAY=$1
 fi
-exp1=prod
-exp2=v70a1
-exp3=v70b1
+exp1=prodobs
+exp2=v70c55obs
+exp3=v70c82obs
 #
 FIRST_AVAIL_DAY=20200901
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
@@ -33,7 +33,7 @@ local_inc=${local_src}/includes
 ##################################################
 ## creating new html and js file in working_dir ##
 ##################################################
-working_dir=/lfs/h2/emc/stmp/${USER}/WEB
+working_dir=/lfs/h2/emc/stmp/${USER}/WEB_o3
 mkdir -p ${working_dir}
 cd ${working_dir}
 /bin/rm -rf *
