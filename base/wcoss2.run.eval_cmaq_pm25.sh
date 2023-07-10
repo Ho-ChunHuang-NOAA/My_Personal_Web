@@ -48,7 +48,7 @@ local_inc=${local_src}/includes
 ##################################################
 ## creating new html and js file in working_dir ##
 ##################################################
-working_dir=/lfs/h2/emc/ptmp/${USER}/WEB
+working_dir=/lfs/h2/emc/ptmp/${USER}/WEB_eval_pm25
 mkdir -p ${working_dir}
 cd ${working_dir}
 /bin/rm -rf *
@@ -89,8 +89,8 @@ D0=`echo ${DISPDAY} | cut -c7-8`
 
 exp1=prodobs
 exp2=prodbcobs
-exp3=v70c15obs
-exp4=v70c15bcobs
+exp3=v70c55obs
+exp4=v70c55bcobs
 
    sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.15.pm25.k1.png!"  ${local_base}/eval_cmaq_pm25.base > ${working_dir}/eval_cmaq_pm25.html
 

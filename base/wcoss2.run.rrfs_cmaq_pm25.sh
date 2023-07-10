@@ -50,7 +50,7 @@ local_inc=${local_src}/includes
 ##################################################
 ## creating new html and js file in working_dir ##
 ##################################################
-working_dir=/lfs/h2/emc/ptmp/${USER}/WEB_pm25
+working_dir=/lfs/h2/emc/stmp/${USER}/WEB_pm25
 mkdir -p ${working_dir}
 cd ${working_dir}
 /bin/rm -rf *

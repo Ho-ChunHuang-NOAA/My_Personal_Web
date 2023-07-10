@@ -33,7 +33,7 @@ local_inc=${local_src}/includes
 ##################################################
 ## creating new html and js file in working_dir ##
 ##################################################
-working_dir=/lfs/h2/emc/stmp/${USER}/WEB
+working_dir=/lfs/h2/emc/stmp/${USER}/WEB_eval_o3
 mkdir -p ${working_dir}
 cd ${working_dir}
 /bin/rm -rf *
