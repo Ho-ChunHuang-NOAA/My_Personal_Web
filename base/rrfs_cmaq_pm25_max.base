@@ -88,40 +88,38 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="prodobs" > AQMv6 & OBS
 <option value="prodbcobs" > AQMv6 BiCor & OBS
-<option value="v70c55obs" > AQMv7 & OBS
-<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="v70c82obs" > AQMv7 & OBS
+<option value="v70c82bcobs" > AQMv7 BiCor & OBS
 <option value="prod" > AQMv6
 <option value="prodbc" > AQMv6 BiCor
-<option value="v70c55" > AQMv7
-<option value="v70c55bc" > AQMv7 BiCor
+<option value="v70c82" > AQMv7
+<option value="v70c82bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="v70c55obs" > AQMv7 & OBS
-<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="v70c82obs" > AQMv7 & OBS
+<option value="v70c82bcobs" > AQMv7 BiCor & OBS
 <option value="prodobs" > AQMv6 & OBS
 <option value="prodbcobs" > AQMv6 BiCor & OBS
 <option value="prod" > AQMv6
 <option value="prodbc" > AQMv6 BiCor
-<option value="v70c55" > AQMv7
-<option value="v70c55bc" > AQMv7 BiCor
+<option value="v70c82" > AQMv7
+<option value="v70c82bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c82obs" > AQMv7 C82 & OBS
-<option value="v70c82bcobs" > C82 BiCor & OBS
-<option value="v70c55bcobs" > AQMv7 BiCor & OBS
+<option value="v70c82bcobs" > AQMv7 BiCor & OBS
 <option value="prodobs" > AQMv6 & OBS
 <option value="prodbcobs" > AQMv6 BiCor & OBS
-<option value="v70c55obs" > AQMv7 & OBS
+<option value="v70c82obs" > AQMv7 & OBS
 <option value="prod" > AQMv6
 <option value="prodbc" > AQMv6 BiCor
-<option value="v70c55" > AQMv7
-<option value="v70c55bc" > AQMv7 BiCor
+<option value="v70c82" > AQMv7
+<option value="v70c82bc" > AQMv7 BiCor
 </select>
 </td></tr>
 
