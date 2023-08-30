@@ -75,24 +75,24 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="prodobs" > AQMv6
 <option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
-<option value="v70c82obs" > AQMv7
-<option value="v70c82bcobs" > AQMv7 Bias-Corrected
+<option value="v70c84obs" > AQMv7
+<option value="v70c84bcobs" > AQMv7 Bias-Corrected
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
 <option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
-<option value="v70c82obs" > AQMv7
-<option value="v70c82bcobs" > AQMv7 Bias-Corrected
+<option value="v70c84obs" > AQMv7
+<option value="v70c84bcobs" > AQMv7 Bias-Corrected
 <option value="prodobs" > AQMv6
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c82obs" > AQMv7
-<option value="v70c82bcobs" > AQMv7 Bias-Corrected
+<option value="v70c84obs" > AQMv7
+<option value="v70c84bcobs" > AQMv7 Bias-Corrected
 <option value="prodobs" > AQMv6
 <option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 </select>
@@ -100,10 +100,10 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 4 Type:&nbsp &nbsp
 <select name="exp4" >
-<option value="v70c82bcobs" > AQMv7 Bias-Corrected
+<option value="v70c84bcobs" > AQMv7 Bias-Corrected
 <option value="prodobs" > AQMv6
 <option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
-<option value="v70c82obs" > AQMv7
+<option value="v70c84obs" > AQMv7
 </select>
 </td></tr>
 
@@ -219,7 +219,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
 <P><left>
 <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
-<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The operational AQMv6 is denoted as "CMAQ PROD" and the developmental AQMv7 is denoted as "Online-CMAQ V70C82" for AQMv7.0 code version 82.</font></P>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The operational AQMv6 is denoted as "CMAQ PROD" and the developmental AQMv7 is denoted as "Online-CMAQ V70C84" for AQMv7.0 code version 84.</font></P>
 
 </table>
 

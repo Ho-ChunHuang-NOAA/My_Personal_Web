@@ -28,7 +28,7 @@ else
 fi
 exp1=prodobs
 exp2=v70c55obs
-exp3=v70c82obs
+exp3=v70c84obs
 #
 FIRST_AVAIL_DAY=20200901
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
