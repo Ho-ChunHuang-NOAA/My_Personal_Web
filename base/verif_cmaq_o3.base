@@ -235,6 +235,7 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 <!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output or Daily max/ave.</font> <br>  -->
 <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
 <font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The operational AQMv6 is denoted as "CMAQ PROD" and the developmental AQMv7 is denoted as "Online-CMAQ V70C84" for AQMv7.0 code version 84.</font></P>
+<!-- <font color=red  > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The NOAA-20 experienced a serious anomaly on 09/29/2023, thus there was no fire emission generated for AQMv6 on 09/30/2023. As a result, AQMv6 uses same fire emission as in 09/30/2023 simulation for the 10/01/2023 simulation.</font></P> -->
 
 </table>
 

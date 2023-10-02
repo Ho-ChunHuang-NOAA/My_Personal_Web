@@ -273,8 +273,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
 <P><left><font color=red size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Graphic only available for CONUS domain for Online CMAQ output</font> <br>
-<!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output or Daily max/ave.</font> <br>  -->
+<!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Options from Product Type Menu for Hourly output or Daily max/ave.</font> <br>  -->
 <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The NOAA-20 experienced a serious anomaly on 09/29/2023, thus there was no fire emission generated for AQMv6 on 09/30/2023. As a result, AQMv6 uses same fire emission as in 09/30/2023 simulation for the 10/01/2023 simulation. 10/01/2023 GBBEPx fire emission was ingested to the NCEP data directory after its normal schedule, thus no fire emission was used in 00Z & 06Z 10/02/2023 AQMv6 simulation.</font></P>
 
 </table>
 
