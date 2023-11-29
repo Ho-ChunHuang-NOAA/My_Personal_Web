@@ -117,39 +117,19 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp" >
-<option value="prodobs" > PROD-OBS overlay
-<option value="prod" > PROD
-<option value="ncoparaobs" > NCO PARA-OBS overlay
-<option value="ncoparabcobs" > NCO PARA BiCor-OBS overlay
-<option value="prodbcobs" > PROD BiCor-OBS overlay
-<option value="prodbc" > PROD BiCor
-<option value="firev4obs" > GBBEPX v4 fire ovelay
-<option value="firev4" > GBBEPX v4 fire
-<option value="firev4bcobs" > GBBEPX v4 BiCor overlay
-<option value="firev4bc" > GBBEPX v4 fire BiCor
-<option value="para6d" > PARA6D
-<option value="para6dbc" > PARA6D BiCor
-<option value="ncopara" > NCO PARA
-<option value="ncoparabc" > NCO PARA BiCor
+<option value="prodobs" > AQMv6 & OBS
+<option value="prodbcobs" > AQMv6 BiCor & OBS
+<option value="prod" > AQMv6
+<option value="prodbc" > AQMv6 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="emcexp" >
-<option value="prodbcobs" > PROD BiCor-OBS overlay
-<option value="prodbc" > PROD BiCor
-<option value="prodobs" > PROD-OBS overlay
-<option value="prod" > PROD
-<option value="para6d" > PARA6D
-<option value="para6dbc" > PARA6D BiCor
-<option value="ncopara" > NCO PARA
-<option value="ncoparabc" > NCO PARA BiCor
-<option value="firev4obs" > GBBEPX v4 fire ovelay
-<option value="firev4" > GBBEPX v4 fire
-<option value="firev4bcobs" > GBBEPX v4 BiCor overlay
-<option value="firev4bc" > GBBEPX v4 fire BiCor
-<option value="ncoparaobs" > NCO PARA-OBS overlay
-<option value="ncoparabcobs" > NCO PARA BiCor-OBS overlay
+<option value="prodbcobs" > AQMv6 BiCor & OBS
+<option value="prodobs" > AQMv6 & OBS
+<option value="prod" > AQMv6
+<option value="prodbc" > AQMv6 BiCor
 </select>
 </td></tr>
 
@@ -164,6 +144,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="sw" > Southwest U.S.
 <option value="ak" > Alaska
 <option value="hi" > Hawaii
+<option value="ctdeep" > CT DEEP
 <option value="lis" > Long Island Sound
 <option value="aznw" > Arizona and New Mexcico
 <option value="Mckinney" > McKinney Fire
