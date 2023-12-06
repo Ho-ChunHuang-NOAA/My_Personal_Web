@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
 ## Will be using the same day as input
 ## machine=`hostname | cut -d'.' -f1`
@@ -12,7 +11,12 @@ fi
 exp=prod
 exp2=para6d
 #
-FIRST_AVAIL_DAY=20200901
+module load prod_util
+#
+# FIRST_AVAIL_DAY=20200901
+cdate=${TODAY}"00"
+FIRST_AVAIL_DAY=$(${NDATE} -2160 ${cdate} | cut -c1-8 )
+#
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
 X0=`echo ${FIRST_AVAIL_DAY} | cut -c5-5`
 if [[ ${X0} == "0" ]]; then

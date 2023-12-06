@@ -158,8 +158,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
      <td style="width:20px">
       Year:
       <select name="yr" >
-        <option value="2022"  > 2022
         <option value="2023"  > 2023
+        <option value="2024"  > 2024
       </select>
      </td>
 
