@@ -218,7 +218,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
 <P><left>
-<font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
+<font color=red size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
 <font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The operational AQMv6 is denoted as "CMAQ PROD" and the developmental AQMv7 is denoted as "Online-CMAQ V70C84" for AQMv7.0 code version 84.</font></P>
 <font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The NOAA-20 experienced a serious anomaly on 09/29/2023, thus there was no fire emission generated for AQMv6 on 09/30/2023. As a result,</font></br>
 <font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp AQMv6 uses the same fire emission as in the 09/30/2023 simulation for the 10/01/2023 simulation. 10/01/2023 GBBEPx fire emission was</font></br>

@@ -8,8 +8,8 @@ do
   ((count++))
 done<tlist
 
-old_ver='c37'
-new_ver='c40'
+old_ver='Click Options from link'
+new_ver='Click link (upper left)'
 for i in "${shfile[@]}"
 do
    echo ${i}

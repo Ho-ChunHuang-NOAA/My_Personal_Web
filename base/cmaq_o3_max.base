@@ -228,13 +228,12 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 </form>
 
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
-<P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output, Daily max/ave, or Hourly speciated species <br>
+<P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Options from link for Hourly output or Daily max/ave. &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp # Some models may contain only 48 hour output and will be a blank page beyond hour 48 &nbsp &nbsp # GOES-16 and VIIRS AOD Images has a 2-3 days latency </font></P>
 <font color=black size=+0>PARA6D (cmaq.v6.0.0) Change Log &nbsp :: &nbsp (1) new Fengsha dust scheme with update surface characteristics input (2) daily-updated 7-day mean VIIRS observed Green Vegetation Fraction (3) bioseason, NH4 bi-directional (4) NEI2016v1 (5) inline dust mask for fugutive dust emission, LBC parallel processing, BELD5, E US fire filter, VIIRS LAI climatorology (6) updated bias-correction scheme</font></P>
 <font color=blue size=+0>NOTE - Figures only be kept for 1 months </font></P>
 <font color=blue size=+0>NOTE - GFSv16 parallel hourly output were not available for some cycle runs.  Thus, there are no PARA6? output for (1) 12Z cycle on Oct 28 2020 (2) November 02 2020 (3) 12Z cycle on November 18 (4) November 21 & 22 and (5) 06Z cycle on December 2 (5) 12Z cycle on December 07 (6) December 09 2020 (7) 06Z 20210117</font></P>
-
-<P><left> <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
+<p><font color=red size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Figures are available from xxxFTRSTDATExxxx to present.</font></P>
 
 </table>
 
