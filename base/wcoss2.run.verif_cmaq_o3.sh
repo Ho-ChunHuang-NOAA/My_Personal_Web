@@ -1,5 +1,7 @@
 #!/bin/bash
 module load prod_util
+#
+set -x
 ## This script will be called from /data/data003/hhuang/code/edraot_viirs_gridded/plot_edraot_daily_avg.pro
 ## Will be using the same day as input
 ## machine=`hostname | cut -d'.' -f1`
@@ -14,8 +16,6 @@ PDYm1=$(${NDATE} -24 ${cdate} | cut -c1-8)
 PDYm2=$(${NDATE} -48 ${cdate} | cut -c1-8)
 #
 FIRST_AVAIL_DAY=20200901
-#
-module load prod_util
 #
 # FIRST_AVAIL_DAY=20200901
 cdate=${TODAY}"00"
