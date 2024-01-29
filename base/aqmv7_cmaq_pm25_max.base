@@ -74,21 +74,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/aqmv7_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
 </td></tr>
 
-<tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
-<select name="exp1" >
-<option value="v70c84obs" > AQMv7
-</select>
-</td></tr>
-
-<tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
-<select name="exp2" >
-<option value="v70c84bcobs" > AQMv7 Bias-Corrected
-</select>
-</td></tr>
-
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
 <select name="rg" >
-<option value="conus" > Continental US
+<option value="conus" > Continental US &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 <option value="east" > Eastern U.S. 
 <option value="ne" > Northeast U.S.
 <option value="se" > Southeast U.S.
@@ -169,7 +157,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
      </td>
 </tr>
 
-<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()">&nbsp &nbsp <input size=10 type="button" name="submit" value="Day-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input size=10 type="button" name="submit" value="Day+1" onClick="load_imageP1(this.form)"></td></tr>
+<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()"> &nbsp <input size=10 type="button" name="submit" value="Day-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input size=10 type="button" name="submit" value="Day+1" onClick="load_imageP1(this.form)"></td></tr>
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Cycle:&nbsp &nbsp
 <select name="tz" >
