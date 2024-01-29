@@ -38,8 +38,6 @@ var ftype_out;
 var first_julian_day=FirstDay();
 var latest_julian_day=LatestDay();
 var latest_calendar_day=jday2cald(latest_julian_day);
-var fireexp1;
-var fireexp2;
 
 
 function Num2Chr(parin) {
@@ -329,13 +327,6 @@ function get_hms_area(area_in){
    }
    return area_out;
 } 
-function get_ftype_fire(run){
-   ftype_out="gbbepxfire";
-   if ( run == "para6d" ) {
-      ftype_out="fireemisfire";
-   }
-   return ftype_out;
-}
   function myWin(){
     newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html", "displayWindow", "width=950,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
   }
@@ -487,13 +478,12 @@ function load_image(frm){
    var day=frm.dy.options[frm.dy.selectedIndex].value;
    var area=frm.rg.options[frm.rg.selectedIndex].value;
    var prod=frm.fld.options[frm.fld.selectedIndex].value;
-   var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
-   var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var calendar_day=yr+mon+day;
    var julian_day=cald2jday(calendar_day);
    var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
    var mcday=get_mcday(yr,mon);
    var switch_day=cald2jday(20160204);
    if ( day > mcday ) {
@@ -532,11 +522,10 @@ function load_image_latest(){
    var new_day=extract_day_from_julianD(latest_julian_day);
    var area=get_current_area();
    var prod=get_current_prod();
-   var exp1=get_current_exp1();
-   var exp2=get_current_exp2();
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=get_current_cyl();
    var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
    var switch_day=cald2jday(20160204);
    if ( area == "" ) {
       area="conus";
@@ -590,11 +579,10 @@ function load_imageP1(frm){
    var new_day=extract_day_from_julianD(new_julian_day);
    var area=frm.rg.options[frm.rg.selectedIndex].value;
    var prod=frm.fld.options[frm.fld.selectedIndex].value;
-   var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
-   var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
    var mcday=get_mcday(new_yr,new_mon);
    if ( new_day > mcday ) {
       alert("McDay Figure for date selected   "+new_yr+"  "+new_mon+"  "+new_day+"   is not available");
@@ -646,11 +634,10 @@ function load_imageM1(frm){
    var new_day=extract_day_from_julianD(new_julian_day);
    var area=frm.rg.options[frm.rg.selectedIndex].value;
    var prod=frm.fld.options[frm.fld.selectedIndex].value;
-   var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
-   var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
    var mcday=get_mcday(new_yr,new_mon);
    var switch_day=cald2jday(20160204);
    if ( new_day > mcday ) {

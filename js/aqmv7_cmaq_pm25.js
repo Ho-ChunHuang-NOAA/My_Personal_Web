@@ -39,8 +39,6 @@ var ftype_out;
 var first_julian_day=FirstDay();
 var latest_julian_day=LatestDay();
 var latest_calendar_day=jday2cald(latest_julian_day);
-var fireexp1;
-var fireexp2;
 
 function Num2Chr(parin) {
    var j;
@@ -336,13 +334,6 @@ function get_hms_area(area_in){
    return area_out;
 } 
 
-function get_ftype_fire(run){
-   ftype_out="rrfs_fireemisfire"
-   if ( run == "prod" ) {
-      ftype_out="gbbepxfire";
-   }
-   return ftype_out;
-} 
   function myWin(){
     newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25.html", "displayWindow", "width=950,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
   }
@@ -495,13 +486,12 @@ function load_image(frm){
    var area=frm.rg.options[frm.rg.selectedIndex].value;
    var prod="pm25";
    var layer="k1";
-   var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
-   var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var calendar_day=yr+mon+day;
    var julian_day=cald2jday(calendar_day);
    var area_hms=get_hms_area(area);
-   var fexp1_fire=get_ftype_fire(exp1);
    var mcday=get_mcday(yr,mon);
    if ( day > mcday ) {
       alert("Figure for date selected   "+yr+"  "+mon+"  "+day+"   is not available");
@@ -511,7 +501,6 @@ function load_image(frm){
          alert("Figure for date selected   "+yr+"  "+mon+"  "+day+"   is not available");
       }
       else {
-         fireexp1=exp1;
          dateStr=yr+mon+day;
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
@@ -546,11 +535,10 @@ function load_image_latest(){
    var area=get_current_area();
    var prod=get_current_prod();
    var layer=get_current_layer();
-   var exp1=get_current_exp1();
-   var exp2=get_current_exp2();
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=get_current_cyl();
    var area_hms=get_hms_area(area);
-   var fexp1_fire=get_ftype_fire(exp1);
    if ( area == "" ) {
       area="conus";
    }
@@ -566,7 +554,6 @@ function load_image_latest(){
    if ( cycle == "" ) {
       cycle="06";
    }
-   fireexp1=exp1;
    chr_yr=Num2Chr(new_yr);
    chr_mon=Num2Chr(new_mon);
    chr_day=Num2Chr(new_day);
@@ -613,11 +600,10 @@ function load_imageP1(frm){
    var area=frm.rg.options[frm.rg.selectedIndex].value;
    var prod="pm25";
    var layer="k1";
-   var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
-   var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var area_hms=get_hms_area(area);
-   var fexp1_fire=get_ftype_fire(exp1);
    var mcday=get_mcday(new_yr,new_mon);
    if ( new_day > mcday ) {
       alert("McDay Figure for date selected   "+new_yr+"  "+new_mon+"  "+new_day+"   is not available");
@@ -627,7 +613,6 @@ function load_imageP1(frm){
          alert("Figure for date selected   "+new_yr+"  "+new_mon+"  "+new_day+"   is not available");
       }
       else {
-         fireexp1=exp1;
          chr_yr=Num2Chr(new_yr);
          chr_mon=Num2Chr(new_mon);
          chr_day=Num2Chr(new_day);
@@ -676,11 +661,10 @@ function load_imageM1(frm){
    var area=frm.rg.options[frm.rg.selectedIndex].value;
    var prod="pm25";
    var layer="k1";
-   var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
-   var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
+   var exp1="v70c84obs";
+   var exp2="v70c84bcobs";
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var area_hms=get_hms_area(area);
-   var fexp1_fire=get_ftype_fire(exp1);
    var mcday=get_mcday(new_yr,new_mon);
    if ( new_day > mcday ) {
       alert("McDay Figure for date selected   "+new_yr+"  "+new_mon+"  "+new_day+"   is not available");
@@ -690,7 +674,6 @@ function load_imageM1(frm){
          alert("Figure for date selected   "+new_yr+"  "+new_mon+"  "+new_day+"   is not available");
       }
       else {
-         fireexp1=exp1;
          chr_yr=Num2Chr(new_yr);
          chr_mon=Num2Chr(new_mon);
          chr_day=Num2Chr(new_day);
