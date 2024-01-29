@@ -80,15 +80,15 @@ D0=`echo ${DISPDAY} | cut -c7-8`
 
 exp1=prodobs
 exp2=prodbcobs
-exp3=v70c55obs
-exp4=v70c55bcobs
+exp3=v70c84obs
+exp4=v70c84bcobs
 
    sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQO3IMAGE1!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp1}.${DISPDAY}.t06z.15.o3.k1.png!"  -e "s!CMAQO3IMAGE2!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp2}.${DISPDAY}.t06z.15.o3.k1.png!" -e "s!CMAQO3IMAGE3!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp3}.${DISPDAY}.t06z.15.o3.k1.png!" -e "s!CMAQO3IMAGE4!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp4}.${DISPDAY}.t06z.15.o3.k1.png!"  ${local_base}/verif_cmaq_o3.base > ${working_dir}/verif_cmaq_o3.html
 
 exp1=prodobs
 exp2=prodbcobs
-exp3=v70c55obs
-exp4=v70c55bcobs
+exp3=v70c84obs
+exp4=v70c84bcobs
 
    sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQO3IMAGE1!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp1}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!"  -e "s!CMAQO3IMAGE2!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp2}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQO3IMAGE3!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp3}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQO3IMAGE4!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp4}.${DISPDAY}.t06z.max_8hr_o3.day1.k1.png!"  ${local_base}/verif_cmaq_o3_max.base > ${working_dir}/verif_cmaq_o3_max.html
 

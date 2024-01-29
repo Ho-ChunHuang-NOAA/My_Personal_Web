@@ -17,7 +17,7 @@ PDYm2=$(${NDATE} -48 ${cdate} | cut -c1-8)
 #
 FIRST_AVAIL_DAY=20200901
 #
-# FIRST_AVAIL_DAY=20200901
+FIRST_AVAIL_DAY=20230401
 cdate=${TODAY}"00"
 FIRST_AVAIL_DAY=$(${NDATE} -2160 ${cdate} | cut -c1-8 )
 #
@@ -41,7 +41,7 @@ local_inc=${local_src}/includes
 ##################################################
 ## creating new html and js file in working_dir ##
 ##################################################
-working_dir=/lfs/h2/emc/stmp/${USER}/WEB_eval_o3
+working_dir=/lfs/h2/emc/stmp/${USER}/WEB_aqmv7
 mkdir -p ${working_dir}
 cd ${working_dir}
 /bin/rm -rf *
@@ -79,27 +79,22 @@ D0=`echo ${DISPDAY} | cut -c7-8`
 ## if [[ -e ${remote_fig}/${Y0}/${TODAY}/hysplitconussmokepbl_03.png ]]; then
    chrstr=${str[${Mx}-1]}   ## keyword for Month
 
-exp1=prodobs
-exp2=prodbcobs
-exp3=v70c84obs
-exp4=v70c84bcobs
+exp1=v70c84obs
+exp2=v70c84bcobs
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.o3.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.o3.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.15.o3.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.15.o3.k1.png!"  ${local_base}/eval_cmaq_o3.base > ${working_dir}/eval_cmaq_o3.html
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.o3.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.o3.k1.png!" ${local_base}/aqmv7_cmaq_o3.base > ${working_dir}/aqmv7_cmaq_o3.html
 
-exp1=prodobs
-exp2=prodbcobs
-exp3=v70c84obs
-exp4=v70c84bcobs
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!" ${local_base}/aqmv7_cmaq_o3_max.base > ${working_dir}/aqmv7_cmaq_o3_max.html
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp4}.${TODAY}.t06z.max_8hr_o3.day1.k1.png!"  ${local_base}/eval_cmaq_o3_max.base > ${working_dir}/eval_cmaq_o3_max.html
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.pm25.k1.png!" ${local_base}/aqmv7_cmaq_pm25.base > ${working_dir}/aqmv7_cmaq_pm25.html
 
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.ave_24hr_pm25.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.ave_24hr_pm25.day1.k1.png!" ${local_base}/aqmv7_cmaq_pm25_max.base > ${working_dir}/aqmv7_cmaq_pm25_max.html
    ##
    ## Update the Date Information of Latest Avaialble Figure for Date Selection Restriction
    ##
-   sed -e "s!AAAA!${Y0}!" -e "s!BBBB!${Mx}!" -e "s!CCCC!${D0}!"  -e "s!XXXX!${FstY0}!" -e "s!YYYY!${FstMx}!" -e "s!ZZZZ!${FstD0}!" ${local_js}/cmaq_o3_latest.day.js.base > ${working_dir}/eval_o3_latest.day.js
+   sed -e "s!AAAA!${Y0}!" -e "s!BBBB!${Mx}!" -e "s!CCCC!${D0}!"  -e "s!XXXX!${FstY0}!" -e "s!YYYY!${FstMx}!" -e "s!ZZZZ!${FstD0}!" ${local_js}/cmaq_o3_latest.day.js.base > ${working_dir}/aqmv7_latest.day.js
 
-cp -p ${local_js}/eval_cmaq_o3.js .
-cp -p ${local_js}/eval_cmaq_o3_max.js .
+cp -p ${local_js}/aqmv7*.js .
 scp *.html ${remote_user}@${remote_machine}:${remote_html}
 scp *.js ${remote_user}@${remote_machine}:${remote_js}
 
