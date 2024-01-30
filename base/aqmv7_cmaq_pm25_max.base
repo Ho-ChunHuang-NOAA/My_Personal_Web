@@ -157,7 +157,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
      </td>
 </tr>
 
-<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()"> &nbsp <input size=10 type="button" name="submit" value="Day-1" onClick="load_imageM1(this.form)"> &nbsp &nbsp <input size=10 type="button" name="submit" value="Day+1" onClick="load_imageP1(this.form)"></td></tr>
+<tr bgcolor="CCCCCC" align="center"><td colspan=3><input size=10 type="button" name="submit" value="Latest" onClick="load_image_latest()"> &nbsp <input size=10 type="button" name="submit" value="Day-1" onClick="load_imageM1(this.form)"> &nbsp <input size=10 type="button" name="submit" value="Day+1" onClick="load_imageP1(this.form)"></td></tr>
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Cycle:&nbsp &nbsp
 <select name="tz" >
