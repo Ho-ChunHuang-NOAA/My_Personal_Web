@@ -200,6 +200,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output or Daily max/ave.</font> <br>  -->
 <P><left><font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
 <P><left><font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp In general, only previous 90 days' graphics will be available, as well as periods requested by the users.</font></P>
+<P><left><font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The left panel is RAW model solution and the right panel is Bias-Corrected solution.</font></P>
 
 </table>
 
