@@ -17,10 +17,11 @@ PDYm2=$(${NDATE} -48 ${cdate} | cut -c1-8)
 #
 FIRST_AVAIL_DAY=20200901
 #
-FIRST_AVAIL_DAY=20230401
 cdate=${TODAY}"00"
 FIRST_AVAIL_DAY=$(${NDATE} -2160 ${cdate} | cut -c1-8 )
 #
+FIRST_AVAIL_DAY=20230401
+
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
 X0=`echo ${FIRST_AVAIL_DAY} | cut -c5-5`
 if [[ ${X0} == "0" ]]; then
