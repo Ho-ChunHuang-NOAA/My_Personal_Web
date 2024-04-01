@@ -116,9 +116,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
+<option value="v70c84bcobs" > AQMv7 BiCor & OBS
 <option value="v70c91aobs" > AQMv7 c91a & OBS
 <option value="v70c91abcobs" > AQMv7 c91a BiCor & OBS
-<option value="v70c84bcobs" > AQMv7 BiCor & OBS
 <option value="prodobs" > AQMv6 & OBS
 <option value="prodbcobs" > AQMv6 BiCor & OBS
 <option value="v70c84obs" > AQMv7 & OBS
