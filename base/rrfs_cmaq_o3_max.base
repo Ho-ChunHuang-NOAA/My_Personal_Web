@@ -84,46 +84,34 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
-<option value="prodobs" > AQMv6 & OBS
-<option value="prodbcobs" > AQMv6 BiCor & OBS
-<option value="v70c84obs" > AQMv7 & OBS
-<option value="v70c84bcobs" > AQMv7 BiCor & OBS
-<option value="v70c91aobs" > AQMv7 c91a & OBS
-<option value="v70c91abcobs" > AQMv7 c91a BiCor & OBS
-<option value="prod" > AQMv6
-<option value="prodbc" > AQMv6 BiCor
-<option value="v70c84" > AQMv7
-<option value="v70c84bc" > AQMv7 BiCor
+<option value="aqmv70obs" > AQMv7.0 & OBS
+<option value="aqmv70bcobs" > AQMv7.0 BiCor & OBS
+<option value="aqmv71aobs" > AQMv7.1a & OBS
+<option value="aqmv71abcobs" > AQMv7.1a BiCor & OBS
+<option value="aqmv70" > AQMv7.0
+<option value="aqmv70bc" > AQMv7.0 BiCor
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="v70c84obs" > AQMv7 & OBS
-<option value="v70c84bcobs" > AQMv7 BiCor & OBS
-<option value="v70c91aobs" > AQMv7 c91a & OBS
-<option value="v70c91abcobs" > AQMv7 c91a BiCor & OBS
-<option value="prodobs" > AQMv6 & OBS
-<option value="prodbcobs" > AQMv6 BiCor & OBS
-<option value="prod" > AQMv6
-<option value="prodbc" > AQMv6 BiCor
-<option value="v70c84" > AQMv7
-<option value="v70c84bc" > AQMv7 BiCor
+<option value="aqmv70bcobs" > AQMv7.0 BiCor & OBS
+<option value="aqmv71aobs" > AQMv7.1a & OBS
+<option value="aqmv71abcobs" > AQMv7.1a BiCor & OBS
+<option value="aqmv70" > AQMv7.0
+<option value="aqmv70bc" > AQMv7.0 BiCor
+<option value="aqmv70obs" > AQMv7.0 & OBS
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c84bcobs" > AQMv7 BiCor & OBS
-<option value="v70c91aobs" > AQMv7 c91a & OBS
-<option value="v70c91abcobs" > AQMv7 c91a BiCor & OBS
-<option value="prodobs" > AQMv6 & OBS
-<option value="prodbcobs" > AQMv6 BiCor & OBS
-<option value="v70c84obs" > AQMv7 & OBS
-<option value="prod" > AQMv6
-<option value="prodbc" > AQMv6 BiCor
-<option value="v70c84" > AQMv7
-<option value="v70c84bc" > AQMv7 BiCor
+<option value="aqmv71aobs" > AQMv7.1a & OBS
+<option value="aqmv71abcobs" > AQMv7.1a BiCor & OBS
+<option value="aqmv70obs" > AQMv7.0 & OBS
+<option value="aqmv70bcobs" > AQMv7.0 BiCor & OBS
+<option value="aqmv70" > AQMv7.0
+<option value="aqmv70bc" > AQMv7.0 BiCor
 </select>
 </td></tr>
 
@@ -254,7 +242,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The NOAA-20 experienced a serious anomaly on 09/29/2023, thus there was no fire emission generated for AQMv6 on 09/30/2023. As a result,</font></br>
 <font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp AQMv6 uses the same fire emission as in the 09/30/2023 simulation for the 10/01/2023 simulation. 10/01/2023 GBBEPx fire emission was</font></br>
 <font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ingested to the NCEP data directory after its normal schedule, thus no fire emission was used in 00Z & 06Z 10/02/2023 AQMv6 simulation.</font></br>
-<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp So far, AQMv7 has not been impacted by the NOAA-20 outage because of offline processing and algorithm design on the hourly RAVE fire emission.</font></P>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp So far, AQMv7.0 has not been impacted by the NOAA-20 outage because of offline processing and algorithm design on the hourly RAVE fire emission.</font></P>
 <p><font color=red size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Figures are available from xxxFTRSTDATExxxx to present.</font></P>
 
 </table>
