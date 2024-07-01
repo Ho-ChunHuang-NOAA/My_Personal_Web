@@ -115,8 +115,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="aqmv70obs" > AQMv7.0 & OBS
 <option value="aqmv70bcobs" > AQMv7.0 BiCor & OBS
-<option value="aqmv71aobs" > AQMv7.1a & OBS
-<option value="aqmv71abcobs" > AQMv7.1a BiCor & OBS
+<option value="aqmv71cobs" > AQMv7.1c & OBS
+<option value="aqmv71cbcobs" > AQMv7.1c BiCor & OBS
 <option value="aqmv70" > AQMv7.0
 <option value="aqmv70bc" > AQMv7.0 BiCor
 </select>
@@ -125,8 +125,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
 <option value="aqmv70bcobs" > AQMv7.0 BiCor & OBS
-<option value="aqmv71aobs" > AQMv7.1a & OBS
-<option value="aqmv71abcobs" > AQMv7.1a BiCor & OBS
+<option value="aqmv71cobs" > AQMv7.1c & OBS
+<option value="aqmv71cbcobs" > AQMv7.1c BiCor & OBS
 <option value="aqmv70" > AQMv7.0
 <option value="aqmv70bc" > AQMv7.0 BiCor
 <option value="aqmv70obs" > AQMv7.0 & OBS
@@ -135,8 +135,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="aqmv71aobs" > AQMv7.1a & OBS
-<option value="aqmv71abcobs" > AQMv7.1a BiCor & OBS
+<option value="aqmv71cobs" > AQMv7.1c & OBS
+<option value="aqmv71cbcobs" > AQMv7.1c BiCor & OBS
 <option value="aqmv70obs" > AQMv7.0 & OBS
 <option value="aqmv70bcobs" > AQMv7.0 BiCor & OBS
 <option value="aqmv70" > AQMv7.0
