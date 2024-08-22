@@ -28,9 +28,9 @@ else
    exp2=$3
    exp3=$4
 fi
-exp1=prodobs
-exp2=v70c55obs
-exp3=v70c84obs
+exp1=aqmv70obs
+exp2=aqmv70bcobs
+exp3=aqmv708obs
 #
 FIRST_AVAIL_DAY=20200901
 #
