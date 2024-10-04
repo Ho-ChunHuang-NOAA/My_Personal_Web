@@ -4,13 +4,14 @@ wcoss2.run.cmaq_pm25.sh \
 wcoss2.run.cmaq_o3.sh \
 wcoss2.run.verif_cmaq_o3.sh \
 wcoss2.run.verif_cmaq_pm25.sh \
+wcoss2.run.eval_cmaq_o3.sh \
+wcoss2.run.eval_cmaq_pm25.sh \
+wcoss2_run_aqmv7_cmaq.sh \
 )
 declare -a site=(
 wcoss2.run.rrfs_cmaq_o3.sh \
 wcoss2.run.rrfs_cmaq_pm25.sh \
-wcoss2.run.eval_cmaq_o3.sh \
-wcoss2.run.eval_cmaq_pm25.sh \
-wcoss2_run_aqmv7_cmaq.sh \
+wcoss2.run.eval_abi_L2_aod.sh 
 )
 
 for i in "${site[@]}"; do
