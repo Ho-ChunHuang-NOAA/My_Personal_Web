@@ -67,8 +67,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <img src="FIREIMAGE1" name="fire1_image" width=350 height=275>
 <img src="FIREIMAGE2" name="fire2_image" width=350 height=275>
 <img src="FIREIMAGE3" name="fire3_image" width=350 height=275>
-<img src="DUSTIMAGE1" name="dust1_image" width=350 height=275>
-<img src="DUSTIMAGE2" name="dust2_image" width=350 height=275>
 <!--  <br> -->
 <!--  <img src="NESDISIMAGE" name="nesdis_image" width=500 height=400> -->
 </td>
@@ -79,7 +77,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/docs/Smoke_CCS_WCOSS.pdf" target="_blank"> HYSPLIT 2013 Upgrades</a><br> -->
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
 <!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3_max.html"> Max/Ave Ozone </a>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
 </td></tr>
@@ -88,34 +85,38 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="aqmv708obs" > AQMv7.0.8 & OBS
 <option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
-<option value="aqmv70obs" > AQMv7.0.7 & OBS
-<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
-<option value="aqmv70" > AQMv7.0.7
-<option value="aqmv70bc" > AQMv7.0.7 BiCor
 </select>
 </td></tr>
+
+<!--  <option value="aqmv70obs" > Future developmental AQM
+<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
+<option value="aqmv70" > AQMv7.0.7
+<option value="aqmv70bc" > AQMv7.0.7 BiCor -->
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
 <option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
 <option value="aqmv708obs" > AQMv7.0.8 & OBS
-<option value="aqmv70" > AQMv7.0.7
-<option value="aqmv70bc" > AQMv7.0.7 BiCor
-<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
-<option value="aqmv70obs" > AQMv7.0.7 & OBS
 </select>
 </td></tr>
 
+<!--  <option value="aqmv70" > Future developmental AQM
+<option value="aqmv70bc" > AQMv7.0.7 BiCor
+<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
+<option value="aqmv70obs" > AQMv7.0.7 & OBS -->
+
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="aqmv70obs" > AQMv7.0.7 & OBS
-<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
-<option value="aqmv70" > AQMv7.0.7
-<option value="aqmv70bc" > AQMv7.0.7 BiCor
-<option value="aqmv708obs" > AQMv7.0.8 & OBS
-<option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
+<option value="aqmv70obs" > Future developmental AQM
 </select>
 </td></tr>
+
+<!--  <option value="aqmv708obs" > AQMv7.0.8 & OBS
+<option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
+<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
+<option value="aqmv70" > AQMv7.0.7
+<option value="aqmv70bc" > AQMv7.0.7 BiCor -->
+
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
 <select name="rg" >
@@ -223,19 +224,14 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
-<tr bgcolor="DDDDDD"><td colspan=3><br>
-<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="blank"> EMC AQ<br>
-<br><br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/cmaq/para/" target="_blank"> EMC AQ Verification<br>
-<br><br>
-<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
-<br><br>
+<tr bgcolor="DDDDDD"><td colspan=3>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/prod/" target="_blank"> EMC AQ Verification<br>
+<center><a href="https://vlab.noaa.gov/web/osti-modeling/air-quality" target="_blank"> NAQFC <br>
 <center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
-<br><br>
 <center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
-<br><br><br><br><br>
+<br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 
-</td>
+</td></tr>
 
 </form>
 

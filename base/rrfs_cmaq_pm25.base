@@ -88,13 +88,14 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=350 height=275>
 <img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=350 height=275>
 <img src="HIGHGAOD" name="highgaod_image" width=350 height=275>
-<img src="MEDGAOD" name="medgaod_image" width=350 height=275>
 <img src="HIGHVAOD" name="highvaod_image" width=350 height=275>
-<img src="MEDVAOD" name="medvaod_image" width=350 height=275>
 <img src="FIREIMAGE1" name="fire1_image" width=350 height=275> 
+
+<!-- <img src="MEDGAOD" name="medgaod_image" width=350 height=275>
+<img src="MEDVAOD" name="medvaod_image" width=350 height=275>
 <img src="FIREIMAGE2" name="fire2_image" width=350 height=275>
 <img src="FIREIMAGE3" name="fire3_image" width=350 height=275>
-<!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
+<figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
 <!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EMC DEV Fire Location </font> </b> </figcaption> -->
 <!--  <br> -->
 <!--  <img src="NESDISIMAGE" name="nesdis_image" width=500 height=400> -->
@@ -106,7 +107,6 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/docs/Smoke_CCS_WCOSS.pdf" target="_blank"> HYSPLIT 2013 Upgrades</a><br> -->
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
 <!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html"> Hourly Ozone</a>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25_max.html"> Max/Ave PM25</a> 
 </td></tr>
@@ -115,34 +115,37 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <select name="exp1" >
 <option value="aqmv708obs" > AQMv7.0.8 & OBS
 <option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
-<option value="aqmv70obs" > AQMv7.0.7 & OBS
-<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
-<option value="aqmv70" > AQMv7.0.7
-<option value="aqmv70bc" > AQMv7.0.7 BiCor
 </select>
 </td></tr>
+
+<!--  <option value="aqmv70obs" > Future developmental AQM
+<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
+<option value="aqmv70" > AQMv7.0.7
+<option value="aqmv70bc" > AQMv7.0.7 BiCor -->
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
 <option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
 <option value="aqmv708obs" > AQMv7.0.8 & OBS
-<option value="aqmv70" > AQMv7.0.7
-<option value="aqmv70bc" > AQMv7.0.7 BiCor
-<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
-<option value="aqmv70obs" > AQMv7.0.7 & OBS
 </select>
 </td></tr>
 
+<!--  <option value="aqmv70" > Future developmental AQM
+<option value="aqmv70bc" > AQMv7.0.7 BiCor
+<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
+<option value="aqmv70obs" > AQMv7.0.7 & OBS -->
+
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="aqmv70obs" > AQMv7.0.7 & OBS
-<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
-<option value="aqmv70" > AQMv7.0.7
-<option value="aqmv70bc" > AQMv7.0.7 BiCor
-<option value="aqmv708obs" > AQMv7.0.8 & OBS
-<option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
+<option value="aqmv70obs" > Future developmental AQM
 </select>
 </td></tr>
+
+<!--  <option value="aqmv708obs" > AQMv7.0.8 & OBS
+<option value="aqmv708bcobs" > AQMv7.0.8 BiCor & OBS
+<option value="aqmv70bcobs" > AQMv7.0.7 BiCor & OBS
+<option value="aqmv70" > AQMv7.0.7
+<option value="aqmv70bc" > AQMv7.0.7 BiCor -->
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp
 <select name="rg" >
@@ -240,7 +243,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Select Field:<br>
 <select name="fld" > 
-<option value="pm25" > &nbsp &nbsp &nbsp &nbsp Total Surface PM diameter < 2.5 μm &nbsp &nbsp &nbsp
+<option value="pm25" > &nbsp &nbsp &nbsp &nbsp Surface PM diameter < 2.5 μm &nbsp &nbsp &nbsp
 <!--  <option value="aod" > &nbsp &nbsp &nbsp &nbsp Aerosol Optical Depth  &nbsp &nbsp &nbsp -->
 <!--  <option value="pm25_col" > &nbsp &nbsp &nbsp &nbsp PM25 Column Total &nbsp &nbsp -->
 <!--  <option value="pm25c_col" > &nbsp &nbsp &nbsp &nbsp Carbon PM25 (EC+OC) Column Total &nbsp &nbsp -->
@@ -259,21 +262,14 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
-<tr bgcolor="DDDDDD"><td colspan=3><br>
-<center><a href="https://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ<br>
-<br>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/cmaq/para/" target="_blank"> EMC AQ Verification<br>
-<br><br>
-<center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank"> NAQFC <br>
-<br><br>
+<tr bgcolor="DDDDDD"><td colspan=3>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/prod/" target="_blank"> EMC AQ Verification<br>
+<center><a href="https://vlab.noaa.gov/web/osti-modeling/air-quality" target="_blank"> NAQFC <br>
 <center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
-<br><br>
 <center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
-<br><br><br><br><br>
+<br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-</td>
+</td></tr>
 
 </form>
 
