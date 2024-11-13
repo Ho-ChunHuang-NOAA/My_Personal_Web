@@ -18,17 +18,13 @@ PDYm3=$(${NDATE} -72 ${cdate} | cut -c1-8)
 #
 FIRST_AVAIL_DAY=20240925
 #
-# FIRST_AVAIL_DAY=20200901
 cdate=${TODAY}"00"
 FIRST_AVAIL_DAY=$(${NDATE} -2160 ${cdate} | cut -c1-8 )
 #
+FIRST_AVAIL_DAY=20240925
+#
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
-X0=`echo ${FIRST_AVAIL_DAY} | cut -c5-5`
-if [[ ${X0} == "0" ]]; then
-   FstMx=`echo ${FIRST_AVAIL_DAY} | cut -c6-6`
-else
-   FstMx=`echo ${FIRST_AVAIL_DAY} | cut -c5-6`
-fi
+FstMx=$( echo ${FIRST_AVAIL_DAY} | cut -c5-6 | sed 's/^0//' )
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 ## Local  Source Directory
@@ -65,12 +61,7 @@ declare -a str=( Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec )
 DISPDAY=${TODAY}
 DISPDAY=${PDYm3}
 Y0=`echo ${DISPDAY} | cut -c1-4`
-X0=`echo ${DISPDAY} | cut -c5-5`
-if [[ ${X0} == "0" ]]; then
-   Mx=`echo ${DISPDAY} | cut -c6-6`
-else
-   Mx=`echo ${DISPDAY} | cut -c5-6`
-fi
+Mx=$( echo ${DISPDAY} | cut -c5-6 | sed 's/^0//' )
 D0=`echo ${DISPDAY} | cut -c7-8`
 #
 # If starting figure is not existed due to any reason,e.g., server down,  do not update the time info of the html and js
@@ -78,6 +69,7 @@ D0=`echo ${DISPDAY} | cut -c7-8`
 ## Can not check remote file. Keep foe local usage
 #
 ## if [[ -e ${remote_fig}/${Y0}/${TODAY}/hysplitconussmokepbl_03.png ]]; then
+chrstr0=${str[${FstMx}-1]}   ## keyword for Month
 chrstr=${str[${Mx}-1]}   ## keyword for Month
 
 exp1="g16.aodc"
@@ -85,7 +77,7 @@ exp2="g18.aodc"
 exp3="g16.aodf"
 exp4="g18.aodf"
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!ABIAODIMAGE1!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp1}.${TODAY}.20.aod.high.png!"  -e "s!ABIAODIMAGE2!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp2}.${TODAY}.20.aod.high.png!" -e "s!ABIAODIMAGE3!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp3}.${TODAY}.20.aod.high.png!" -e "s!ABIAODIMAGE4!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp4}.${TODAY}.20.aod.high.png!"  ${local_base}/eval_abi_L2_aod.base > ${working_dir}/eval_abi_L2_aod.html
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!ABIAODIMAGE1!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp1}.${TODAY}.20.aod.high.png!"  -e "s!ABIAODIMAGE2!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp2}.${TODAY}.20.aod.high.png!" -e "s!ABIAODIMAGE3!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp3}.${TODAY}.20.aod.high.png!" -e "s!ABIAODIMAGE4!${WebFig}/${Y0}/${TODAY}/aqm.conus.${exp4}.${TODAY}.20.aod.high.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!"  ${local_base}/eval_abi_L2_aod.base > ${working_dir}/eval_abi_L2_aod.html
 
    ##
    ## Update the Date Information of Latest Avaialble Figure for Date Selection Restriction

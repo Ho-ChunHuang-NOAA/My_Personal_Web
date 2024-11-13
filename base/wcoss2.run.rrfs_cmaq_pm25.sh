@@ -38,15 +38,10 @@ FIRST_AVAIL_DAY=20200901
 cdate=${TODAY}"00"
 FIRST_AVAIL_DAY=$(${NDATE} -2160 ${cdate} | cut -c1-8 )
 #
-FIRST_AVAIL_DAY=20230401
+FIRST_AVAIL_DAY=20240701
 #
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
-X0=`echo ${FIRST_AVAIL_DAY} | cut -c5-5`
-if [[ ${X0} == "0" ]]; then
-   FstMx=`echo ${FIRST_AVAIL_DAY} | cut -c6-6`
-else
-   FstMx=`echo ${FIRST_AVAIL_DAY} | cut -c5-6`
-fi
+FstMx=$( echo ${FIRST_AVAIL_DAY} | cut -c5-6 | sed 's/^0//' )
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 ## Local  Source Directory
@@ -80,12 +75,7 @@ WebFig=${remote_http}/fig
 
 declare -a str=( Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec )
 Y0=`echo ${TODAY} | cut -c1-4`
-X0=`echo ${TODAY} | cut -c5-5`
-if [[ ${X0} == "0" ]]; then
-   Mx=`echo ${TODAY} | cut -c6-6`
-else
-   Mx=`echo ${TODAY} | cut -c5-6`
-fi
+Mx=$( echo ${TODAY} | cut -c5-6 | sed 's/^0//' )
 D0=`echo ${TODAY} | cut -c7-8`
 #
 # If starting figure is not existed due to any reason,e.g., server down,  do not update the time info of the html and js
