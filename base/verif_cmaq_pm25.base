@@ -3,9 +3,9 @@
 <head>
 <title> NCEP AQM PM GRAPHICS </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="../script/style.css"></link>
-<script language="JavaScript" src="../script/verif_pm_latest.day.js"> </script> 
-<script language="JavaScript" src="../script/verif_cmaq_pm25.js"> </script> 
+<link rel="stylesheet" type="text/css" href="../js/style.css"></link>
+<script language="JavaScript" src="../js/verif_pm_latest.day.js"> </script> 
+<script language="JavaScript" src="../js/verif_cmaq_pm25.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -95,37 +95,37 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
 <select name="exp1" >
-<option value="prodobs" > AQMv6
-<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
-<option value="v70c84obs" > AQMv7
-<option value="v70c84bcobs" > AQMv7 Bias-Corrected
+<option value="aqmv708obs" > AQMv7
+<option value="aqmv708bcobs" > AQMv7 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
+<option value="aqmv8obs" > AQMv8
+<option value="aqmv8bcobs" > AQMv8 Bias-Corrected
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 2 Type:&nbsp &nbsp
 <select name="exp2" >
-<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
-<option value="v70c84obs" > AQMv7
-<option value="v70c84bcobs" > AQMv7 Bias-Corrected
-<option value="prodobs" > AQMv6
+<option value="aqmv708bcobs" > AQMv7 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
+<option value="aqmv8obs" > AQMv8
+<option value="aqmv8bcobs" > AQMv8 Bias-Corrected
+<option value="aqmv708obs" > AQMv7
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="v70c84obs" > AQMv7
-<option value="v70c84bcobs" > AQMv7 Bias-Corrected
-<option value="prodobs" > AQMv6
-<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
+<option value="aqmv8obs" > AQMv8
+<option value="aqmv8bcobs" > AQMv8 Bias-Corrected
+<option value="aqmv708obs" > AQMv7
+<option value="aqmv708bcobs" > AQMv7 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
 </select>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 4 Type:&nbsp &nbsp
 <select name="exp4" >
-<option value="v70c84bcobs" > AQMv7 Bias-Corrected
-<option value="prodobs" > AQMv6
-<option value="prodbcobs" > AQMv6 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
-<option value="v70c84obs" > AQMv7
+<option value="aqmv8bcobs" > AQMv8 Bias-Corrected
+<option value="aqmv708obs" > AQMv7
+<option value="aqmv708bcobs" > AQMv7 Bias-Corrected &nbsp &nbsp &nbsp &nbsp
+<option value="aqmv8obs" > AQMv8
 </select>
 </td></tr>
 
@@ -230,14 +230,14 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 </form>
 
-<p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
+<p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS aqmv708ucts and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
 <!--  <P><left><font color=blue size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output or Daily max/ave.</font> <br>  -->
 <font color=red size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use ctrl and "+" or "-" keys to adjust figure size. Figures will rearrange themselve automatically.</font></P>
-<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The operational AQMv6 is denoted as "CMAQ PROD" and the developmental AQMv7 is denoted as "Online-CMAQ V70C84" for AQMv7.0 code version 84.</font></P>
-<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The NOAA-20 experienced a serious anomaly on 09/29/2023, thus there was no fire emission generated for AQMv6 on 09/30/2023. As a result,</font></br>
-<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp AQMv6 uses the same fire emission as in the 09/30/2023 simulation for the 10/01/2023 simulation. 10/01/2023 GBBEPx fire emission was</font></br>
-<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ingested to the NCEP data directory after its normal schedule, thus no fire emission was used in 00Z & 06Z 10/02/2023 AQMv6 simulation.</font></br>
-<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp So far, AQMv7 has not been impacted by the NOAA-20 outage because of offline processing and algorithm design on the hourly RAVE fire emission.</font></P>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The operational AQMv7 is denoted as "CMAQ PROD" and the developmental AQMv8 is denoted as "Online-CMAQ V70C84" for AQMv8.0 code version 84.</font></P>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The NOAA-20 experienced a serious anomaly on 09/29/2023, thus there was no fire emission generated for AQMv7 on 09/30/2023. As a result,</font></br>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp AQMv7 uses the same fire emission as in the 09/30/2023 simulation for the 10/01/2023 simulation. 10/01/2023 GBBEPx fire emission was</font></br>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ingested to the NCEP data directory after its normal schedule, thus no fire emission was used in 00Z & 06Z 10/02/2023 AQMv7 simulation.</font></br>
+<font color=blue > &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp So far, AQMv8 has not been impacted by the NOAA-20 outage because of offline processing and algorithm design on the hourly RAVE fire emission.</font></P>
 
 </table>
 

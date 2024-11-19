@@ -66,6 +66,8 @@ remote_daily=${remote_src}/daily_ave_pm25
 remote_hourly=${remote_src}/hourly_pm25
 remote_js=${remote_src}/script
 remote_src=/home/people/emc/www/htdocs/mmb/hchuang/web
+remote_html=${remote_src}/html
+remote_js=${remote_src}/js
 remote_inc=${remote_src}/includes
 
 remote_fig=${remote_src}/fig
@@ -85,17 +87,17 @@ D0=`echo ${DISPDAY} | cut -c7-8`
 
    chrstr=${str[${Mx}-1]}   ## keyword for Month
 
-exp1=prodobs
-exp2=prodbcobs
-exp3=v70c84obs
-exp4=v70c84bcobs
+exp1=aqmv708obs
+exp2=aqmv708bcobs
+exp3=aqmv8obs
+exp4=aqmv8bcobs
 
    sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp1}.${DISPDAY}.t06z.15.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp2}.${DISPDAY}.t06z.15.pm25.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp3}.${DISPDAY}.t06z.15.pm25.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp4}.${DISPDAY}.t06z.15.pm25.k1.png!"  ${local_base}/verif_cmaq_pm25.base > ${working_dir}/verif_cmaq_pm25.html
 
-exp1=prodobs
-exp2=prodbcobs
-exp3=v70c84obs
-exp4=v70c84bcobs
+exp1=aqmv708obs
+exp2=aqmv708bcobs
+exp3=aqmv8obs
+exp4=aqmv8bcobs
 
    sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp1}.${DISPDAY}.t06z.ave_24hr_pm25.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp2}.${DISPDAY}.t06z.ave_24hr_pm25.day1.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp3}.${DISPDAY}.t06z.ave_24hr_pm25.day1.k1.png!" -e "s!CMAQPMIMAGE4!${WebFig}/${Y0}/${DISPDAY}/t06z/aqm.conus.${exp4}.${DISPDAY}.t06z.ave_24hr_pm25.day1.k1.png!"  ${local_base}/verif_cmaq_pm25_max.base > ${working_dir}/verif_cmaq_pm25_max.html
 
@@ -107,8 +109,12 @@ exp4=v70c84bcobs
 ## cp -p ${local_js}/verif_cmaq_pm25.js .
 ## cp -p ${local_js}/verif_cmaq_pm25_max.js .
 ## cp -p ${local_js}/verif_cmaq_pm25_nog16.js .
-scp verif_cmaq_pm25.html ${remote_user}@${remote_machine}:${remote_hourly}/index.html
-scp verif_cmaq_pm25_max.html ${remote_user}@${remote_machine}:${remote_daily}/index.html
-scp verif_pm_latest.day.js ${remote_user}@${remote_machine}:${remote_js}
+## scp verif_cmaq_pm25.html ${remote_user}@${remote_machine}:${remote_hourly}/index.html
+## scp verif_cmaq_pm25_max.html ${remote_user}@${remote_machine}:${remote_daily}/index.html
+## scp verif_pm_latest.day.js ${remote_user}@${remote_machine}:${remote_js}
+cp -p ${local_js}/verif_cmaq_pm25.js .
+cp -p ${local_js}/verif_cmaq_pm25_max.js .
+scp *.html ${remote_user}@${remote_machine}:${remote_html}
+scp *.js ${remote_user}@${remote_machine}:${remote_js}
 
 exit
