@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="../js/style.css"></link>
 <script language="JavaScript" src="../js/cmaq_pm_latest.day.js"> </script> 
-<script language="JavaScript" src="../js/rrfs_cmaq_pm25_dev.js"> </script> 
+<script language="JavaScript" src="../js/rrfs_cmaq_pm25_dev2.js"> </script> 
 <script language="JavaScript">
 
 </script>
@@ -86,10 +86,11 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <td rowspan=30>
 <img src="CMAQPMIMAGE1" name="cmaq_pm_image" width=350 height=275> 
 <img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=350 height=275>
-<img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=350 height=275>
+<img src="GEFSPMIMAGE1" name="gefs1_pm_image" width=350 height=275>
 <img src="HIGHGAOD" name="highgaod_image" width=350 height=275>
 <img src="HIGHVAOD" name="highvaod_image" width=350 height=275>
 <img src="CMAQAOD" name="cmaq_aod_image" width=350 height=275>
+<img src="GEFSAOD" name="gefs_aod_image" width=350 height=275>
 <img src="FIREIMAGE1" name="fire1_image" width=350 height=275> 
 
 <!-- <img src="MEDGAOD" name="medgaod_image" width=350 height=275>

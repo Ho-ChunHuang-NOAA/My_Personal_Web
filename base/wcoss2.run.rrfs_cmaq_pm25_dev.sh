@@ -72,6 +72,7 @@ remote_inc=${remote_src}/includes
 
 remote_fig=${remote_src}/fig
 WebFig=${remote_http}/fig
+GEFSFig=http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun
 
 declare -a str=( Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec )
 Y0=`echo ${TODAY} | cut -c1-4`
@@ -91,8 +92,8 @@ sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}!
 
 ##   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp}.${TODAY}.t06z.21.pm25_tot.k1.png!" -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.21.pm25_tot.k1.png!" -e "s!HIGHAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g16.${TODAY}.21.aod.high.png!"  -e "s!MEDAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g16.${TODAY}.21.aod.medium.png!" -e "s!LOWAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g16.${TODAY}.21.aod.low.png!" -e "s!FIREIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/fireemisfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/gbbepxfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/hmsfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/cmaq_pm25_sp.base > ${working_dir}/cmaq_pm25_sp.html
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.21.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.21.pm25.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.21.pm25.k1.png!" -e "s!HIGHGAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g16.${TODAY}.21.aod.high.png!"  -e "s!HIGHVAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.viirs.${TODAY}.21.aod.high.png!" -e "s!CMAQAOD!${WebFig}/${Y0}/${TODAY}/t06z/rrfs_aqm.conus.prod.${TODAY}.t06z.21.aod.k1.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/rrfs_fireemisfire.conus.v70fire.${TODAY}.t06z.location.21.k1.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/rrfs_cmaq_pm25_dev.base > ${working_dir}/rrfs_cmaq_pm25_dev.html
-
+   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.15.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!HIGHGAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g16.${TODAY}.21.aod.high.png!"  -e "s!HIGHVAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.viirs.${TODAY}.21.aod.high.png!" -e "s!CMAQAOD!${WebFig}/${Y0}/${TODAY}/t06z/rrfs_aqm.conus.prod.${TODAY}.t06z.21.aod.k1.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/rrfs_fireemisfire.conus.v70fire.${TODAY}.t06z.location.15.k1.png!" -e "s!GEFSPMIMAGE1!${GEFSFig}/${TODAY}/gefs.conus.${TODAY}.t06z.pm25.sfc.f015.png!" -e "s!GEFSAOD!${GEFSFig}/${TODAY}/gefs.conus.${TODAY}.t06z.aod.k1.f015.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/rrfs_cmaq_pm25_dev.base > ${working_dir}/rrfs_cmaq_pm25_dev.html
+/20250109/gefs.lafire.20250109.t12z.pm25.sfc.f009.png
    ##
    ## Update the Date Information of Latest Avaialble Figure for Date Selection Restriction
    ##

@@ -321,6 +321,17 @@ function get_current_layer(){
    return j;
 }
 
+function get_gefs_area(area_in){
+   area_out=area_in
+   if ( area_in == "LAfire" ) {
+      area_out="lafire";
+   }
+   if ( area_in == "LABasin" ) {
+      area_out="labasin";
+   }
+   return area_out;
+} 
+
 function get_hms_area(area_in){
    area_out=area_in
    if ( area_in == "glf" ) {
@@ -397,11 +408,12 @@ function anim(){
    }
    document.cmaq_pm_image.src  =  pics[i].src;
    document.cmaq2_pm_image.src =  pics[i+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[i+2*nmodel].src;
+   document.gefs1_pm_image.src =  pics[i+2*nmodel].src;
    document.highgaod_image.src =  pics[i+3*nmodel].src;
    document.highvaod_image.src =  pics[i+4*nmodel].src;
    document.cmaq_aod_image.src =  pics[i+5*nmodel].src;
-   document.fire1_image.src    =  pics[i+6*nmodel].src;
+   document.gefs_aod_image.src =  pics[i+6*nmodel].src;
+   document.fire1_image.src    =  pics[i+7*nmodel].src;
    window.setTimeout("increase_i(); anim()", speed);
 }
              
@@ -412,11 +424,12 @@ function animation(){
    if (document.form2.timerBox.checked){
       document.cmaq_pm_image.src  =  pics[i].src;
       document.cmaq2_pm_image.src =  pics[i+nmodel].src;
-      document.cmaq3_pm_image.src =  pics[i+2*nmodel].src;
+      document.gefs1_pm_image.src =  pics[i+2*nmodel].src;
       document.highgaod_image.src =  pics[i+3*nmodel].src;
       document.highvaod_image.src =  pics[i+4*nmodel].src;
       document.cmaq_aod_image.src =  pics[i+5*nmodel].src;
-      document.fire1_image.src    =  pics[i+6*nmodel].src;
+      document.gefs_aod_image.src =  pics[i+6*nmodel].src;
+      document.fire1_image.src    =  pics[i+7*nmodel].src;
       anmiloop= window.setTimeout("increase_i(); animation()", speed);
       ith=i;
    }
@@ -435,22 +448,24 @@ function show2(i){
    }
    document.cmaq_pm_image.src  =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
+   document.gefs1_pm_image.src =  pics[ith+2*nmodel].src;
    document.highgaod_image.src =  pics[ith+3*nmodel].src;
    document.highvaod_image.src =  pics[ith+4*nmodel].src;
    document.cmaq_aod_image.src =  pics[ith+5*nmodel].src;
-   document.fire1_image.src    =  pics[ith+6*nmodel].src;
+   document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+   document.fire1_image.src    =  pics[ith+7*nmodel].src;
 }
 
 function show(i){
    ith=i;
    document.cmaq_pm_image.src  =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
+   document.gefs1_pm_image.src =  pics[ith+2*nmodel].src;
    document.highgaod_image.src =  pics[ith+3*nmodel].src;
    document.highvaod_image.src =  pics[ith+4*nmodel].src;
    document.cmaq_aod_image.src =  pics[ith+5*nmodel].src;
-   document.fire1_image.src    =  pics[ith+6*nmodel].src;
+   document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+   document.fire1_image.src    =  pics[ith+7*nmodel].src;
 }
 
 function next2(){
@@ -462,11 +477,12 @@ function next2(){
    else {
       document.cmaq_pm_image.src  =  pics[ith].src;
       document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-      document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
+      document.gefs1_pm_image.src =  pics[ith+2*nmodel].src;
       document.highgaod_image.src =  pics[ith+3*nmodel].src;
       document.highvaod_image.src =  pics[ith+4*nmodel].src;
       document.cmaq_aod_image.src =  pics[ith+5*nmodel].src;
-      document.fire1_image.src    =  pics[ith+6*nmodel].src;
+      document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+      document.fire1_image.src    =  pics[ith+7*nmodel].src;
    }
 }
 
@@ -479,11 +495,12 @@ function prev2(){
    else {
       document.cmaq_pm_image.src  =  pics[ith].src;
       document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-      document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
+      document.gefs1_pm_image.src =  pics[ith+2*nmodel].src;
       document.highgaod_image.src =  pics[ith+3*nmodel].src;
       document.highvaod_image.src =  pics[ith+4*nmodel].src;
       document.cmaq_aod_image.src =  pics[ith+5*nmodel].src;
-      document.fire1_image.src    =  pics[ith+6*nmodel].src;
+      document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+      document.fire1_image.src    =  pics[ith+7*nmodel].src;
    }
 }
 
@@ -492,11 +509,12 @@ function next(){
    if(ith >= nmax) ith=nmax;
    document.cmaq_pm_image.src  =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
+   document.gefs1_pm_image.src =  pics[ith+2*nmodel].src;
    document.highgaod_image.src =  pics[ith+3*nmodel].src;
    document.highvaod_image.src =  pics[ith+4*nmodel].src;
    document.cmaq_aod_image.src =  pics[ith+5*nmodel].src;
-   document.fire1_image.src    =  pics[ith+6*nmodel].src;
+   document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+   document.fire1_image.src    =  pics[ith+7*nmodel].src;
 }
 
 function prev(){
@@ -504,22 +522,24 @@ function prev(){
    if(ith < 0) ith=0;
    document.cmaq_pm_image.src  =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
+   document.gefs1_pm_image.src =  pics[ith+2*nmodel].src;
    document.highgaod_image.src =  pics[ith+3*nmodel].src;
    document.highvaod_image.src =  pics[ith+4*nmodel].src;
    document.cmaq_aod_image.src =  pics[ith+5*nmodel].src;
-   document.fire1_image.src    =  pics[ith+6*nmodel].src;
+   document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+   document.fire1_image.src    =  pics[ith+7*nmodel].src;
 }
 
 function rewind(){
    ith=0;
    document.cmaq_pm_image.src  =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
+   document.gefs1_pm_image.src =  pics[ith+2*nmodel].src;
    document.highgaod_image.src =  pics[ith+3*nmodel].src;
    document.highvaod_image.src =  pics[ith+4*nmodel].src;
    document.cmaq_aod_image.src =  pics[ith+5*nmodel].src;
-   document.fire1_image.src    =  pics[ith+6*nmodel].src;
+   document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+   document.fire1_image.src    =  pics[ith+7*nmodel].src;
 }
 
 function last(){
@@ -527,11 +547,12 @@ function last(){
    get_i();
    document.cmaq_pm_image.src  =  pics[i].src;
    document.cmaq2_pm_image.src =  pics[i+nmodel].src;
-   document.cmaq3_pm_image.src =  pics[i+2*nmodel].src;
+   document.gefs1_pm_image.src =  pics[i+2*nmodel].src;
    document.highgaod_image.src =  pics[i+3*nmodel].src;
    document.highvaod_image.src =  pics[i+4*nmodel].src;
    document.cmaq_aod_image.src =  pics[i+5*nmodel].src;
-   document.fire1_image.src    =  pics[i+6*nmodel].src;
+   document.gefs_aod_image.src =  pics[ith+6*nmodel].src;
+   document.fire1_image.src    =  pics[i+7*nmodel].src;
 }
 
 function openWin(url) {
@@ -560,6 +581,7 @@ function load_image(frm){
    var calendar_day=yr+mon+day;
    var julian_day=cald2jday(calendar_day);
    var area_hms=get_hms_area(area);
+   var gefsarea=get_gefs_area(area);
    var fexp1_fire=get_ftype_fire(exp1);
    var fexp2_fire=get_ftype_fire(exp2);
    var fexp3_fire=get_ftype_fire(exp3);
@@ -588,7 +610,7 @@ function load_image(frm){
          }
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+data+"."+prod+"."+layer+".png";
+            filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z."+prod+".sfc.f0"+data+".png";
             preload(filename);
          }
          obsfhd="aqm";
@@ -661,6 +683,11 @@ function load_image(frm){
          }
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
+            filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z.aod.k1.f0"+data+".png";
+            preload(filename);
+         }
+         for (k=1; k<=72; k++) {
+            data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/rrfs_fireemisfire."+area_hms+".v70fire."+dateStr+".t"+cycle+"z.location."+data+".k1.png";
             preload(filename);
          }
@@ -692,6 +719,7 @@ function load_image_latest(){
    var exp3=get_current_exp3();
    var cycle=get_current_cyl();
    var area_hms=get_hms_area(area);
+   var gefsarea=get_gefs_area(area);
    var fexp1_fire=get_ftype_fire(exp1);
    var fexp2_fire=get_ftype_fire(exp2);
    var fexp3_fire=get_ftype_fire(exp3);
@@ -729,7 +757,7 @@ function load_image_latest(){
    }
    for (k=1; k<=72; k++) {
       data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+data+"."+prod+"."+layer+".png";
+      filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z."+prod+".sfc.f0"+data+".png";
       preload(filename);
    }
          obsfhd="aqm";
@@ -798,6 +826,11 @@ function load_image_latest(){
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+".prod."+dateStr+".t"+cycle+"z."+data+".aod."+layer+".png";
+            preload(filename);
+         }
+         for (k=1; k<=72; k++) {
+            data=Num2Chr(k);
+            filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z.aod.k1.f0"+data+".png";
             preload(filename);
          }
          for (k=1; k<=72; k++) {
@@ -842,6 +875,7 @@ function load_imageP1(frm){
    var exp3=frm.exp3.options[frm.exp3.selectedIndex].value;
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var area_hms=get_hms_area(area);
+   var gefsarea=get_gefs_area(area);
    var fexp1_fire=get_ftype_fire(exp1);
    var fexp2_fire=get_ftype_fire(exp2);
    var fexp3_fire=get_ftype_fire(exp3);
@@ -873,7 +907,7 @@ function load_imageP1(frm){
          }
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+data+"."+prod+"."+layer+".png";
+            filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z."+prod+".sfc.f0"+data+".png";
             preload(filename);
          }
          obsfhd="aqm";
@@ -942,6 +976,11 @@ function load_imageP1(frm){
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+".prod."+dateStr+".t"+cycle+"z."+data+".aod."+layer+".png";
+            preload(filename);
+         }
+         for (k=1; k<=72; k++) {
+            data=Num2Chr(k);
+            filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z.aod.k1.f0"+data+".png";
             preload(filename);
          }
          for (k=1; k<=72; k++) {
@@ -988,6 +1027,7 @@ function load_imageM1(frm){
    var exp3=frm.exp3.options[frm.exp3.selectedIndex].value;
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var area_hms=get_hms_area(area);
+   var gefsarea=get_gefs_area(area);
    var fexp1_fire=get_ftype_fire(exp1);
    var fexp2_fire=get_ftype_fire(exp2);
    var fexp3_fire=get_ftype_fire(exp3);
@@ -1019,7 +1059,7 @@ function load_imageM1(frm){
          }
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+data+"."+prod+"."+layer+".png";
+            filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z."+prod+".sfc.f0"+data+".png";
             preload(filename);
          }
          obsfhd="aqm";
@@ -1088,6 +1128,11 @@ function load_imageM1(frm){
          for (k=1; k<=72; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+".prod."+dateStr+".t"+cycle+"z."+data+".aod."+layer+".png";
+            preload(filename);
+         }
+         for (k=1; k<=72; k++) {
+            data=Num2Chr(k);
+            filename="http://www.emc.ncep.noaa.gov/gc_wmb/parthab/For_HoChun/"+dateStr+"/gefs."+gefsarea+"."+dateStr+".t"+cycle+"z.aod.k1.f0"+data+".png";
             preload(filename);
          }
          for (k=1; k<=72; k++) {
