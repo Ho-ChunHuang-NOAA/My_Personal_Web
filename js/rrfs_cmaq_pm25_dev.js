@@ -323,6 +323,24 @@ function get_current_layer(){
 
 function get_gefs_area(area_in){
    area_out=area_in
+   if ( area_in == "east" ) {
+      area_out="conuseast";
+   }
+   if ( area_in == "west" ) {
+      area_out="conuswest";
+   }
+   if ( area_in == "ne" ) {
+      area_out="conusne";
+   }
+   if ( area_in == "se" ) {
+      area_out="conusse";
+   }
+   if ( area_in == "nw" ) {
+      area_out="conusnw";
+   }
+   if ( area_in == "sw" ) {
+      area_out="conussw";
+   }
    if ( area_in == "LAfire" ) {
       area_out="lafire";
    }
