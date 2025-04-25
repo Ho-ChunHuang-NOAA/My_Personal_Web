@@ -610,7 +610,7 @@ function load_image(frm){
             obs_yr=extract_year_from_calendarD(newdate);
             chr_oyr=Num2Chr(obs_yr);
             data=itmp;
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g16.aodc."+newdate+"."+data+".aod.high.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g19.aodc."+newdate+"."+data+".aod.high.png";
             preload(filename);
          }
          for (k=1; k<=72; k++) {
@@ -746,7 +746,7 @@ function load_image_latest(){
             obs_yr=extract_year_from_calendarD(newdate);
             chr_oyr=Num2Chr(obs_yr);
             data=itmp;
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g16.aodc."+newdate+"."+data+".aod.high.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g19.aodc."+newdate+"."+data+".aod.high.png";
             preload(filename);
          }
          for (k=1; k<=72; k++) {
@@ -885,7 +885,7 @@ function load_imageP1(frm){
             obs_yr=extract_year_from_calendarD(newdate);
             chr_oyr=Num2Chr(obs_yr);
             data=itmp;
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g16.aodc."+newdate+"."+data+".aod.high.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g19.aodc."+newdate+"."+data+".aod.high.png";
             preload(filename);
          }
          for (k=1; k<=72; k++) {
@@ -1026,7 +1026,7 @@ function load_imageM1(frm){
             obs_yr=extract_year_from_calendarD(newdate);
             chr_oyr=Num2Chr(obs_yr);
             data=itmp;
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g16.aodc."+newdate+"."+data+".aod.high.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_oyr+"/"+newdate+"/"+obsfhd+"."+area+".g19.aodc."+newdate+"."+data+".aod.high.png";
             preload(filename);
          }
          for (k=1; k<=72; k++) {
