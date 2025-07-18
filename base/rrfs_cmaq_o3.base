@@ -152,8 +152,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="hi" > Hawaii
 <option value="ctdeep" > CT DEEP
 <option value="lis" > Long Island Sound
-<option value="aznw" > Arizona and New Mexcico
-<option value="Mckinney" > McKinney Fire
+<option value="can" > Canadian Wild Fires
 </select>
 </td>
 </tr>
