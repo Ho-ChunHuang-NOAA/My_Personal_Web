@@ -168,6 +168,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="can" > Canadian Wild Fires
 <option value="LAfire" > LA Fire
 <option value="LABasin" > LA Basin
+<option value="dset" > Full Domain
 </td>
 </tr>
 
