@@ -42,12 +42,12 @@ FstMx=$( echo ${FIRST_AVAIL_DAY} | cut -c5-6 | sed 's/^0//' )
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
 # Calculate years
-YEAR0=$(date +%Y)           # 2026
+YEAR0=$(date -d "2 years ago" +%Y) # 2024
 YEAR1=$(date -d "1 year ago" +%Y)  # 2025
-YEAR2=$(date -d "2 years ago" +%Y) # 2024
+YEAR2=$(date +%Y)           # 2026
 
 # Create the HTML string (Note the 'selected' on the current year)
-YEAR_BLOCK="<option value=\"$YEAR0\" selected>$YEAR0</option><option value=\"$YEAR1\">$YEAR1</option><option value=\"$YEAR2\">$YEAR2</option>"
+YEAR_BLOCK="<option value=\"$YEAR0\">$YEAR0</option><option value=\"$YEAR1\">$YEAR1</option><option value=\"$YEAR2\" selected>$YEAR2</option>"
 
 ## Local  Source Directory
 BASE=/lfs/h2/emc/vpppg/save/ho-chun.huang/WEB/base
