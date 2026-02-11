@@ -22,6 +22,15 @@ else
 fi
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
+# Calculate years
+YEAR0=$(date +%Y)           # 2026
+YEAR1=$(date -d "1 year ago" +%Y)  # 2025
+YEAR2=$(date -d "2 years ago" +%Y) # 2024
+
+# Create the HTML string (Note the 'selected' on the current year)
+YEAR_BLOCK="<option value=\"$YEAR0\" selected>$YEAR0</option><option value=\"$YEAR1\">$YEAR1</option><option value=\"$YEAR2\">$YEAR2</option>"
+
+## Local  Source Directory
 ## Local  Source Directory
 BASE=`pwd`
 export local_src="$(dirname ${BASE})"
@@ -85,7 +94,7 @@ url11="https://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/${Y0}/${TODAY}/aqm.conu
    chrstr=${str[${Mx}-1]}   ## keyword for Month
 
    ## sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!GEFSPMIMAGE!${WebFig}/${Y0}/${TODAY}/t06z/gefs.conus.${exp}.${TODAY}.t06z.15.pm25.k1.png!"  -e "s!CMAQPMIMAGE!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!RRFSPMIMAGE!${WebFig}/${Y0}/${TODAY}/t06z/rrfs.conus.${exp}.${TODAY}.t06z.15.pm25.k1.png!" -e "s!GEFSAODIMAGE!${WebFig}/${Y0}/${TODAY}/t06z/gefs.conus.${exp}.${TODAY}.t06z.15.aod.k1.png!"  -e "s!CMAQAODIMAGE!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp}.${TODAY}.t06z.15.aod.k1.png!" -e "s!RRFSAODIMAGE!${WebFig}/${Y0}/${TODAY}/t06z/rrfs.conus.${exp}.${TODAY}.t06z.15.aod.k1.png!" -e "s!GLBGOESAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g16.${TODAY}.21.aod.high.png!"  -e "s!GLBVIIRSAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.viirs.${TODAY}.21.aod.high.png!" -e "s!REGGOESAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g16.${TODAY}.21.aod.high.png!" -e "s!REGVIIRSAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.viirs.${TODAY}.21.aod.high.png!" ${local_base}/global_aod.base > ${working_dir}/global_aod.html
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!GEFSPMIMAGE!${url1}!"  -e "s!CMAQPMIMAGE!${url2}!" -e "s!RRFSPMIMAGE!${url3}!" -e "s!GEFSAODIMAGE!${url4}!"  -e "s!CMAQAODIMAGE!${url5}!" -e "s!RRFSAODIMAGE!${url6}!" -e "s!GLBGOESAOD!${url7}!"  -e "s!GLBVIIRSAOD!${url8}!" -e "s!NULLPAGE!${url9}!" -e "s!REGGOESAOD!${url10}!" -e "s!REGVIIRSAOD!${url11}!" ${local_base}/global_aod.base > ${working_dir}/global_aod.html
+   sed -e "s!XXXX_YEAR_OPTIONS_XXXX!$YEAR_BLOCK!g" -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!GEFSPMIMAGE!${url1}!"  -e "s!CMAQPMIMAGE!${url2}!" -e "s!RRFSPMIMAGE!${url3}!" -e "s!GEFSAODIMAGE!${url4}!"  -e "s!CMAQAODIMAGE!${url5}!" -e "s!RRFSAODIMAGE!${url6}!" -e "s!GLBGOESAOD!${url7}!"  -e "s!GLBVIIRSAOD!${url8}!" -e "s!NULLPAGE!${url9}!" -e "s!REGGOESAOD!${url10}!" -e "s!REGVIIRSAOD!${url11}!" ${local_base}/global_aod.base > ${working_dir}/global_aod.html
 
    ##
    ## Update the Date Information of Latest Avaialble Figure for Date Selection Restriction

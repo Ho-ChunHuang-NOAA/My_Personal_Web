@@ -41,6 +41,14 @@ FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
 FstMx=$( echo ${FIRST_AVAIL_DAY} | cut -c5-6 | sed 's/^0//' )
 FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
 #
+# Calculate years
+YEAR0=$(date +%Y)           # 2026
+YEAR1=$(date -d "1 year ago" +%Y)  # 2025
+YEAR2=$(date -d "2 years ago" +%Y) # 2024
+
+# Create the HTML string (Note the 'selected' on the current year)
+YEAR_BLOCK="<option value=\"$YEAR0\" selected>$YEAR0</option><option value=\"$YEAR1\">$YEAR1</option><option value=\"$YEAR2\">$YEAR2</option>"
+
 ## Local  Source Directory
 BASE=/lfs/h2/emc/vpppg/save/ho-chun.huang/WEB/base
 export local_src="$(dirname ${BASE})"
@@ -84,11 +92,11 @@ D0=`echo ${TODAY} | cut -c7-8`
    chrstr0=${str[${FstMx}-1]}   ## keyword for Month
    chrstr=${str[${Mx}-1]}   ## keyword for Month
 
-sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp}.${TODAY}.t06z.max_1hr_pm25.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.max_1hr_pm25.day1.k1.png!"  -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}-${exp}.${TODAY}.t06z.max_1hr_pm25.day1.k1.png!" -e "s!FIREIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/fireemisfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/gbbepxfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/hmsfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/rrfs_cmaq_pm25_max.base > ${working_dir}/rrfs_cmaq_pm25_max.html
+sed -e "s!XXXX_YEAR_OPTIONS_XXXX!$YEAR_BLOCK!g" -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp}.${TODAY}.t06z.max_1hr_pm25.day1.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.max_1hr_pm25.day1.k1.png!"  -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}-${exp}.${TODAY}.t06z.max_1hr_pm25.day1.k1.png!" -e "s!FIREIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/fireemisfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/gbbepxfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/hmsfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/rrfs_cmaq_pm25_max.base > ${working_dir}/rrfs_cmaq_pm25_max.html
 
 ##   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp}.${TODAY}.t06z.21.pm25_tot.k1.png!" -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.21.pm25_tot.k1.png!" -e "s!HIGHAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g19.${TODAY}.21.aod.high.png!"  -e "s!MEDAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g19.${TODAY}.21.aod.medium.png!" -e "s!LOWAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g19.${TODAY}.21.aod.low.png!" -e "s!FIREIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/fireemisfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/gbbepxfire.conus.${exp2}.${TODAY}.t06z.location.day1.k1.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/hmsfire.conus.${exp}.${TODAY}.t06z.location.day1.k1.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/cmaq_pm25_sp.base > ${working_dir}/cmaq_pm25_sp.html
 
-   sed -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.21.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.21.pm25.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.21.pm25.k1.png!" -e "s!HIGHGAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g19.${TODAY}.21.aod.high.png!"  -e "s!HIGHVAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.viirs.${TODAY}.21.aod.high.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/rrfs_fireemisfire.conus.v70fire.${TODAY}.t06z.location.21.k1.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/rrfs_cmaq_pm25.base > ${working_dir}/rrfs_cmaq_pm25.html
+   sed -e "s!XXXX_YEAR_OPTIONS_XXXX!$YEAR_BLOCK!g" -e "s!=\"${D0}\"  > ${D0}!=\"${D0}\"  selected > ${D0}!" -e "s! > ${chrstr}! selected > ${chrstr}!" -e "s! > ${Y0}! selected > ${Y0}!"  -e "s!CMAQPMIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp1}.${TODAY}.t06z.21.pm25.k1.png!"  -e "s!CMAQPMIMAGE2!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp2}.${TODAY}.t06z.21.pm25.k1.png!" -e "s!CMAQPMIMAGE3!${WebFig}/${Y0}/${TODAY}/t06z/aqm.conus.${exp3}.${TODAY}.t06z.21.pm25.k1.png!" -e "s!HIGHGAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.g19.${TODAY}.21.aod.high.png!"  -e "s!HIGHVAOD!${WebFig}/${Y0}/${TODAY}/aqm.conus.viirs.${TODAY}.21.aod.high.png!" -e "s!FIREIMAGE1!${WebFig}/${Y0}/${TODAY}/t06z/rrfs_fireemisfire.conus.v70fire.${TODAY}.t06z.location.21.k1.png!" -e "s!xxxFTRSTDATExxxx!${chrstr0} ${FstD0} ${FstY0}!" ${local_base}/rrfs_cmaq_pm25.base > ${working_dir}/rrfs_cmaq_pm25.html
 
    ##
    ## Update the Date Information of Latest Avaialble Figure for Date Selection Restriction
