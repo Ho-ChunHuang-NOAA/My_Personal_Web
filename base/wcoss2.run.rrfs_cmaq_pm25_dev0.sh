@@ -32,10 +32,10 @@ exp1=aqmv708obs
 exp2=aqmv708bcobs
 exp3=aqmv707obs
 #
-FIRST_AVAIL_DAY=20200901
-#
 cdate=${TODAY}"00"
 FIRST_AVAIL_DAY=$(${NDATE} -2160 ${cdate} | cut -c1-8 )
+#
+FIRST_AVAIL_DAY=20250301
 #
 FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
 FstMx=$( echo ${FIRST_AVAIL_DAY} | cut -c5-6 | sed 's/^0//' )
