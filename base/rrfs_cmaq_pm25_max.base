@@ -67,9 +67,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <img src="CMAQPMIMAGE1" name="cmaq1_pm_image" width=350 height=275>
 <img src="CMAQPMIMAGE2" name="cmaq2_pm_image" width=350 height=275>
 <img src="CMAQPMIMAGE3" name="cmaq3_pm_image" width=350 height=275> 
-<img src="FIREIMAGE1" name="fire1_image" width=350 height=275>
-<img src="FIREIMAGE2" name="fire2_image" width=350 height=275>
-<img src="FIREIMAGE3" name="fire3_image" width=350 height=275>
+<img src="CMAQPMIMAGE4" name="cmaq4_pm_image" width=350 height=275> 
 <!--  <br> -->
 <!--  <img src="NESDISIMAGE" name="nesdis_image" width=500 height=400> -->
 </td>
@@ -110,7 +108,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="aqmv70obs" > Future developmental AQM
+<option value="aqmv80obs" > Future developmental AQM
 </select>
 </td></tr>
 
@@ -119,6 +117,12 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <option value="aqmv70bcobs" > AQMv7.0 BiCor & OBS
 <option value="aqmv70" > AQMv7.0
 <option value="aqmv70bc" > AQMv7.0 BiCor -->
+
+<tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 4 Type:&nbsp &nbsp
+<select name="exp4" >
+<option value="aqmv80bcobs" > Future developmental AQM
+</select>
+</td></tr>
 
 
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> Region:&nbsp &nbsp

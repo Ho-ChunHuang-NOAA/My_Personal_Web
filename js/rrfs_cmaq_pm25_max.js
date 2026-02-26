@@ -28,20 +28,17 @@ var current_day;
 var current_exp1;
 var current_exp2;
 var current_exp3;
+var current_exp4;
 var current_cyl;
 var current_area;
 var current_prod;
 var area_in;
 var area_out;
-var area_hms;
 var run;
 var ftype_out;
 var first_julian_day=FirstDay();
 var latest_julian_day=LatestDay();
 var latest_calendar_day=jday2cald(latest_julian_day);
-var fireexp1;
-var fireexp2;
-var fireexp3;
 
 
 function Num2Chr(parin) {
@@ -275,10 +272,11 @@ function get_current_day(){
    return j;
 }
 
-function save_current_prod(exp1,exp2,exp3,cycle,area,prod) {
+function save_current_prod(exp1,exp2,exp3,exp4,cycle,area,prod) {
    current_exp1=exp1;
    current_exp2=exp2;
    current_exp3=exp3;
+   current_exp4=exp4;
    current_cyl=cycle;
    current_area=area;
    current_prod=prod;
@@ -297,6 +295,11 @@ function get_current_exp2(){
 
 function get_current_exp3(){
    var j=current_exp3;
+   return j;
+}
+
+function get_current_exp4(){
+   var j=current_exp4;
    return j;
 }
 
@@ -391,9 +394,7 @@ function anim(){
    document.cmaq1_pm_image.src =  pics[i].src;
    document.cmaq2_pm_image.src =  pics[i+nmodel].src;
    document.cmaq3_pm_image.src =  pics[i+2*nmodel].src;
-   document.fire1_image.src    =  pics[i+3*nmodel].src;
-   document.fire2_image.src    =  pics[i+4*nmodel].src;
-   document.fire3_image.src    =  pics[i+5*nmodel].src;
+   document.cmaq4_pm_image.src =  pics[i+3*nmodel].src;
    window.setTimeout("increase_i(); anim()", speed);
 }
              
@@ -405,9 +406,7 @@ function animation(){
       document.cmaq1_pm_image.src =  pics[i].src;
       document.cmaq2_pm_image.src =  pics[i+nmodel].src;
       document.cmaq3_pm_image.src =  pics[i+2*nmodel].src;
-      document.fire1_image.src    =  pics[i+3*nmodel].src;
-      document.fire2_image.src    =  pics[i+4*nmodel].src;
-      document.fire3_image.src    =  pics[i+5*nmodel].src;
+      document.cmaq4_pm_image.src =  pics[i+3*nmodel].src;
       anmiloop= window.setTimeout("increase_i(); animation()", speed);
       ith=i;
    }
@@ -427,9 +426,7 @@ function show2(i){
    document.cmaq1_pm_image.src =  pics[latest_ith].src;
    document.cmaq2_pm_image.src =  pics[latest_ith+nmodel].src;
    document.cmaq3_pm_image.src =  pics[latest_ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[latest_ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[latest_ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[latest_ith+5*nmodel].src;
+   document.cmaq4_pm_image.src =  pics[latest_ith+3*nmodel].src;
 }
 
 function show(i){
@@ -437,9 +434,7 @@ function show(i){
    document.cmaq1_pm_image.src =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
    document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
+   document.cmaq4_pm_image.src =  pics[ith+3*nmodel].src;
 }
 
 function next2(){
@@ -452,9 +447,7 @@ function next2(){
       document.cmaq1_pm_image.src =  pics[ith].src;
       document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
       document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-      document.fire1_image.src    =  pics[ith+3*nmodel].src;
-      document.fire2_image.src    =  pics[ith+4*nmodel].src;
-      document.fire3_image.src    =  pics[ith+5*nmodel].src;
+      document.cmaq4_pm_image.src =  pics[ith+3*nmodel].src;
    }
 }
 
@@ -468,9 +461,7 @@ function prev2(){
       document.cmaq1_pm_image.src =  pics[ith].src;
       document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
       document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-      document.fire1_image.src    =  pics[ith+3*nmodel].src;
-      document.fire2_image.src    =  pics[ith+4*nmodel].src;
-      document.fire3_image.src    =  pics[ith+5*nmodel].src;
+      document.cmaq4_pm_image.src =  pics[ith+3*nmodel].src;
    }
 }
 
@@ -480,20 +471,16 @@ function next(){
    document.cmaq1_pm_image.src =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
    document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
+   document.cmaq4_pm_image.src =  pics[ith+3*nmodel].src;
 }
 
 function prev(){
    ith=ith-1;
    if(ith < 0) ith=0;
-   document.cmaq1_pm_image.src =  pics[ithth].src;
+   document.cmaq1_pm_image.src =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
    document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
+   document.cmaq4_pm_image.src =  pics[ith+3*nmodel].src;
 }
 
 function rewind(){
@@ -501,9 +488,7 @@ function rewind(){
    document.cmaq1_pm_image.src =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
    document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
+   document.cmaq4_pm_image.src =  pics[ith+3*nmodel].src;
 }
 
 function last(){
@@ -512,9 +497,7 @@ function last(){
    document.cmaq1_pm_image.src =  pics[ith].src;
    document.cmaq2_pm_image.src =  pics[ith+nmodel].src;
    document.cmaq3_pm_image.src =  pics[ith+2*nmodel].src;
-   document.fire1_image.src    =  pics[ith+3*nmodel].src;
-   document.fire2_image.src    =  pics[ith+4*nmodel].src;
-   document.fire3_image.src    =  pics[ith+5*nmodel].src;
+   document.cmaq4_pm_image.src =  pics[ith+3*nmodel].src;
 }
 
 function openWin(url) {
@@ -538,13 +521,10 @@ function load_image(frm){
    var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
    var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
    var exp3=frm.exp3.options[frm.exp3.selectedIndex].value;
+   var exp4=frm.exp4.options[frm.exp4.selectedIndex].value;
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
    var calendar_day=yr+mon+day;
    var julian_day=cald2jday(calendar_day);
-   var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
-   var fireexp2="fireemisfire";
-   var fireexp3="fireemisfire";
    var mcday=get_mcday(yr,mon);
    var switch_day=cald2jday(20160204);
    if ( day > mcday ) {
@@ -573,21 +553,11 @@ function load_image(frm){
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(yr,mon,day);
-         istatus=save_current_prod(exp1,exp2,exp3,cycle,area,prod);
+         istatus=save_current_prod(exp1,exp2,exp3,exp4,cycle,area,prod);
          show(0);
       }
    }
@@ -606,11 +576,8 @@ function load_image_latest(){
    var exp1=get_current_exp1();
    var exp2=get_current_exp2();
    var exp3=get_current_exp3();
+   var exp4=get_current_exp4();
    var cycle=get_current_cyl();
-   var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
-   var fireexp2="fireemisfire";
-   var fireexp3="fireemisfire";
    var switch_day=cald2jday(20160204);
    if ( area == "" ) {
       area="conus";
@@ -645,17 +612,7 @@ function load_image_latest(){
    }
    for (k=0; k<nmodel; k++) {
       data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-      preload(filename);
-   }
-   for (k=0; k<nmodel; k++) {
-      data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
-      preload(filename);
-   }
-   for (k=0; k<nmodel; k++) {
-      data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
       preload(filename);
    }
    show(0);
@@ -687,11 +644,8 @@ function load_imageP1(frm){
    var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
    var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
    var exp3=frm.exp3.options[frm.exp3.selectedIndex].value;
+   var exp4=frm.exp4.options[frm.exp4.selectedIndex].value;
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
-   var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
-   var fireexp2="fireemisfire";
-   var fireexp3="fireemisfire";
    var mcday=get_mcday(new_yr,new_mon);
    var switch_day=cald2jday(20160204);
    if ( new_day > mcday ) {
@@ -723,21 +677,11 @@ function load_imageP1(frm){
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);
-         istatus=save_current_prod(exp1,exp2,exp3,cycle,area,prod);
+         istatus=save_current_prod(exp1,exp2,exp3,exp4,cycle,area,prod);
       }
    }
    show(0);
@@ -767,11 +711,8 @@ function load_imageM1(frm){
    var exp1=frm.exp1.options[frm.exp1.selectedIndex].value;
    var exp2=frm.exp2.options[frm.exp2.selectedIndex].value;
    var exp3=frm.exp3.options[frm.exp3.selectedIndex].value;
+   var exp4=frm.exp4.options[frm.exp4.selectedIndex].value;
    var cycle=frm.tz.options[frm.tz.selectedIndex].value;
-   var area_hms=get_hms_area(area);
-   var fireexp1=get_ftype_fire(exp1);
-   var fireexp2="fireemisfire";
-   var fireexp3="fireemisfire";
    var mcday=get_mcday(new_yr,new_mon);
    var switch_day=cald2jday(20160204);
    if ( new_day > mcday ) {
@@ -803,21 +744,11 @@ function load_imageM1(frm){
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
-            preload(filename);
-         }
-         for (k=0; k<nmodel; k++) {
-            data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp3+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);
-         istatus=save_current_prod(exp1,exp2,exp3,cycle,area,prod);
+         istatus=save_current_prod(exp1,exp2,exp3,exp4,cycle,area,prod);
       }
    }
    show(0);
