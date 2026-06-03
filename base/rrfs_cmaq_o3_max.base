@@ -153,7 +153,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
        Month:
        <select name="mn" >
        <option value="01"  > Jan
-       <option value="02"  selected > Feb
+       <option value="02"  > Feb
        <option value="03"  > Mar
        <option value="04"  > Apr
        <option value="05"  > May
@@ -180,7 +180,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
        <option value="08"  > 08
        <option value="09"  > 09
        <option value="10"  > 10
-       <option value="11"  selected > 11
+       <option value="11"  > 11
        <option value="12"  > 12
        <option value="13"  > 13
        <option value="14"  > 14
