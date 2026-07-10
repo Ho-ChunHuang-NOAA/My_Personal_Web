@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title> NCEP CMAQ PM GRAPHICS </title>
+<title> OMD CMAQ PM GRAPHICS </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="../js/style.css"></link>
 <script language="JavaScript" src="../js/cmaq_pm_latest.day.js"> </script> 
@@ -16,7 +16,7 @@
                                                                                                                   
 <body  border=0 bgcolor="addbff"  text="000000" onLoad="javascript:load_image(document.form1)" >
 
-<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65><img src="../js/ncep_80.gif" height=55 width=75> 
+<img src="../js/noaa_logo.gif" height=60 width=65><img src="../js/nws_logo.gif" height=60 width=65>
 <font color="Blue" size=+3> &nbsp &nbsp &nbsp  NAQFC Hourly PM<sub>2.5</sub> Simulations</font>
 
 <br> 
@@ -100,7 +100,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <img src="FIREIMAGE2" name="fire2_image" width=350 height=275>
 <img src="FIREIMAGE3" name="fire3_image" width=350 height=275>
 <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PROD Fire Location </font> </b> </figcaption> -->
-<!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EMC DEV Fire Location </font> </b> </figcaption> -->
+<!-- <figcaption> <left> <b> <font color=blue size=+1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp OMD DEV Fire Location </font> </b> </figcaption> -->
 <!--  <br> -->
 <!--  <img src="NESDISIMAGE" name="nesdis_image" width=500 height=400> -->
 </td>
@@ -267,7 +267,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="CCCCCC" align="center"><td colspan=3> <input size=10 type="button" name="submit" value="Display Image" onClick="load_image(this.form)"></td></tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3>
-<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/prod/" target="_blank"> EMC AQ Verification<br>
+<center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/prod/" target="_blank"> OMD EVS AQ Verification<br>
 <center><a href="https://vlab.noaa.gov/web/osti-modeling/air-quality" target="_blank"> NAQFC <br>
 <center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
 <center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
