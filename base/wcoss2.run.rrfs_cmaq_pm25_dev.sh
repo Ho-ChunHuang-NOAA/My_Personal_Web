@@ -68,8 +68,8 @@ cd ${working_dir}
 remote_machine=emcrzdm.ncep.noaa.gov
 remote_user=hchuang
 ## Remote Target Directory
-remote_src=/home/people/emc/www/htdocs/mmb/hchuang/web
-remote_http=http://www.emc.ncep.noaa.gov/mmb/hchuang/web
+remote_src=/home/people/emc/www/htdocs/regional/restricted/aqm/web
+remote_http=http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web
 remote_html=${remote_src}/html
 remote_js=${remote_src}/js
 remote_inc=${remote_src}/includes

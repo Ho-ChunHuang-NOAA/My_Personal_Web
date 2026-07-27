@@ -84,12 +84,12 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="AAAAAA">
 <td colspan=3></td>
 <td rowspan=30>
-<img src="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/2026/20260211/t06z/aqm.conus.aqmv708obs.20260211.t06z.21.o3.k1.png" name="cmaq_o3_image" width=350 height=275>
-<img src="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/2026/20260211/t06z/aqm.conus.aqmv708bcobs.20260211.t06z.21.o3.k1.png" name="cmaq2_o3_image" width=350 height=275>
-<img src="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/2026/20260211/t06z/aqm.conus.aqmv70obs.20260211.t06z.21.o3.k1.png" name="cmaq3_o3_image" width=350 height=275>
-<img src="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/2026/20260211/t06z/hmsfire.conus..20260211.t06z.location.day1.k1.png" name="fire1_image" width=350 height=275>
-<img src="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/2026/20260211/t06z/aqm.conus.aqmv70obs.20260211.t06z.location.day1.k1.png" name="fire2_image" width=350 height=275>
-<img src="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/2026/20260211/t06z/fireemisfire.conus.aqmv708bcobs.20260211.t06z.location.day1.k1.png" name="fire3_image" width=350 height=275>
+<img src="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/2026/20260211/t06z/aqm.conus.aqmv708obs.20260211.t06z.21.o3.k1.png" name="cmaq_o3_image" width=350 height=275>
+<img src="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/2026/20260211/t06z/aqm.conus.aqmv708bcobs.20260211.t06z.21.o3.k1.png" name="cmaq2_o3_image" width=350 height=275>
+<img src="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/2026/20260211/t06z/aqm.conus.aqmv70obs.20260211.t06z.21.o3.k1.png" name="cmaq3_o3_image" width=350 height=275>
+<img src="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/2026/20260211/t06z/hmsfire.conus..20260211.t06z.location.day1.k1.png" name="fire1_image" width=350 height=275>
+<img src="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/2026/20260211/t06z/aqm.conus.aqmv70obs.20260211.t06z.location.day1.k1.png" name="fire2_image" width=350 height=275>
+<img src="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/2026/20260211/t06z/fireemisfire.conus.aqmv708bcobs.20260211.t06z.location.day1.k1.png" name="fire3_image" width=350 height=275>
 </td>
 </tr>
 
@@ -98,8 +98,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/docs/Smoke_CCS_WCOSS.pdf" target="_blank"> HYSPLIT 2013 Upgrades</a><br> -->
 <!--  <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/hysplit/grib" target="_blank"> HYSPLIT grib2 files</a><br> -->
 <!--  <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br> -->
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3_max.html"> Max/Ave Ozone</a>
+<center><a href="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/html/rrfs_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
+<center><a href="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/html/rrfs_cmaq_o3_max.html"> Max/Ave Ozone</a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
