@@ -75,9 +75,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 </tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3> 
-<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/eval_cmaq_o3.html"> Hourly Ozone</a> 
-<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/eval_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
-<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/eval_cmaq_pm25_max.html"> Max/Ave PM<sub>2.5</sub></a>
+<center><a href="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/html/eval_cmaq_o3.html"> Hourly Ozone</a> 
+<center><a href="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/html/eval_cmaq_pm25.html"> Hourly PM<sub>2.5</sub></a>
+<center><a href="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/html/eval_cmaq_pm25_max.html"> Max/Ave PM<sub>2.5</sub></a>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 1 Type:&nbsp &nbsp
