@@ -345,12 +345,12 @@ function get_ftype_fire(run){
    return ftype_out;
 }
   function myWin(){
-    newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html", "displayWindow", "width=950,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
+    newWin = open ("http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/rrfs_cmaq_o3.html", "displayWindow", "width=950,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
   }
 
   function myWindow(frm){
     dateStr=frm.yr.options[frm.yr.selectedIndex].value+frm.mn.options[frm.mn.selectedIndex].value+frm.dy.options[frm.dy.selectedIndex].value;
-    newWin = open ("http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/rrfs_cmaq_o3.html", "displayWindow", "width=800,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
+    newWin = open ("http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/rrfs_cmaq_o3.html", "displayWindow", "width=800,height=800,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,location=yes,status=yes");
   }
 function preload2(img){
     if ( count > imax ) {
@@ -558,32 +558,32 @@ function load_image(frm){
          dateStr=yr+mon+day;
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(yr,mon,day);
@@ -630,32 +630,32 @@ function load_image_latest(){
    dateStr=chr_yr+chr_mon+chr_day;
    for (k=1; k<=nmodel; k++) {
       data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+      filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
       preload(filename);
    }
    for (k=1; k<=nmodel; k++) {
       data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+      filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
       preload(filename);
    }
    for (k=1; k<=nmodel; k++) {
       data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+      filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
       preload(filename);
    }
    for (k=0; k<nmodel; k++) {
       data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+      filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
       preload(filename);
    }
    for (k=0; k<nmodel; k++) {
       data=Num2Chr(k);
-      filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
+      filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
       preload(filename);
    }
    for (k=1; k<=nmodel; k++) {
        data=Num2Chr(k);
-       filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
+       filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
        preload(filename);
    }
    show(0);
@@ -707,32 +707,32 @@ function load_imageP1(frm){
          dateStr=chr_yr+chr_mon+chr_day;
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);
@@ -787,32 +787,32 @@ function load_imageM1(frm){
          dateStr=chr_yr+chr_mon+chr_day;
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp1+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp2+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp1+"."+area_hms+".prod."+dateStr+".t06z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=0; k<nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t06z/"+fireexp2+"."+area_hms+".para6d."+dateStr+".t06z.location.day"+k+".k1.png";
             preload(filename);
          }
          for (k=1; k<=nmodel; k++) {
             data=Num2Chr(k);
-            filename="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
+            filename="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/dustemis."+area+".prod."+dateStr+".t"+cycle+"z.location.day"+k+".k1.png";
             preload(filename);
          }
          istatus=save_current_date(chr_yr,chr_mon,chr_day);

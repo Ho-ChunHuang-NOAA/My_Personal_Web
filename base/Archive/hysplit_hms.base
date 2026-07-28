@@ -74,15 +74,15 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 </tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3> 
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/hysplit_bluesky.html" target="_blank"> HYSPLIT smoke/dust page </a><br><br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25_max.html" target="_blank"> CMAQ PM page</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/hysplit_bluesky.html" target="_blank"> HYSPLIT smoke/dust page </a><br><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_pm25_max.html" target="_blank"> CMAQ PM page</a><br>
 </td></tr>
 
 
 <tr bgcolor="DDDDDD"><td colspan=3><center> Product Type </a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25_sp.html"> Hourly Speciated </a> <br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25.html"> Hourly </a> &nbsp &nbsp
-<a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm25_max.html"> Daily Max_Ave</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_pm25_sp.html"> Hourly Speciated </a> <br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_pm25.html"> Hourly </a> &nbsp &nbsp
+<a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_pm25_max.html"> Daily Max_Ave</a><br>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> NCO RUN:&nbsp &nbsp

@@ -93,9 +93,9 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 </td></tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3><center> Product Type </a>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_pm.html"> Hourly Speciated </a> <br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_25pm.html"> Hourly </a> &nbsp &nbsp
-<a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_25pm_max.html"> Daily Max_Ave</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_pm.html"> Hourly Speciated </a> <br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_25pm.html"> Hourly </a> &nbsp &nbsp
+<a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_25pm_max.html"> Daily Max_Ave</a><br>
 </td></tr>
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> NCO RUN Type:<br>

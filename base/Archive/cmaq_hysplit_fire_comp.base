@@ -77,9 +77,9 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 </tr>
 
 <tr bgcolor="DDDDDD"><td colspan=3> 
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/hysplit.nesdis.html/" target="_blank"> HYSPLIT smoke/dust pub</a><br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/hysplit_bluesky.html" target="_blank"> HYSPLIT smoke/dust page </a><br><br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_25pm_max.html" target="_blank"> CMAQ PM page</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/hysplit.nesdis.html/" target="_blank"> HYSPLIT smoke/dust pub</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/hysplit_bluesky.html" target="_blank"> HYSPLIT smoke/dust page </a><br><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_25pm_max.html" target="_blank"> CMAQ PM page</a><br>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a><br><br>
 </td></tr>
 

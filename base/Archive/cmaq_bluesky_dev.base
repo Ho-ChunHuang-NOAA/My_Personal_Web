@@ -91,7 +91,7 @@ Animation toggle <input  type="checkbox" name="timerBox"  onClick="javascript:ge
 <tr bgcolor="DDDDDD"><td colspan=3> <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/fvs/hysplit/web/html/fho.html" target="_blank"> HYSPLIT Verification </a><br>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq/docs/Smoke_CCS_WCOSS.pdf" target="_blank"> HYSPLIT 2013 Upgrades</a><br>
 <center><a href="http://www.ospo.noaa.gov/Products/land/hms.html" target="_blank"> NESDIS fire/smoke imagry</a><br>
-<center><a href="http://www.emc.ncep.noaa.gov/mmb/hchuang/web/html/cmaq_hms_fire.html" target="_blank"> HMS Reg Fire Location</a><br>
+<center><a href="http://www.emc.ncep.noaa.gov//regional/restricted/aqm/web/html/cmaq_hms_fire.html" target="_blank"> HMS Reg Fire Location</a><br>
 <center><a href="http://www.emc.ncep.noaa.gov/mmb/aq" target="_blank"> EMC AQ web site </a><br><br>
 </td></tr>
 
