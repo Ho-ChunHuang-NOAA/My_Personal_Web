@@ -78,8 +78,8 @@ D0=`echo ${TODAY} | cut -c7-8`
 #
 ## if [[ -e ${remote_fig}/${Y0}/${TODAY}/hysplitconussmokepbl_03.png ]]; then
 ## noimage="https://www.emc.ncep.noaa.gov/users/verification/style/images/noimage.png"
-noimage1="https://www.emc.ncep.noaa.gov/mmb/hchuang/style/images/rrfs-blank_image.png"
-noimage2="https://www.emc.ncep.noaa.gov/mmb/hchuang/style/images/web_blank_figure.png"
+noimage1="https://www.emc.ncep.noaa.gov/regional/restricted/aqm/style/images/rrfs-blank_image.png"
+noimage2="https://www.emc.ncep.noaa.gov/regional/restricted/aqm/style/images/web_blank_figure.png"
 url1="https://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/${Y0}/${TODAY}/t06z/gefs.conus.prod.${TODAY}.t06z.15.pm25.k1.png"
 url2="https://www.emc.ncep.noaa.gov/mmb/hchuang/web/fig/${Y0}/${TODAY}/t06z/aqm.conus.prod.${TODAY}.t06z.15.pm25.k1.png"
 url3=${noimage1}

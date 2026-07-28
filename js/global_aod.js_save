@@ -33,9 +33,9 @@ var current_area;
 var first_julian_day=FirstDay();
 var latest_julian_day=LatestDay();
 var latest_calendar_day=jday2cald(latest_julian_day);
-var noimage="https://www.emc.ncep.noaa.gov/mmb/hchuang/style/images/no_web_figure.png";
-var norrfsimage="https://www.emc.ncep.noaa.gov/mmb/hchuang/style/images/rrfs-blank_image.png";
-var blankimage="https://www.emc.ncep.noaa.gov/mmb/hchuang/style/images/web_blank_figure.png";
+var noimage="https://www.emc.ncep.noaa.gov/regional/restricted/aqm/style/images/no_web_figure.png";
+var norrfsimage="https://www.emc.ncep.noaa.gov/regional/restricted/aqm/style/images/rrfs-blank_image.png";
+var blankimage="https://www.emc.ncep.noaa.gov/regional/restricted/aqm/style/images/web_blank_figure.png";
 
 function Num2Chr(parin) {
    var j;
