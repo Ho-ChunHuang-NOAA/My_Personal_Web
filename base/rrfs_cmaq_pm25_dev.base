@@ -271,7 +271,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <tr bgcolor="DDDDDD"><td colspan=3>
 <center><a href="https://www.emc.ncep.noaa.gov/users/verification/air_quality/aqm/prod/" target="_blank"> OMD EVS AQ Verification<br>
 <center><a href="https://vlab.noaa.gov/web/osti-modeling/air-quality" target="_blank"> NAQFC <br>
-<center><a href="http://www.ncep.noaa.gov" target="_blank"> NCEP Home <br>
+<center><a href="https://www.weather.gov/ncep" target="_blank"> NCEP Home <br>
 <center><a href="http://www.noaa.gov" target="_blank"> NOAA Home <br>
 <br>
 <center><a href=mailto:ho-chun.huang@noaa.gov>Send Comments 

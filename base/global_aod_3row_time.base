@@ -258,7 +258,7 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 <br>
 <center><a href="https://www.weather.gov/sti/stimodeling_airquality" target="_blank" style="font-size:25px;"> NAQFC <br>
 <br>
-<center><a href="http://www.ncep.noaa.gov" target="_blank" style="font-size:25px;"> NCEP Home <br>
+<center><a href="https://www.weather.gov/ncep" target="_blank" style="font-size:25px;"> NCEP Home <br>
 <br>
 <center><a href="http://www.noaa.gov" target="_blank" style="font-size:25px;"> NOAA Home <br>
 <br><br><br>
