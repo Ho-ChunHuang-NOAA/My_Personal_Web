@@ -128,7 +128,9 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 
 <tr bgcolor="CCCCCC"><td colspan=3><center> RUN # 3 Type:&nbsp &nbsp
 <select name="exp3" >
-<option value="aqmv70obs" > Future developmental AQM
+<option value="aqmv80obs" > Developmental AQM AQMv8.0 & OBS
+<option value="aqmv80bcobs" > Developmental AQM AQMv8.0 BiCor & OBS
+<option value="aqmvxxobs" > Future developmental AQM
 </select>
 </td></tr>
 
