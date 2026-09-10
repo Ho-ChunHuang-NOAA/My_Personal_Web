@@ -275,14 +275,8 @@ Animation toggle <input  type="checkbox" name="timerBox" onClick="javascript:get
 </form>
 
 <p style="color:black;background-color:LightSkyBlue;text-align:center;font-size:1.0em;margin-top:-2px;margin-left:120px;margin-right:170px" ><b>Disclaimer:</b> The content provided on this page supports model development. These are not official NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.</p>
-<P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp Graphic only available for CONUS domain for Online CMAQ output</br></font></P>
-<!-- <P><left><font color=red size=+1>&nbsp &nbsp &nbsp &nbsp Disclaimer - Graphics exhibited at this web site is non-operational product.  Therefore they are not supported 24/7 and can be removed anytime without advanced notice.</br></font> -->
-<!-- <font color=red size=+1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Users who use this web site is at their own risk </font> </P> -->
-<!-- <P><left><font color=red size=+0>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click Optiond from Product Type Menu for Hourly output, Daily max/ave, or Hourly speciated species <br>
-	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp # Some models may contain only 48 hour output and will be a blank page beyond hour 48 &nbsp &nbsp # GOES-16 and VIIRS AOD Images has a 2-3 days latency </font></P>  -->
-<!--  <P><left><font color=blue size=+0> PARA6x in figures indicates an experiment for testing new updates.  Once the AQ management approves the update. New OMD NRT run will be assigned with a new name such as PARA6%version%.  The version is in alphabetical order currently in "b".<br> -->
-<!--  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use number click to jump to model forecast hour. Use 'prev' and 'next' to move through hours </font></P> -->
 
+<p><font color=red size=+0> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Figures are available from xxxFTRSTDATExxxx to present.</font></P>
 </table>
 
 </body>
