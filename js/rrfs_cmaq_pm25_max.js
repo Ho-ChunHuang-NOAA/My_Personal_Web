@@ -551,7 +551,7 @@ function load_image(frm){
             filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
-         for (k=0; k<nmodel; k++) {
+         for (k=1; k<nmodel; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
@@ -610,7 +610,7 @@ function load_image_latest(){
       filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
       preload(filename);
    }
-   for (k=0; k<nmodel; k++) {
+   for (k=1; k<nmodel; k++) {
       data=Num2Chr(k);
       filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
       preload(filename);
@@ -675,7 +675,7 @@ function load_imageP1(frm){
             filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
-         for (k=0; k<nmodel; k++) {
+         for (k=1; k<nmodel; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
@@ -742,7 +742,7 @@ function load_imageM1(frm){
             filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp3+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
          }
-         for (k=0; k<nmodel; k++) {
+         for (k=1; k<nmodel; k++) {
             data=Num2Chr(k);
             filename="http://www.emc.ncep.noaa.gov/regional/restricted/aqm/web/fig/"+chr_yr+"/"+dateStr+"/t"+cycle+"z/aqm."+area+"."+exp4+"."+dateStr+".t"+cycle+"z."+prod+".day"+k+".k1.png";
             preload(filename);
