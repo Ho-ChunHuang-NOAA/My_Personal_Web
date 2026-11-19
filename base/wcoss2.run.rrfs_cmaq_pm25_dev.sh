@@ -32,12 +32,19 @@ exp1=aqmv708obs
 exp2=aqmv708bcobs
 exp3=aqmv707obs
 #
-FIRST_AVAIL_DAY=20250301
-#
-FIRST_AVAIL_DAY=$(date -d "90 days ago" +%Y%m%d)
-FstY0=$(date -d "90 days ago" +%Y)
-FstMx=$(date -d "90 days ago" +%m | sed 's/^0//' )
-FstD0=$(date -d "90 days ago" +%d)
+flag_fix_1st_day=yes
+
+if [[ "${flag_fix_1st_day}" = "yes" ]]; then
+   FIRST_AVAIL_DAY=20260710
+   FstY0=`echo ${FIRST_AVAIL_DAY} | cut -c1-4`
+   FstMx=$( echo ${FIRST_AVAIL_DAY} | cut -c5-6 | sed 's/^0//' )
+   FstD0=`echo ${FIRST_AVAIL_DAY} | cut -c7-8`
+else
+   FIRST_AVAIL_DAY=$(date -d "90 days ago" +%Y%m%d)
+   FstY0=$(date -d "90 days ago" +%Y)
+   FstMx=$(date -d "90 days ago" +%m | sed 's/^0//' )
+   FstD0=$(date -d "90 days ago" +%d)
+fi
 echo "${FIRST_AVAIL_DAY} ${FstY0} ${FstMx} ${FstD0}"
 #
 # Calculate years
